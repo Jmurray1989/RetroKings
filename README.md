@@ -1,8 +1,17 @@
-# Your Project's Name
+# RetroKings
 
-One or two paragraphs providing an overview of your project.
+<hr>
 
-Essentially, this part is your sales pitch.
+### Code Institute / Full Stack Frameworks with Django Milestone Project
+
+Tasked to create a website combining knowledge from the Full Stack Frameworks with Django Development modules on the Code Institute course.
+
+## Introducing you to
+<p align="center">
+  <img width="350" height="350" src="">
+</p>
+
+Your one stop shop for all retro soccer, nba & nfl jerseys.
  
 ## UX
  
