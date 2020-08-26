@@ -7,7 +7,6 @@ html {
 body {
     background-color: ;
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Old Standard TT', serif;
 }
 
@@ -33,24 +32,30 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #000000;
+    color: #ffffff;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: #000000;
+    color: #ffffff;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.shop-all-btn:hover,
+.shop-all-btn:active,
+.shop-all-btn:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #000000;
+    color: #ffffff;
+}
+
+.fa-shopping-bag:hover,
+.fa-user:hover,
+.fa-search:hover {
+    color: #D4AF37;
 }
 
 .text-black {
