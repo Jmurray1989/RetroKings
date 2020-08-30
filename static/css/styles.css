@@ -19,6 +19,10 @@ body {
     text-align: center;
 }
 
+.hr-hero-font {
+    background-color: #D4AF37;
+}
+
 .shop-all-btn:hover {
     background: #000000;
     color: #D4AF37;
@@ -42,6 +46,7 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+    background-image: linear-gradient(to left, rgba(255,0,0,0),rgb(212,175,55,0.4));
 }
 
 .btn-black {
