@@ -6,7 +6,7 @@ html {
 
 body {
     background: url('/media/jersey-home-background.jpg') no-repeat center center fixed;
-    background-size: contain;
+    background-size: contain; 
     height: calc(100vh - 164px);
     color: #000000;
     font-family: 'Old Standard TT', serif;
@@ -46,7 +46,7 @@ body {
 
 .border-black {
     border: 1px solid black !important;
-    background-image: linear-gradient(to left, rgba(255,0,0,0),rgb(212,175,55,0.4));
+    background: linear-gradient(to left, rgba(255,0,0,0),rgb(212,175,55,0.4));
 }
 
 .btn-black {
@@ -65,6 +65,10 @@ body {
     width: fit-content;
 }
 
+#main-nav {
+    margin-top: -5rem;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -72,6 +76,10 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 
