@@ -1,4 +1,4 @@
-/*-------------------------------------Homepage/Base-------------------------------------------*/
+/*-------------------------------------Base-------------------------------------------*/
 
 html {
     height: 100%;
@@ -13,43 +13,6 @@ body {
     color: #000000;
     font-family: 'Old Standard TT', serif;
 }
-
-/* Homepage Header & Paragraph */
-
-.hr-hero-font {
-    background-color: #D4AF37;
-    width: 25%;
-}
-
-/* Shop All button on homepage */
-
-.shop-all-btn {
-    background: #D4AF37;
-    color: #000000;
-    margin-top: 2rem;
-}
-
-.shop-all-btn:hover {
-    background: #000000;
-    color: #D4AF37;
-}
-
-
-
-/* Zoom Effect On Images */
-
-.img-hover-zoom {
-  overflow: hidden;
-}
-
-.img-hover-zoom img {
-  transition: transform .5s ease;
-}
-
-.img-hover-zoom:hover img {
-  transform: scale(1.2);
-}
-
 
 /*-------------------------------------Navbar-------------------------------------------*/
 
@@ -111,9 +74,53 @@ body {
     color: white;
 }
 
-div.col-12 {
-    padding: 0rem;
+/*-------------------------------------Homepage-------------------------------------------*/
+
+/* Homepage Header & Paragraph */
+
+.hero-font{
+    margin-top: 12rem;
 }
+
+.hr-hero-font {
+    background-color: #D4AF37;
+    padding: 0.03rem;
+    width: 25%;
+}
+
+/* Shop All button on homepage */
+
+.shop-all-btn {
+    background: #D4AF37;
+    color: #000000;
+    margin: 2rem;
+}
+
+.shop-all-btn:hover {
+    background: #000000;
+    color: #D4AF37;
+}
+
+/* Image Cards */
+
+.card-deck {
+    margin: 3rem;
+}
+
+/* Zoom Effect On Card Images */
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 1.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+
 
 /*-----------------------------------Media Queries----------------------------------------*/
 
