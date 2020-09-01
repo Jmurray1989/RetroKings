@@ -121,6 +121,43 @@ body {
   transform: scale(1.2);
 }
 
+/*-------------------------------------Footer-------------------------------------------*/
+
+.page-footer {
+    background-color: #000000;
+}
+
+.list-inline-item,
+.copyright,
+.footer-icon,
+.footer-name {
+    color: #D4AF37;
+}
+
+.footer-icon:hover {
+    color: #ffffff;
+}
+
+.footer-info {
+    color: #ffffff;
+}
+
+.footer-link {
+    color: #ffffff;
+}
+
+.footer-link:hover {
+    color: #D4AF37;
+}
+
+.name {
+    color: #ffffff;
+}
+
+.name:hover {
+    color: #D4AF37; 
+}
+
 
 /*-----------------------------------Media Queries----------------------------------------*/
 
