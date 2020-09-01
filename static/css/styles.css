@@ -134,6 +134,10 @@ body {
     color: #D4AF37;
 }
 
+.footer-name {
+    text-decoration: underline;
+}
+
 .footer-icon:hover {
     color: #ffffff;
 }
@@ -152,12 +156,13 @@ body {
 
 .name {
     color: #ffffff;
+    
 }
 
 .name:hover {
     color: #D4AF37; 
+    outline: none;
 }
-
 
 /*-----------------------------------Media Queries----------------------------------------*/
 
