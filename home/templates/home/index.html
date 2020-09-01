@@ -1,134 +1,142 @@
 {% extends "base.html" %} {% load static %} {% block page_header %}
 
 <div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
+	<div class="row">
+		<div class="col"></div>
+	</div>
 </div>
+
 {% endblock %} {% block content %}
-<div class="container-fluid text-center">
-  <div class="row hero-text">
-    <div class="col-12">
-      <h1 class="display-5 hero-font">
-        ORIGINAL & VINTAGE JERSEYS
-      </h1>
 
-      <hr class="hr-hero-font" />
+<!--Main Page Text-->
 
-      <p>
-        At Retro Sports Jerseys we sell authentic, original jerseys from the
-        biggest sports on the planet.&nbsp;
-      </p>
+<div class="container text-center">
+	<div class="row">
+		<div class="col-12">
 
-      <p>
-        Check out our store to see classic jerseys across Football, MLB, NFL,
-        NBA, NHL and More
-      </p>
+			<h1 class="display-5 hero-font">
+				ORIGINAL & VINTAGE JERSEYS
+			</h1>
 
-      <div class="my-3">
-        <h4>
-          <a
-            href=""
-            class="shop-all-btn btn btn-lg rounded text-uppercase font-weight-bold py-3"
-            >Shop All</a
-          >
-        </h4>
-      </div>
+			<hr class="hr-hero-font" />
 
-      <div class="card-deck">
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-      </div>
+			<p>
+				At Retro Sports Jerseys we sell authentic, original jerseys from the
+				biggest sports on the planet.&nbsp;
+			</p>
 
-      <div class="card-deck">
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-      </div>
+			<p>
+				Check out our store to see classic jerseys across Football, MLB, NFL,
+				NBA, NHL and More
+			</p>
 
-      <div class="card-deck">
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="card">
-          <img
-            src="{% static 'logo/RetroKingsLogo.png' %}"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-      </div>
-    </div>
-  </div>
+			<h4>
+				<a href="/" class="shop-all-btn btn btn-lg rounded text-uppercase font-weight-bold py-3">Shop All</a>
+			</h4>
+		</div>
+	</div>
 </div>
 
-{% endblock %}
+<!--Jersey Selection Cards-->
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+
+			<div class="card-deck">
+				<div class="card img-hover-zoom">
+					<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+					<div class="card img-hover-zoom">
+						<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+						<div class="card img-hover-zoom">
+							<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+							<div class="card img-hover-zoom">
+								<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+							</div>
+
+							<div class="card-deck">
+								<div class="card img-hover-zoom">
+									<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+									<div class="card img-hover-zoom">
+										<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+										<div class="card img-hover-zoom">
+											<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+											<div class="card img-hover-zoom">
+												<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+											</div>
+
+											<div class="card-deck">
+												<div class="card img-hover-zoom">
+													<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+													<div class="card img-hover-zoom">
+														<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+														<div class="card img-hover-zoom">
+															<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+															<div class="card img-hover-zoom">
+																<img
+            src="{% static 'logo/RetroKingsLogo.png' %}"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												{% endblock %}

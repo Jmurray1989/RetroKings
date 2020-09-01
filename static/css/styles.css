@@ -9,20 +9,16 @@ html {
 body {
     background: url('/media/jersey-home-background.jpg') no-repeat center center;
     background-size: contain; 
-    height: calc(100vh - 100px);
+    height: calc(100vh - 164px);
     color: #000000;
     font-family: 'Old Standard TT', serif;
 }
 
 /* Homepage Header & Paragraph */
 
-.hero-text {
-    position: absolute;
-    top: 75%;
-}
-
 .hr-hero-font {
     background-color: #D4AF37;
+    width: 25%;
 }
 
 /* Shop All button on homepage */
@@ -30,6 +26,7 @@ body {
 .shop-all-btn {
     background: #D4AF37;
     color: #000000;
+    margin-top: 2rem;
 }
 
 .shop-all-btn:hover {
@@ -37,11 +34,20 @@ body {
     color: #D4AF37;
 }
 
-/* Image cards on homepage */
 
-.card-deck {
-    margin: 2rem;
-    margin-top: 5rem;
+
+/* Zoom Effect On Images */
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
 }
 
 
@@ -103,6 +109,10 @@ body {
 .btn-black {
     background: black;
     color: white;
+}
+
+div.col-12 {
+    padding: 0rem;
 }
 
 /*-----------------------------------Media Queries----------------------------------------*/
