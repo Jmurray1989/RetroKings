@@ -88,6 +88,12 @@ body {
     width: 25%;
 }
 
+.hr-jersey-card {
+    background-color: #D4AF37;
+    padding: 0.03rem;
+    width: 25%;
+}
+
 /* Shop All button on homepage */
 
 .shop-all-btn {
@@ -119,6 +125,29 @@ body {
 
 .img-hover-zoom:hover img {
   transform: scale(1.2);
+}
+
+/* Carousel */
+
+
+#retro-image-carousel {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    color: #000000;
+}
+
+.img-fluid {
+    height: 675px;
+}
+
+.carousel-header {
+    font-size: 3rem;
+    margin: 3rem;
+}
+
+.carousel-p {
+    margin-bottom: 2rem;
 }
 
 /*-------------------------------------Footer-------------------------------------------*/
