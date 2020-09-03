@@ -110,7 +110,11 @@ body {
 /* Image Cards */
 
 .card-deck {
-    margin: 3rem;
+    padding: 2rem;
+}
+
+.jersey-header {
+    margin-top: 1rem;
 }
 
 /* Zoom Effect On Card Images */
@@ -124,11 +128,21 @@ body {
 }
 
 .img-hover-zoom:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+/* Dropshadow Effect On Card Images */
+
+.card {
+  background: linear-gradient(to top, rgb(255, 255, 255),rgba(212, 175, 55, 0.13));
+  padding: 1rem;
+  margin: 1rem;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow:  0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border: 30px solid white;
 }
 
 /* Carousel */
-
 
 #retro-image-carousel {
     padding-left: 5rem;
