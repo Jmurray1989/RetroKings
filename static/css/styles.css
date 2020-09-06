@@ -9,7 +9,6 @@ html {
 body {
     background: url('/media/jersey-home-background.jpg') no-repeat center center;
     background-size: contain; 
-    height: calc(100vh - 164px);
     color: #000000;
     font-family: 'Old Standard TT', serif;
 }
@@ -206,6 +205,29 @@ body {
     color: #D4AF37; 
     outline: none;
 }
+
+/*-------------------------------------Products-------------------------------------------*/
+
+/* Hides the background image */
+
+.overlay {
+    height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.products-header {
+    margin-top: 3rem;
+}
+
+.products-row {
+    margin-bottom: 3rem;
+}
+
 
 /*-----------------------------------Media Queries----------------------------------------*/
 
