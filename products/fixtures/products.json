@@ -206,5 +206,18 @@
       "image_url": "",
       "image": "cardinals.png"
     }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001725",
+      "name": "Green Bay Packers",
+      "description": "You remember watching Reggie White dominate opponents with his skill set. Celebrate his career with this Green Bay Packers Authentic retired player jersey from Mitchell & Ness. The picture-perfect design will remind you of the days when your favorite player patrolled the gridiron. When you wear this Green Bay Packers jersey, all eyes will be on you.",
+      "price": 56.99,
+      "category": 2,
+      "image_url": "",
+      "image": "packers.png"
+    }
   }
 ]
