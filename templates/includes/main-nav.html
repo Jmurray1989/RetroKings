@@ -31,11 +31,11 @@
         Sport
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="sport-link">
-        <a href="" class="dropdown-item">Baseball</a>
-        <a href="" class="dropdown-item">American Football</a>
-        <a href="" class="dropdown-item">Soccer</a>
-        <a href="" class="dropdown-item">Basketball</a>
-        <a href="" class="dropdown-item">Ice Hockey</a>
+        <a href="{% url 'products' %}?category=baseball" class="dropdown-item">Baseball</a>
+        <a href="{% url 'products' %}?category=americanfootball" class="dropdown-item">American Football</a>
+        <a href="{% url 'products' %}?category=soccer" class="dropdown-item">Soccer</a>
+        <a href="{% url 'products' %}?category=basketball" class="dropdown-item">Basketball</a>
+        <a href="{% url 'products' %}?category=icehockey" class="dropdown-item">Ice Hockey</a>
       </div>
     </li>
 
@@ -51,9 +51,9 @@
         Brands
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="brands-link">
-        <a href="" class="dropdown-item">Adidas</a>
-        <a href="" class="dropdown-item">Nike</a>
-        <a href="" class="dropdown-item">All Brands</a>
+        <a href="{% url 'products' %}?category=adidas" class="dropdown-item">Adidas</a>
+        <a href="{% url 'products' %}?category=nike" class="dropdown-item">Nike</a>
+        <a href="{% url 'products' %}?category=mitchellness" class="dropdown-item">Mitchell & Ness</a>
       </div>
     </li>
 
