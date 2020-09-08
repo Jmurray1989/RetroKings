@@ -219,5 +219,200 @@
       "image_url": "",
       "image": "packers.png"
     }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001825",
+      "name": "Indianapolis Colts",
+      "description": "You remember watching Peyton Manning dominate opponents with his skill set. Celebrate his career with this Indianapolis Colts Authentic Retired Player Jersey from Mitchell & Ness. The picture-perfect design will remind you of the days when your favorite player patrolled the gridiron. When you wear this Indianapolis Colts jersey, all eyes will be on you.",
+      "price": 72.99,
+      "category": 2,
+      "image_url": "",
+      "image": "colts.png"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001925",
+      "name": "Denver Broncos",
+      "description": "Celebrate your Denver Broncos with this Authentic Throwback jersey from Mitchell & Ness! You'll show some true team spirit and some love for the legendary John Elway when you wear this at your next game day get-together! This authentic, professional quality on-field jersey is constructed of premium nylon mesh fabric and is adorned with John Elway graphics for a look any Denver Broncos fan will envy! Shop for your favorite NFL gear at Fanatics.com",
+      "price": 64.99,
+      "category": 2,
+      "image_url": "",
+      "image": "broncos.png"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002025",
+      "name": "Miami Dolphins",
+      "description": "Prove that you're the ultimate Miami Dolphins fan with this Dan Marino Authentic Throwback jersey from Mitchell & Ness! The authentic Miami Dolphins and Dan Marino graphics will ensure your die-hard team pride won't go unnoticed. You'll be ready to boast your enthusiastic Miami Dolphins fandom whenever you don this festive jersey!",
+      "price": 78.99,
+      "category": 2,
+      "image_url": "",
+      "image": "dolphins.png"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002125",
+      "name": "Philadelphia Eagles",
+      "description": "You remember watching Brian Dawkins dominate opponents with his skill set. Celebrate his career with this Philadelphia Eagles Authentic retired player jersey from Mitchell & Ness. The picture-perfect design will remind you of the days when your favorite player patrolled the gridiron. When you wear this Philadelphia Eagles jersey, all eyes will be on you.",
+      "price": 66.99,
+      "category": 2,
+      "image_url": "",
+      "image": "eagles.png"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002225",
+      "name": "Seattle Seahawks",
+      "description": "Cheer on your Seattle Seahawks with this Throwback Authentic jersey from Mitchell & Ness! You'll show some true team spirit and some love for the legendary Steve Largent when you wear this at your next Seattle Seahawks game day get-together! This authentic jersey is constructed of premium nylon mesh fabric and is adorned with Steve Largent's iconic name and number for a look any fan will envy!",
+      "price": 58.99,
+      "category": 2,
+      "image_url": "",
+      "image": "seahawks.png"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002325",
+      "name": "Las Vegas Raiders",
+      "description": "You remember watching Howie Long dominate opponents with his skill set. Celebrate his career with this Las Vegas Raiders Authentic retired player jersey from Mitchell & Ness. Its highlight-worthy design will remind you of the days when your favorite player patrolled the gridiron. When you wear this Las Vegas Raiders jersey, all eyes will be on you",
+      "price": 85.99,
+      "category": 2,
+      "image_url": "",
+      "image": "raiders.png"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002425",
+      "name": "Los Angeles Rams",
+      "description": "You remember watching Eric Dickerson dominate opponents with his skill set. Celebrate his career with this Los Angeles Rams Authentic retired player jersey from Mitchell & Ness. The picture-perfect design will remind you of the days when your favorite player patrolled the gridiron. When you wear this Los Angeles Rams jersey, all eyes will be on you.",
+      "price": 72.99,
+      "category": 2,
+      "image_url": "",
+      "image": "rams.png"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002525",
+      "name": "Arizona Cardinals",
+      "description": "You remember watching Pat Tillman dominate opponents with his skill set. Celebrate his career with this Arizona Cardinals Authentic Retired Player Jersey from Mitchell & Ness. The picture-perfect design will remind you of the days when your favorite player patrolled the gridiron. When you wear this Arizona Cardinals jersey, all eyes will be on you.",
+      "price": 72.99,
+      "category": 2,
+      "image_url": "",
+      "image": "cardinalsnfl.png"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002625",
+      "name": "Detroit Lions",
+      "description": "Display your team pride on game day with this Matthew Stafford Limited jersey from Nike. It features bold Detroit Lions graphics along with your favorite player's name and number on the back. Everyone will know your commitment to the Detroit Lions with this spirited jersey!",
+      "price": 59.99,
+      "category": 2,
+      "image_url": "",
+      "image": "lions.png"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002725",
+      "name": "Jacksonville Jaguars",
+      "description": "You're a massive Jacksonville Jaguars fan and also loved watching Mark Brunell play. Now you can show off your fandom for both when you get this Mark Brunell Jacksonville Jaguars Legacy replica jersey from Mitchell & Ness. It features distinctive throwback Jacksonville Jaguars graphics on the chest and back, perfect for wearing at a home game. By wearing this jersey, you'll be able to feel like you're reliving some of the great plays that Mark Brunell accomplished to lead the Jacksonville Jaguars to glory.",
+      "price": 72.99,
+      "category": 2,
+      "image_url": "",
+      "image": "jaguars.png"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002825",
+      "name": "Minnesota Vikings",
+      "description": "Emulate Randy Moss in his prime with this Minnesota Vikings Retired Player replica jersey from Mitchell & Ness. You'll look and feel like a member of the Minnesota Vikings whenever you wear it.",
+      "price": 69.99,
+      "category": 2,
+      "image_url": "",
+      "image": "vikings.png"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016002925",
+      "name": "San Diego Chargers",
+      "description": "Celebrate the career of Lance Alworth with this San Diego Chargers Replica Retired player jersey by Mitchell & Ness. With bold graphics of your favorite player's name and number, this jersey will ensure nobody second guesses your team dedication!",
+      "price": 67.99,
+      "category": 2,
+      "image_url": "",
+      "image": "chargers.png"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003025",
+      "name": "Carolina Panthers",
+      "description": "You're a massive Carolina Panthers fan and also loved watching Sam Mills play. Now you can show off your fandom for both when you get this Sam Mills Carolina Panthers Legacy replica jersey from Mitchell & Ness. It features distinctive throwback Carolina Panthers graphics on the chest and back, perfect for wearing at a home game. By wearing this jersey, you'll be able to feel like you're reliving some of the great plays that Sam Mills accomplished to lead the Carolina Panthers to glory.",
+      "price": 72.99,
+      "category": 2,
+      "image_url": "",
+      "image": "panthers.png"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003125",
+      "name": "New England Patriots",
+      "description": "You're a massive New England Patriots fan and also loved watching Rodney Harrison play. Now you can show off your fandom for both when you get this Rodney Harrison New England Patriots Legacy replica jersey from Mitchell & Ness. It features distinctive throwback New England Patriots graphics on the chest and back, perfect for wearing at a home game. By wearing this jersey, you'll be able to feel like you're reliving some of the great plays that Rodney Harrison accomplished to lead the New England Patriots to glory.",
+      "price": 99.99,
+      "category": 2,
+      "image_url": "",
+      "image": "patriots.png"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003225",
+      "name": "New York Jets",
+      "description": "Let everyone see your New York Jets fandom with this Wayne Chrebet retired player replica jersey from Mitchell & Ness! It features bold New York Jets colors along with Wayne Chrebet name and number graphics on the back.",
+      "price": 77.99,
+      "category": 2,
+      "image_url": "",
+      "image": "jets.png"
+    }
   }
 ]
