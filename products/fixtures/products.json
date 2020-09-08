@@ -6,7 +6,7 @@
       "sku": "pp5001340155",
       "name": "Chicago Cubs",
       "description": "Celebrate your Chicago Cubs fandom with this jersey! This stylish jersey will have you sporting your Chicago Cubs pride comfortably around town. Whether you're running like you're stealing a base or practicing your swing at the cages, this jersey will let everyone know that you are a devoted Chicago Cubs fan.",
-      "price": 39.99,
+      "price": 49.99,
       "category": 1,
       "image_url": "",
       "image": "cubs-grey-retro.png"
@@ -16,13 +16,195 @@
     "pk": 2,
     "model": "products.product",
     "fields": {
-      "sku": "pp5001600425",
+      "sku": "pp5001600225",
       "name": "San Francisco Giants",
       "description": "Even though Will Clark isn't out there putting on a show for the San Francisco Giants anymore, his impact on the franchise will never be forgotten. Show your respect for one of the game's all-time greats with this Cooperstown Collection Player jersey from Nike.",
-      "price": 39.99,
+      "price": 59.99,
       "category": 1,
       "image_url": "",
       "image": "giants-white.png"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600325",
+      "name": "Pittsburgh Pirates",
+      "description": "Willie Stargell was one of the greatest players in Pittsburgh Pirates history, and you like to show your appreciation for his storied career every chance you get. Now you can pay tribute to one of the all-time greats with this Cooperstown Collection Authentic jersey from Mitchell & Ness! Its throwback design is constructed to identical standards as the uniform Willie Stargell wore during his remarkable career with the franchise. This jersey's detailed graphics and high-quality stitching will help bring back all those cherished memories of watching Willie Stargell lead the Pittsburgh Pirates onto the diamond.",
+      "price": 39.99,
+      "category": 1,
+      "image_url": "",
+      "image": "pirates.png"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600425",
+      "name": "New York Yankees",
+      "description": "Make sure you're ready to show off your New York Yankees pride with this Authentic Joe DiMaggio jersey from Mitchell & Ness! It's the perfect top for warm weather occasions. It was specially designed to provide maximum comfort, with highly breathable fabric and quality New York Yankees graphics to match.",
+      "price": 89.99,
+      "category": 1,
+      "image_url": "",
+      "image": "yankees.png"
+    }
+  },
+   {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600525",
+      "name": "Cincinnati Reds",
+      "description": "You don't know anyone else who has as much passion for the Cincinnati Reds as you do. It Helps you experience the history and greatness of your favorite ball club with this Ken Griffey Jr. Cooperstown Collection Batting Practice jersey from Mitchell & Ness. Its distinctive throwback design and team graphics will get you pumped up to be a Cincinnati Reds fan.",
+      "price": 59.99,
+      "category": 1,
+      "image_url": "",
+      "image": "reds.png"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600625",
+      "name": "Atlanta Braves",
+      "description": "Bring back the glorious feelings of watching Chipper Jones play with this Authentic Atlanta Braves jersey from Mitchell & Ness. Every stitch is tailored to play up to the same standards of design, comfort and movement your all-time favorite player had. With its outstanding construction and fine attention to detail, a taste for this kind of jersey is a sure sign of a truly dedicated fan.",
+      "price": 39.99,
+      "category": 1,
+      "image_url": "",
+      "image": "braves.png"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600725",
+      "name": "Brooklyn Dodgers",
+      "description": "Baseball is always moving forward, but it's also important to recognize the game's history. This Cooperstown Collection Team jersey from Nike is a great way to honor the legacy of the Brooklyn Dodgers. Its replica design features throwback Brooklyn Dodgers graphics and trims for a timeless look.",
+      "price": 79.99,
+      "category": 1,
+      "image_url": "",
+      "image": "dodgers.png"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600825",
+      "name": "Oakland Athletics",
+      "description": "You loved watching players like Rickey Henderson. Experience the excitement of baseball with this incredible Cooperstown Collection Mesh Batting Practice jersey from Mitchell & Ness. It has distinctive Oakland Athletics graphics on the front and Rickey Henderson graphics on the back to get you pumped up to carry on your fandom.",
+      "price": 49.99,
+      "category": 1,
+      "image_url": "",
+      "image": "oakland.png"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600925",
+      "name": "Tampa Bay Rays",
+      "description": "You loved watching players like Wade Boggs. Experience the excitement of baseball with this incredible Cooperstown Collection jersey from Mitchell & Ness. It has distinctive Tampa Bay Rays graphics on the front and Wade Boggs graphics on the back to get you pumped up to carry on your fandom.",
+      "price": 45.99,
+      "category": 1,
+      "image_url": "",
+      "image": "rays.png"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001025",
+      "name": "Detroit Tigers",
+      "description": "You don't know anyone else who has as much Detroit Tigers passion as you. Now you can wear your pride for everyone to see while you celebrate your favorite player with this spirited Alan Trammell Cooperstown Collection Mesh Batting Practice jersey from Mitchell & Ness. The next time you jump to your feet to celebrate another big victory, everyone will notice your fervent Detroit Tigers fandom thanks to this unique jersey!",
+      "price": 68.99,
+      "category": 1,
+      "image_url": "",
+      "image": "detroit.png"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001125",
+      "name": "Chicago White Sox",
+      "description": "Show off your team spirit with this one-of-a-kind Chicago White Sox Cooperstown replica team jersey from Majestic! You'll have no problem staying comfortable and cool with this jersey. It features quality Chicago White Sox graphics and Cool Base technology which is made with moisture-wicking fabric that gives this jersey a breathable feel.",
+      "price": 55.99,
+      "category": 1,
+      "image_url": "",
+      "image": "red-sox.png"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001225",
+      "name": "Philadelphia Phillies",
+      "description": "Whether you're watching from the couch or within the stadium, you'll be the biggest Philadelphia Phillies fan around when you sport this 1979 Saturday Night Special Cool Base Cooperstown Team Jersey! This Majestic jersey features bold Philadelphia Phillies graphics that will showcase your team pride no matter where you watch the game. The Cool Base technology wicks away moisture, so you'll look and feel fresh all game long.",
+      "price": 72.99,
+      "category": 1,
+      "image_url": "",
+      "image": "phillies.png"
+    }
+  },
+   {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001325",
+      "name": "Houston Astros",
+      "description": "Craig Biggio was one of the greatest players in Houston Astros history, and you like to show your appreciation for his storied career every chance you get. Now you can pay tribute to your all-time favorite Houston Astros star with this Cooperstown Collection Authentic jersey from Mitchell & Ness! Its throwback design is constructed to identical standards as the uniform Craig Biggio wore during his remarkable career with the franchise. This jersey's remarkably detailed graphics and high-quality stitching will help bring back all those cherished memories of watching Craig Biggio lead the Houston Astros onto the diamond.",
+      "price": 79.99,
+      "category": 1,
+      "image_url": "",
+      "image": "astros.png"
+    }
+  },
+   {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001425",
+      "name": "New York Mets",
+      "description": "Tom Seaver was one of the greatest players in New York Mets history, and you like to show your appreciation for his storied career every chance you get. Now you can pay tribute to one of the all-time greats with this Cooperstown Collection Authentic jersey from Mitchell & Ness! Its throwback design is constructed to identical standards as the uniform Tom Seaver wore during his remarkable career with the franchise. This jersey's detailed graphics and high-quality stitching will help bring back all those cherished memories of watching Tom Seaver lead the New York Mets onto the diamond.",
+      "price": 76.99,
+      "category": 1,
+      "image_url": "",
+      "image": "mets.png"
+    }
+  },
+   {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001525",
+      "name": "Seattle Mariners",
+      "description": "Whether you're watching from the couch or heading under the bright lights of the ballpark, you'll look like the biggest Seattle Mariners fan around when you sport this 1989 Turn Back the Clock Authentic Team jersey! This Majestic jersey features bold Seattle Mariners graphics that will showcase your team pride no matter where you watch the game. There is no better way to showcase your passion this season.",
+      "price": 67.99,
+      "category": 1,
+      "image_url": "",
+      "image": "mariners.png"
+    }
+  },
+   {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016001625",
+      "name": "St. Louis Cardinals",
+      "description": "Bring back the glorious feeling of watching Mark McGwire on the field with this St. Louis Cardinals Cooperstown Collection Authentic jersey from Mitchell & Ness. Every stitch is tailored to play up to the same standards of design, comfort and movement your all-time favorite player had. With its outstanding construction and fine attention to detail, a taste for this kind of jersey is a sure sign of a truly dedicated St. Louis Cardinals fan.",
+      "price": 56.99,
+      "category": 1,
+      "image_url": "",
+      "image": "cardinals.png"
     }
   }
 ]
