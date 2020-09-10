@@ -414,5 +414,421 @@
       "image_url": "",
       "image": "jets.png"
     }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003325",
+      "name": "Republic Of Ireland",
+      "description": "Home shirt as worn by Mick McCarthy when Ireland were competing in the 1990 World Cup, being knocked out in the quarter finals of the competition after losing 1-0 against Italy.",
+      "price": 110.99,
+      "category": 3,
+      "image_url": "",
+      "image": "ireland.png"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003425",
+      "name": "Croatia",
+      "description": "Home shirt as worn by Hakan Suker when Croatia were competing in the 1996 European Championship, being knocked out in the quarter finals of the competition after losing 2-1 against Germany.",
+      "price": 65.99,
+      "category": 3,
+      "image_url": "",
+      "image": "croatia.png"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003525",
+      "name": "Brazil",
+      "description": "Home shirt as worn by Ronaldo when Brazil made it to the final of the 1998 World Cup final, losing 3-0 against hosts France with goals from Zinedine Zidane and Emmanuel Petit.",
+      "price": 99.99,
+      "category": 3,
+      "image_url": "",
+      "image": "brazil.png"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003625",
+      "name": "France",
+      "description": "Home shirt as worn by Zidane when France won their first ever World Cup, winning the competition as the host nation, beating Brazil 3-0 in the final with a brace from Zinedine Zidane before the win was sealed in added time with Emmanuel Petit scoring the final goal for France.",
+      "price": 68.99,
+      "category": 3,
+      "image_url": "",
+      "image": "france.png"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003725",
+      "name": "Argentina",
+      "description": "Classic home shirt as worn by Gabriel Batistuta in the 1999 Copa America, when the side progressed from the group stages, but came unstuck against eventual winners Brazil in the quarter finals, losing 2-1.",
+      "price": 88.99,
+      "category": 3,
+      "image_url": "",
+      "image": "argentina.png"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003825",
+      "name": "Netherlands",
+      "description": "Home shirt as worn by Van Basten when Holland were attempting to qualify for the 1988 European Championship, successfully qualifying for the competition after finishing top of their group ahead of second placed Greece.",
+      "price": 62.99,
+      "category": 3,
+      "image_url": "",
+      "image": "holland.png"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016003925",
+      "name": "England",
+      "description": "Home shirt worn against West Germany in the semi final in Italia 90, Famous for Gazza crying his eyes out after that yellow card that would have kept him out of the final, and Lineker doing the international gesture for 'keep an eye on him'.",
+      "price": 79.99,
+      "category": 3,
+      "image_url": "",
+      "image": "eng.png"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004025",
+      "name": "Portugal",
+      "description": "Home shirt as worn by Luis Figo when Portugal were attempting to qualify for the 2000 European Championship, successfully qualifying for the competition after finishing 2nd in their group, making it to the competition as the best runner up.",
+      "price": 90.99,
+      "category": 3,
+      "image_url": "",
+      "image": "portugal.png"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004125",
+      "name": "Germany",
+      "description": "Vintage home shirt with classic and ionic design was famously worn by Jurgen Klinsmann throughout Italia 1990, which the side went on to win, against Maradona's Argentina",
+      "price": 94.99,
+      "category": 3,
+      "image_url": "",
+      "image": "germany.png"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004225",
+      "name": "Spain",
+      "description": "Home shirt as worn when Spain were competing in the 1996 European Championship, finishing 2nd in their group behind France before going out in the quarter finals after losing 4-2 on penalties against England.",
+      "price": 64.99,
+      "category": 3,
+      "image_url": "",
+      "image": "spain.png"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004325",
+      "name": "Cameroon",
+      "description": "Away shirt as worn by Samuel Eto in the 1998 World Cup when Cameroon failed to qualify for the knockout stages of the competition after finishing bottom of their group with 2 points.",
+      "price": 67.99,
+      "category": 3,
+      "image_url": "",
+      "image": "cameroon.png"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004425",
+      "name": "Nigeria",
+      "description": "Home shirt as worn by Jay Jay Okocha when Nigeria were competing in the 2002 World Cup, being knocked out in the group stages of the competition after finishing bottom of their group behind Sweden, England and Argentina.",
+      "price": 93.99,
+      "category": 3,
+      "image_url": "",
+      "image": "nigeria.png"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004525",
+      "name": "Wales",
+      "description": "Home shirt as worn by Ryan Giggs when Wales were attempting to qualify for the 2000 European Championship, failing to qualify for the competition after finishing 4th in their qualification group.",
+      "price": 45.99,
+      "category": 3,
+      "image_url": "",
+      "image": "wales.png"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004625",
+      "name": "Japan",
+      "description": "Home shirt as worn during the 2000 Asian Cup when Japan finished as winners of the competition, beating Saudi Arabia 1-0 in the final. Also worn when Japan made it to the final of the 2001 Confederations Cup, losing 1-0 against France.",
+      "price": 57.99,
+      "category": 3,
+      "image_url": "",
+      "image": "japan.png"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004725",
+      "name": "Austrailia",
+      "description": "Home shirt as worn in a world record 31-0 win over American Samoa in the 2002 World Cup Qualifiers",
+      "price": 54.99,
+      "category": 3,
+      "image_url": "",
+      "image": "aus.png"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004825",
+      "name": "Italy",
+      "description": "Home shirt believed to have been worn by or issued to #16 of Italy during the period the team were competing in both the 1988 European Championship and the 1990 World Cup, being knocked out in the semi finals of both competitions, losing 2-0 against the Soviet Union in the 1988 European Champions before losing on penalties against Argentina in the 1990 World Cup",
+      "price": 129.99,
+      "category": 3,
+      "image_url": "",
+      "image": "italy.png"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016004925",
+      "name": "Manchester United",
+      "description": "Classic reversible kit launched to celebrate hundred years of Manchester United, as worn when Manchester United finished 3rd in the Premier League, the first time they finished outside of the top 2 in the Premier League era, and made it to the semi finals of the Champions League, losing on away goals against Bayer Leverkusen.",
+      "price": 249.99,
+      "category": 4,
+      "image_url": "",
+      "image": "manu.png"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005025",
+      "name": "St Patricks Athletic",
+      "description": "Home shirt as worn when St Patrick's Athletic finished 8th in the League of Ireland and were knocked out in the third round of the FAI Cup, losing 2-0 against Drogheda United.",
+      "price": 39.99,
+      "category": 4,
+      "image_url": "",
+      "image": "pats.png"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005125",
+      "name": "Inter Milan",
+      "description": "Home shirt believed to have been worn by or issued to #15 of Inter Milan when they finished 6th in Serie A and were knocked out in the quarter finals of the Coppa Italia, losing 2-1 after extra time against Foggia. Also worn when Inter were knocked out in the first round of the UEFA Cup, losing 4-3 on penalties against Aston Villa after the tie finished 1-1 on aggregate.",
+      "price": 57.99,
+      "category": 4,
+      "image_url": "",
+      "image": "inter.png"
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005225",
+      "name": "Celtic",
+      "description": "Home shirt as worn when Celtic finished as champions of the Scottish Premier League in the 2001-02 season before finishing as runners up in the next season, losing the title on goal difference to Rangers by 1 goal, and made it to the 2002 Scottish Cup final, losing 3-2 against Rangers. Also worn when Celtic made it to the 2003 UEFA Cup final, losing 3-2 after extra time against Porto.",
+      "price": 69.99,
+      "category": 4,
+      "image_url": "",
+      "image": "celtic.png"
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005325",
+      "name": "Paris St Germain",
+      "description": "Away shirt as worn when Paris Saint-Germain finished as runners up in Ligue 1, finishing 7 points behind champions AS Monaco, and were knocked out in the last 16 of the Coupe de France, losing 1-0 against RC Strasbourg. Also worn when Paris Saint-Germain made it to the final of the Coupe de la Ligue, losing 2-0 against FC Gueugnon.",
+      "price": 66.99,
+      "category": 4,
+      "image_url": "",
+      "image": "psg.png"
+    }
+  },
+  {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005425",
+      "name": "Real Madrid",
+      "description": "Home shirt as worn when Guus Hiddink took over as Real Madrid manager who after a run of poor form was sacked in February to be replaced by former Madrid manager John Toshack. Toshack led the team to a second place finish in La Liga in the 1998-99 season, finishing 11 points behind champions Barcelona. In the next season Toshack could only survive as manager until November when he was replaced by Vicente del Bosque who could only lead the team to a 5th place finish in La Liga, but did manage to lead the club to its eighth European title as Madrid beat Valencia 3-0 in the Champions League final.",
+      "price": 66.99,
+      "category": 4,
+      "image_url": "",
+      "image": "madrid.png"
+    }
+  },
+  {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005525",
+      "name": "Chelsea FC",
+      "description": "Home shirt as worn when Chelsea finished 4th and 3rd respectively in the Premier League and won the 1998 League Cup final, beating Middlesbrough 2-0 in the final with goals from Frank Sinclair and Roberto Di Matteo in extra time. Also worn when Chelsea won the 1998 UEFA Cup Winners' Cup, beating Stuttgart 1-0 in the final with Gianfranco Zola scoring the winner in the 71st minute.",
+      "price": 77.99,
+      "category": 4,
+      "image_url": "",
+      "image": "chelsea.png"
+    }
+  },
+  {
+    "pk": 56,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005625",
+      "name": "Juventus",
+      "description": "Home shirt as worn when Juventus finished as champions of Serie A, finishing 5 points ahead of second placed Inter Milan, and were knocked out in the semi finals of the Coppa Italia, losing 3-2 on aggregate against Lazio. Also worn when Juventus made it to the final of the Champions League, losing 1-0 against Real Madrid.",
+      "price": 89.99,
+      "category": 4,
+      "image_url": "",
+      "image": "juve.png"
+    }
+  },
+  {
+    "pk": 57,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005725",
+      "name": "AC Milan",
+      "description": "Home shirt as worn by Paulo Maldini when AC Milan finished as champions of Serie A in the 1998-99 season before failing to defend their title in the next season, finishing in 3rd place, 11 points behind champions Lazio. Also worn when AC Milan were knocked out in the group stage of the 1999-00 Champions League after finishing bottom of their group behind Chelsea, Hertha Berlin and Galatasaray.",
+      "price": 69.99,
+      "category": 4,
+      "image_url": "",
+      "image": "acmilan.png"
+    }
+  },
+  {
+    "pk": 58,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005825",
+      "name": "Arsenal FC",
+      "description": "Classic away shirt as worn in the 1989 title decider against Liverpool, Arsenal won 2-0, with a last-minute goal scored by Michael Thomas, the final goal, in the final minute, of the final game of the league season giving them their ninth First Division title and denying Liverpool the chance of a second Double. The match is considered to be one of the most dramatic conclusions to a league season in the history of the English game.",
+      "price": 49.99,
+      "category": 4,
+      "image_url": "",
+      "image": "arsenal.png"
+    }
+  },
+  {
+    "pk": 59,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016005925",
+      "name": "AS Roma",
+      "description": "Home shirt as worn by club legend Francesco Totti when Roma finished 8th in Serie A and made it to the final of the Coppa Italia, losing 6-3 on aggregate against AC Milan. Also worn when Roma were knocked out in the second group stage of the Champions League after finishing bottom of their group behind Valencia, Ajax and Arsenal.",
+      "price": 64.99,
+      "category": 4,
+      "image_url": "",
+      "image": "roma.png"
+    }
+  },
+  {
+    "pk": 60,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006025",
+      "name": "Manchester City",
+      "description": "Home shirt as worn when Manchester City finished 4th and 3rd in the Second Division in respective seasons, earning promotion to the First Division in the 1984-85, and were knocke3d out in the third round of the FA Cup in back to back seasons, losing against Blackpool and Coventry City in respective seasons.",
+      "price": 59.99,
+      "category": 4,
+      "image_url": "",
+      "image": "city.png"
+    }
+  },
+  {
+    "pk": 61,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006125",
+      "name": "Liverpool FC",
+      "description": "Away shirt as worn during Graeme Souness first season in charge of the club leading Liverpool to a 6th place finish in the First Division and also won silverware for the club lifting the 1991-92 FA Cup after beating Sunderland 2-0 in the final with goals from Michael Thomas and Ian Rush. Also worn when Liverpool made it to the quarter finals of the UEFA Cup, losing 4-1 on aggregate against Genoa.",
+      "price": 49.99,
+      "category": 4,
+      "image_url": "",
+      "image": "lpool.png"
+    }
+  },
+  {
+    "pk": 62,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006225",
+      "name": "Barcelona",
+      "description": "Home shirt as worn when Barcelona won the 1998-99 La Liga title before finishing as runners up the next season and made it to the 1999-00 Champions League semi finals, losing 5-3 on aggregate against Valencia. Also worn when Barcelona were knocked out in the semi finals of the 1999-00 Copa del Rey, losing 6-0 on aggregate against Atletico Madrid.",
+      "price": 99.99,
+      "category": 4,
+      "image_url": "",
+      "image": "barca.png"
+    }
+  },
+  {
+    "pk": 63,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006325",
+      "name": "Borussia Dortmund",
+      "description": "Home shirt as worn when Borussia Dortmund finished as champions of the Bundesliga, finishing 1 point clear of second placed Werder Bremen, and were knocked out in the semi finals of the UEFA Cup, losing 4-3 on aggregate against Juventus.",
+      "price": 39.99,
+      "category": 4,
+      "image_url": "",
+      "image": "dortmund.png"
+    }
+  },
+  {
+    "pk": 64,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006425",
+      "name": "FC Bayern München",
+      "description": "Home shirt as worn when Bayern Munich won the Bundesliga in both seasons and won the Champions League in the 2000-01 season, beating Valencia 5-4 on penalties",
+      "price": 77.99,
+      "category": 4,
+      "image_url": "",
+      "image": "bayern.png"
+    }
   }
 ]

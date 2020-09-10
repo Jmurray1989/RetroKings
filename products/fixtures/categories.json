@@ -12,45 +12,50 @@
   {
     "pk": 3,
     "model": "products.category",
-    "fields": { "name": "soccer", "friendly_name": "Soccer" }
+    "fields": { "name": "intsoccer", "friendly_name": "International Soccer" }
   },
   {
     "pk": 4,
     "model": "products.category",
-    "fields": { "name": "basketball", "friendly_name": "Basketball" }
+    "fields": { "name": "clubsoccer", "friendly_name": "Club Soccer" }
   },
   {
     "pk": 5,
     "model": "products.category",
-    "fields": { "name": "ice_hockey", "friendly_name": "Ice Hockey" }
+    "fields": { "name": "basketball", "friendly_name": "Basketball" }
   },
   {
     "pk": 6,
     "model": "products.category",
-    "fields": { "name": "adidas", "friendly_name": "Adidas" }
+    "fields": { "name": "ice_hockey", "friendly_name": "Ice Hockey" }
   },
   {
     "pk": 7,
     "model": "products.category",
-    "fields": { "name": "nike", "friendly_name": "Nike" }
+    "fields": { "name": "adidas", "friendly_name": "Adidas" }
   },
   {
     "pk": 8,
     "model": "products.category",
-    "fields": { "name": "new_arrivals", "friendly_name": "New Arrivals" }
+    "fields": { "name": "nike", "friendly_name": "Nike" }
   },
   {
     "pk": 9,
     "model": "products.category",
-    "fields": { "name": "deals", "friendly_name": "Deals" }
+    "fields": { "name": "new_arrivals", "friendly_name": "New Arrivals" }
   },
   {
     "pk": 10,
     "model": "products.category",
-    "fields": { "name": "clearance", "friendly_name": "Clearance" }
+    "fields": { "name": "deals", "friendly_name": "Deals" }
   },
   {
     "pk": 11,
+    "model": "products.category",
+    "fields": { "name": "clearance", "friendly_name": "Clearance" }
+  },
+  {
+    "pk": 12,
     "model": "products.category",
     "fields": { "name": "all_specials", "friendly_name": "Specials" }
   }
