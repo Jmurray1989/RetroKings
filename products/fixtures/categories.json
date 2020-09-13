@@ -7,7 +7,7 @@
   {
     "pk": 2,
     "model": "products.category",
-    "fields": { "name": "american_football ", "friendly_name": "American Football" }
+    "fields": { "name": "americanfootball", "friendly_name": "American Football" }
   },
   {
     "pk": 3,
@@ -27,7 +27,7 @@
   {
     "pk": 6,
     "model": "products.category",
-    "fields": { "name": "ice_hockey", "friendly_name": "Ice Hockey" }
+    "fields": { "name": "icehockey", "friendly_name": "Ice Hockey" }
   },
   {
     "pk": 7,
@@ -42,7 +42,7 @@
   {
     "pk": 9,
     "model": "products.category",
-    "fields": { "name": "new_arrivals", "friendly_name": "New Arrivals" }
+    "fields": { "name": "newarrivals", "friendly_name": "New Arrivals" }
   },
   {
     "pk": 10,
@@ -57,6 +57,6 @@
   {
     "pk": 12,
     "model": "products.category",
-    "fields": { "name": "all_specials", "friendly_name": "Specials" }
+    "fields": { "name": "allspecials", "friendly_name": "Specials" }
   }
 ]
