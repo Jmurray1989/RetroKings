@@ -58,5 +58,10 @@
     "pk": 12,
     "model": "products.category",
     "fields": { "name": "allspecials", "friendly_name": "Specials" }
+  },
+  {
+    "pk": 13,
+    "model": "products.category",
+    "fields": { "name": "fanatics", "friendly_name": "Fanatics" }
   }
 ]
