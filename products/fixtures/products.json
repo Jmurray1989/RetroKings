@@ -830,5 +830,421 @@
       "image_url": "",
       "image": "bayern.png"
     }
+  },
+  {
+    "pk": 65,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006525",
+      "name": "Philadelphia 76ers",
+      "description": "Allen Iverson 2000-01 Road Swingman Jersey by Mitchell & Ness.Go for a different but no less authentic look. This jersey boasts exceptional design and build quality for the ultimate in basketball clothing.",
+      "price": 84.99,
+      "category": 5,
+      "image_url": "",
+      "image": "sixers.png"
+    }
+  },
+  {
+    "pk": 66,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006625",
+      "name": "Chicago Bulls",
+      "description": "As a die-hard Chicago Bulls fan, you love to show your appreciation for the storied career of Michael Jordan every chance you get. Now you can pay tribute to your all-time favorite Chicago Bulls star with this 1984-85 Hardwood Classics Rookie Authentic Jersey from Mitchell & Ness! Its throwback design is constructed to identical standards as the uniform Michael Jordan wore during his unforgettable seasons with the franchise. This jersey's remarkably detailed graphics and high-quality stitching will help bring back all those cherished memories of watching Michael Jordan lead the Chicago Bulls to glory.",
+      "price": 249.99,
+      "category": 5,
+      "image_url": "",
+      "image": "bulls.png"
+    }
+  },
+  {
+    "pk": 67,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006725",
+      "name": "Toronto Raptors",
+      "description": "As a die-hard Toronto Raptors fan, you love to show your appreciation for the storied career of Vince Carter every chance you get. Now you can pay tribute to your all-time favorite NBA star with this Hardwood Classics Authentic jersey from Mitchell & Ness. Its throwback design is constructed to identical standards as the uniform Vince Carter wore during his unforgettable seasons with the franchise. This jersey's remarkably detailed graphics and high-quality stitching will help bring back all those cherished memories of watching him lead the Toronto Raptors to glory.",
+      "price": 77.99,
+      "category": 5,
+      "image_url": "",
+      "image": "raptors.png"
+    }
+  },
+  {
+    "pk": 68,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006825",
+      "name": "New York Knicks",
+      "description": "You may be a newcomer to ranks of the New York Knicks faithful, but they're still love to honor one of the best to wear the team's uniform. Before the next game tips off, help yourself pay homage to your team's storied past while also recognizing one of its all-time brightest stars with this Patrick Ewing Hardwood Classics Swingman jersey from Mitchell & Ness! Its throwback-inspired design and player-specific graphics are sure to remind fellow fans of all their favorite New York Knicks wins, both past and present.",
+      "price": 99.99,
+      "category": 5,
+      "image_url": "",
+      "image": "knicks.png"
+    }
+  },
+  {
+    "pk": 69,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016006925",
+      "name": "Boston Celtics",
+      "description": "You may be a newcomer to ranks of the Boston Celtics faithful, but they're still love to honor one of the best to wear the team's uniform. Before the next game tips off, help your yourself pay homage to your team's storied past while also recognizing one of its all-time brightest stars with this Larry Bird Hardwood Classics Swingman jersey from Mitchell & Ness! Its throwback-inspired design and player-specific graphics are sure to remind fellow fans of all their favorite Boston Celtics wins, both past and present.",
+      "price": 129.99,
+      "category": 5,
+      "image_url": "",
+      "image": "celtics.png"
+    }
+  },
+  {
+    "pk": 70,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007025",
+      "name": "Phoenix Suns",
+      "description": "Take a trip down memory lane by getting your hands on this fantastic Phoenix Suns Hardwood Classics jersey from Mitchell & Ness. This top features amazing throwback colors and graphics, perfect for signifying your lifelong dedication to your beloved Phoenix Suns. When you step out of the house rocking this tank, people will know that you're a true member of the franchise.",
+      "price": 62.99,
+      "category": 5,
+      "image_url": "",
+      "image": "suns.png"
+    }
+  },
+  {
+    "pk": 71,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007125",
+      "name": "Memphis Grizzlies",
+      "description": "Feel like you're about to take to the court with the fundamental shooting abilities of the Memphis Grizzlies when you put on this Hardwood Classics jersey. This jersey from Mitchell & Ness features classic trims and Memphis Grizzlies graphics so casual and die-hard basketball fans will know which players inspire you. Before you head to the next game, grab this slick jersey and put your enthusiasm for your favorite team and the sport of basketball on display.",
+      "price": 109.99,
+      "category": 5,
+      "image_url": "",
+      "image": "grizzlies.png"
+    }
+  },
+  {
+    "pk": 72,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007225",
+      "name": "Golden State Warriors",
+      "description": "As a die-hard Golden State Warriors fan, you love to show your appreciation for the storied career of Chris Mullin's every chance you get. Now you can pay tribute to your all-time favorite NBA star with this Hardwood Classics Authentic jersey from Mitchell & Ness. Its throwback design is constructed to identical standards as the uniform Chris Mullin's wore during his unforgettable seasons with the franchise. This jersey's remarkably detailed graphics and high-quality stitching will help bring back all those cherished memories of watching him lead the Warriors to glory.",
+      "price": 69.99,
+      "category": 5,
+      "image_url": "",
+      "image": "warriors.png"
+    }
+  },
+  {
+    "pk": 73,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007325",
+      "name": "San Antonio Spurs",
+      "description": "You may be a newcomer to ranks of the San Antonio Spurs faithful, but they still take the time to honor one of the best to wear the team's uniform. Before the next game tips off, help you pay homage to the franchise's storied past while also recognizing one of its all-time brightest stars with this Tim Duncan Hardwood Classics Swingman jersey from Mitchell & Ness! Its throwback-inspired design and player-specific graphics are sure to remind fellow fans of all their favorite San Antonio Spurs victories, both past and present.",
+      "price": 88.99,
+      "category": 5,
+      "image_url": "",
+      "image": "spurs.png"
+    }
+  },
+  {
+    "pk": 74,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007425",
+      "name": "Los Angeles Lakers",
+      "description": "Through extensive research and attention to detail, Mitchell & Ness Authentics are recreations of the original uniforms worn by the legends of the game. They only use premium fabrics and application as they bring these pieces of history to life. It is an honor to celebrate the history of the game through the uniforms and logos of the icons of sports. Join the celebration with this Los Angeles Lakers Kobe Bryant 1996-97 Hardwood Classics Authentic Player Jersey.",
+      "price": 229.99,
+      "category": 5,
+      "image_url": "",
+      "image": "lakers.png"
+    }
+  },
+  {
+    "pk": 75,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007525",
+      "name": "Houston Rockets",
+      "description": "You may be a newcomer to ranks of the Houston Rockets faithful, but they still take the time to honor one of the best to wear the team's uniform. Before the next game tips off, help you pay homage to the franchise's storied past while also recognizing one of its all-time brightest stars with this Hakeem Olajuwon Hardwood Classics Swingman jersey from Mitchell & Ness! Its throwback-inspired design and player-specific graphics are sure to remind fellow fans of all their favorite Houston Rockets victories, both past and present.",
+      "price": 87.99,
+      "category": 5,
+      "image_url": "",
+      "image": "rockets.png"
+    }
+  },
+  {
+    "pk": 76,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007625",
+      "name": "Miami Heat",
+      "description": "You may be a newcomer to ranks of the Miami Heat faithful, but they still take the time to honor one of the best to wear the team's uniform. Before the next game tips off, help you pay homage to the franchise's storied past while also recognizing one of its all-time brightest stars with this Hardwood Classics Swingman jersey from Mitchell & Ness! Its throwback-inspired design and player-specific graphics are sure to remind fellow fans of all their favorite Miami Heat victories, both past and present.",
+      "price": 92.99,
+      "category": 5,
+      "image_url": "",
+      "image": "heat.png"
+    }
+  },
+  {
+    "pk": 77,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007725",
+      "name": "Charlotte Hornets",
+      "description": "You may be a newcomer to ranks of the Charlotte Hornets faithful, but they still take the time to honor one of the best to wear the team's uniform. Before the next game tips off, help you pay homage to the franchise's storied past while also recognizing one of its all-time brightest stars with this Hardwood Classics Swingman jersey from Mitchell & Ness! Its throwback-inspired design and player-specific graphics are sure to remind fellow fans of all their favorite Charlotte Hornets victories, both past and present.",
+      "price": 80.99,
+      "category": 5,
+      "image_url": "",
+      "image": "hornets.png"
+    }
+  },
+  {
+    "pk": 78,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007825",
+      "name": "Sacramento Kings",
+      "description": "You will always take the time to honor one of the best to wear your favorite team's uniform. Before the next Sacramento Kings game tips off, pay homage to the franchise's storied past while also recognizing one of its all-time brightest stars with this Jason Williams Hardwood Classics Swingman jersey from Mitchell & Ness. Its throwback-inspired design and player-specific graphics are sure to remind fellow fans of all their favorite Sacramento Kings moments, both past and present.",
+      "price": 66.99,
+      "category": 5,
+      "image_url": "",
+      "image": "nbakings.png"
+    }
+  },
+  {
+    "pk": 79,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016007925",
+      "name": "Milwaukee Bucks",
+      "description": "You will always take the time to honor one of the best to wear your favorite team's uniform. Before the next Milwaukee Bucks game tips off, pay homage to the franchise's storied past while also recognizing one of its all-time brightest stars with this Hardwood Classics Swingman jersey from Mitchell & Ness. Its throwback-inspired design and player-specific graphics are sure to remind fellow fans of all their favorite Milwaukee Bucks moments, both past and present.",
+      "price": 77.99,
+      "category": 5,
+      "image_url": "",
+      "image": "bucks.png"
+    }
+  },
+  {
+    "pk": 80,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008025",
+      "name": "Denver Nuggets",
+      "description": "Denver Nuggets Dikembe Mutombo Hardwood Classics Road Swingman Jersey is inspired by the jerseys worn by the legends of the NBA, this Mitchell & Ness Hardwood Classic Swingman jersey is constructed to resemble the way Dikembe Mutombo played.",
+      "price": 55.99,
+      "category": 5,
+      "image_url": "",
+      "image": "nuggets.png"
+    }
+  },
+  {
+    "pk": 81,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008125",
+      "name": "Los Angeles Kings",
+      "description": "You're a massive Los Angeles Kings fan and love collecting as much memorabilia as you can. Now you can show off your fandom when you get this Rob Blake Los Angeles Kings 1995/96 Throwback Alternate Authentic Vintage jersey from Mitchell & Ness. This jersey features distinctive Los Angeles Kings graphics on the front and back, exactly like the one Rob Blake wore out on to the ice.",
+      "price": 84.99,
+      "category": 6,
+      "image_url": "",
+      "image": "kingsnhl.png"
+    }
+  },
+  {
+    "pk": 82,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008225",
+      "name": "Philadelphia Flyers",
+      "description": "Fellow longtime Philadelphia Flyers fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Philadelphia Flyers on display in timeless fashion with this True Classics Throwback from Mitchell & Ness Fanatics Branded jersey! Its graphics and classic design let everyone in the arena know your team pride runs deep.",
+      "price": 109.99,
+      "category": 6,
+      "image_url": "",
+      "image": "flyers.png"
+    }
+  },
+  {
+    "pk": 83,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008325",
+      "name": "Anaheim Ducks",
+      "description": "Fellow longtime Anaheim Ducks fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Anaheim Ducks on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 149.99,
+      "category": 6,
+      "image_url": "",
+      "image": "ducks.png"
+    }
+  },
+  {
+    "pk": 84,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008425",
+      "name": "New Jersey Devils",
+      "description": "Fellow longtime New Jersey Devils fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the New Jersey Devils on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 77.99,
+      "category": 6,
+      "image_url": "",
+      "image": "devils.png"
+    }
+  },
+  {
+    "pk": 85,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008525",
+      "name": "Pittsburgh Penguins",
+      "description": "Fellow longtime Pittsburgh Penguins fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Pittsburgh Penguins on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 72.99,
+      "category": 6,
+      "image_url": "",
+      "image": "penguins.png"
+    }
+  },
+  {
+    "pk": 86,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008625",
+      "name": "Colorado Avalanche",
+      "description": "Fellow longtime Colorado Avalanche fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Colorado Avalanche on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 79.99,
+      "category": 6,
+      "image_url": "",
+      "image": "avalanche.png"
+    }
+  },
+  {
+    "pk": 87,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008725",
+      "name": "New York Rangers",
+      "description": "Fellow longtime New York Rangers fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the New York Rangers on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 99.99,
+      "category": 6,
+      "image_url": "",
+      "image": "rangers.png"
+    }
+  },
+  {
+    "pk": 88,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008825",
+      "name": "Dallas Stars",
+      "description": "Fellow longtime Dallas Stars fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Dallas Stars on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 68.99,
+      "category": 6,
+      "image_url": "",
+      "image": "stars.png"
+    }
+  },
+  {
+    "pk": 89,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016008925",
+      "name": "Chicago Blackhawks",
+      "description": "Fellow longtime Chicago Blackhawks fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Chicago Blackhawks on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 74.99,
+      "category": 6,
+      "image_url": "",
+      "image": "blackhawks.png"
+    }
+  },
+  {
+    "pk": 90,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016009025",
+      "name": "Boston Bruins",
+      "description": "Fellow longtime Boston Bruins fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Boston Bruins on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 56.99,
+      "category": 6,
+      "image_url": "",
+      "image": "bruins.png"
+    }
+  },
+  {
+    "pk": 91,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016009125",
+      "name": "Edmonton Oilers",
+      "description": "Fellow longtime Edmonton Oilers fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Edmonton Oilers on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 82.99,
+      "category": 6,
+      "image_url": "",
+      "image": "oilers.png"
+    }
+  },
+  {
+    "pk": 92,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016009225",
+      "name": "St Louis Blues",
+      "description": "Fellow longtime St Louis Blues fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the St Louis Blues on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 68.99,
+      "category": 6,
+      "image_url": "",
+      "image": "blues.png"
+    }
+  },
+  {
+    "pk": 93,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016009325",
+      "name": "New York Islanders",
+      "description": "Fellow longtime New York Islanders fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the New York Islanders on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 69.99,
+      "category": 6,
+      "image_url": "",
+      "image": "islanders.png"
+    }
+  },
+  {
+    "pk": 94,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016009425",
+      "name": "Montreal Canadiens",
+      "description": "Fellow longtime Montreal Canadiens fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Montreal Canadiens on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 80.99,
+      "category": 6,
+      "image_url": "",
+      "image": "canadiens.png"
+    }
+  },
+  {
+    "pk": 95,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016009525",
+      "name": "San Jose Sharks",
+      "description": "Fellow longtime San Jose Sharks can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the San Jose Sharks on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 89.99,
+      "category": 6,
+      "image_url": "",
+      "image": "sharks.png"
+    }
+  },
+  {
+    "pk": 96,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp50016009625",
+      "name": "Washington Capitals",
+      "description": "Fellow longtime Washington Capitals fans can hear the excitement in your voice when you talk about your favorite NHL squad. Now it's time to put your allegiance to the Washington Capitals on display in timeless fashion with this True Classics Throwback Slub T-Shirt from Fanatics Branded! Its distressed graphics and classic two-tone design let everyone in the arena know your team pride runs deep.",
+      "price": 54.99,
+      "category": 6,
+      "image_url": "",
+      "image": "capitals.png"
+    }
   }
 ]
