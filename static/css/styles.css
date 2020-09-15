@@ -84,8 +84,7 @@ body {
 
 .hr-jersey-card {
     background-color: #D4AF37;
-    padding: 0.03rem;
-    width: 25%;
+    margin-top: 2rem;
 }
 
 /* Shop All button on homepage */
@@ -151,7 +150,11 @@ body {
 
 .carousel-header {
     font-size: 3rem;
-    margin: 3rem;
+    margin-top: 3rem;
+}
+
+.hr-carousel-header {
+    background-color: #D4AF37;
 }
 
 .carousel-p {
