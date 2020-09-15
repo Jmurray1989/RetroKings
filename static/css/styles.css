@@ -183,6 +183,8 @@ body {
     margin-bottom: 3rem;
 }
 
+/* Category Buttons */
+
 .category-badge {
     background-color: #D4AF37; 
     color: #000000;
@@ -192,6 +194,38 @@ body {
     background-color: #000000; 
     color: #D4AF37;
 }
+
+/* Products Home Link - Products Page */
+
+.products-home-link {
+    color: #000000;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.products-home-link:hover {
+    color: #D4AF37;
+}
+
+/* Back To Top Button - Products Page */
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    background-color: #D4AF37;
+    margin-bottom: 3.5rem;
+    border-radius: 2rem;
+}
+
+.btt-button:hover {
+    background-color: #000000;
+    color:  #D4AF37;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 
 
 /*-------------------------------------Footer-------------------------------------------*/
