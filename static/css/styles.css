@@ -59,8 +59,7 @@ body {
 
 /* Search Box */
 
-.border-black {
-    border: 1px solid black !important;
+.searchbox {
     background: linear-gradient(to left, rgb(255, 255, 255),rgb(212,175,55,0.4));
 }
 
