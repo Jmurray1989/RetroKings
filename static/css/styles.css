@@ -7,7 +7,7 @@ html {
 /* Homepage Image */
 
 body {
-    background: url('/media/jersey-home-background.jpg') no-repeat center center;
+    background: url('/media/jersey-home-background.jpg') no-repeat center 60%;
     background-size: contain; 
     color: #000000;
     font-family: 'Old Standard TT', serif;
@@ -23,10 +23,6 @@ body {
 
 .main-logo-link {
     width: fit-content;
-}
-
-#main-nav {
-    margin-top: -3rem;
 }
 
 .navbar {
@@ -227,7 +223,6 @@ body {
 .products-row {
     margin-bottom: 3rem;
 }
-
 
 /*-----------------------------------Media Queries----------------------------------------*/
 
