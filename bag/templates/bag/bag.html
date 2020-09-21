@@ -1,14 +1,4 @@
-{% extends "base.html" %} {% load static %} {% block page_header %}
-
-<!--Header Container-->
-
-<div class="container header-container">
-	<div class="row">
-		<div class="col"></div>
-	</div>
-</div>
-
-{% endblock %}
+{% extends "base.html" %} {% load static %}
 
 {% block content %}
 
@@ -17,7 +7,7 @@
 	<div class="row">
 		<div class="col">
 			<hr>
-			<h2 class="logo-font mb-4">Shopping Bag</h2>
+			<h2 class="text-center logo-font mb-4">Shopping Bag</h2>
 			<hr>
 		</div>
 	</div>
@@ -41,7 +31,7 @@
 					<tr>
 						<td class="p-3 w-25">
 							<img class="img-fluid rounded" src="{{ item.product.image.url }}">
-                                    </td>
+                        </td>
 						<td class="py-3">
 							<p class="my-0"><strong>{{ item.product.name }}</strong></p>
 							<p class="my-0">
@@ -88,7 +78,7 @@
 								data-size="{{ item.size }}"><small>Remove</small></a>
 						</td>
 						<td class="py-3">
-							<p class="my-0">${{ item.product.price }}</p>
+							<p class="my-0">€{{ item.product.price }}</p>
 						</td>
 					</tr>
 					{% endfor %}
@@ -96,10 +86,10 @@
 						<td colspan="5" class="pt-5 text-right">
 							<h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
 							<h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
-							<h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+							<h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
 							{% if free_delivery_delta > 0 %}
 							<p class="mb-1 text-danger">
-								You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong>
+								You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong>
 								more!
 							</p>
 							{% endif %}
@@ -107,7 +97,7 @@
 					</tr>
 					<tr>
 						<td colspan="5" class="text-right">
-							<a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+							<a href="{% url 'products' %}" class="btn btn-gold rounded-0 btn-lg">
 								<span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
@@ -125,7 +115,7 @@
 			</div>
 			{% else %}
 			<p class="lead mb-5">Your bag is empty.</p>
-			<a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+			<a href="{% url 'products' %}" class="btn btn-gold rounded-0 btn-lg">
 				<span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>

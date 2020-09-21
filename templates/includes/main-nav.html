@@ -30,8 +30,9 @@
 			</a>
 			<div class="dropdown-menu border-0" aria-labelledby="brands-link">
 				<a href="{% url 'products' %}?category=adidas" class="dropdown-item">Adidas</a>
-				<a href="{% url 'products' %}?category=nike" class="dropdown-item">Nike</a>
 				<a href="{% url 'products' %}?category=fanatics" class="dropdown-item">Fanatics</a>
+                <a href="{% url 'products' %}?category=nike" class="dropdown-item">Nike</a>
+                <a href="{% url 'products' %}?category=majestic" class="dropdown-item">Majestic</a>
 				<a href="{% url 'products' %}?category=mitchellness" class="dropdown-item">Mitchell & Ness</a>
 			</div>
 		</li>
@@ -42,10 +43,9 @@
 				Special Offers
 			</a>
 			<div class="dropdown-menu border-0" aria-labelledby="specials-link">
-				<a href="" class="dropdown-item">New Arrivals</a>
-				<a href="" class="dropdown-item">Deals</a>
-				<a href="" class="dropdown-item">Clearance</a>
-				<a href="" class="dropdown-item">All Specials</a>
+				<a href="{% url 'products' %}?category=newarrivals" class="dropdown-item">New Arrivals</a>
+				<a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+				<a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
 			</div>
 		</li>
 	</ul>
