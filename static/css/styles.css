@@ -7,7 +7,7 @@ html {
 /* Homepage Image */
 
 body {
-    background: url('/media/jersey-home-background.jpg') no-repeat center 60%;
+    background: url('/media/jersey-home-background.jpg') no-repeat center 70%;
     background-size: contain; 
     color: #000000;
     font-family: 'Old Standard TT', serif;
@@ -317,7 +317,7 @@ body {
     }
 
     .header-container {
-        padding-top: 400px;
+        padding-top: 325px;
     }
     
 }
