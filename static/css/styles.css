@@ -222,6 +222,30 @@ body {
     color:  #D4AF37;
 }
 
+/* Product Details Keep Shopping & Add To Cart Buttons */
+
+.btn-keepshop {
+    background: #D4AF37;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-keepshop:hover {
+    background: #ffffff;
+    color: #D4AF37 !important;
+}
+
+.btn-addbag {
+    background: #000000;
+    color: #D4AF37; 
+    border: 1px solid black;
+}
+
+.btn-addbag:hover {
+    background:#ffffff;
+    color:  #000000;
+}
+
 .btt-link {
     cursor: pointer;
 }
