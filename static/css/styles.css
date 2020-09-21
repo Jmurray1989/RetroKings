@@ -246,8 +246,12 @@ body {
     color:  #000000;
 }
 
-.btt-link {
-    cursor: pointer;
+/*Cursor */
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer; /* Changes cursor by default on hover */
 }
 
 
