@@ -20,14 +20,14 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/837a9d992d.js" crossorigin="anonymous"></script>    
-    <!-- Browser Tab Favicon -->
-    <link rel="shortcut icon" href="{% static 'logo/favicon.ico' %}" type="image/x-icon">
-    <!-- Custom CSS File -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">    
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/837a9d992d.js" crossorigin="anonymous"></script>
+	<!-- Browser Tab Favicon -->
+	<link rel="shortcut icon" href="{% static 'logo/favicon.ico' %}" type="image/x-icon">
+	<!-- Custom CSS File -->
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
 	{% endblock %}
 
 	{% block extra_css %}
@@ -54,78 +54,86 @@
 
 <body>
 	<header class="container-fluid">
-        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img src="{% static 'logo/RetroKingsLogo.png' %}" class="navbar-logo" alt="Logo" title="RetroKings Logo">
+		<div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
+			<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+				<a href="{% url 'home' %}" class="nav-link main-logo-link">
+					<img src="{% static 'logo/RetroKingsLogo.png' %}" class="navbar-logo" alt="Logo" title="RetroKings Logo">
                 </a>
-            </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="{% url 'products' %}">
-                    <div class="input-group w-100">
-                        <input class="searchbox form-control rounded-0" type="text" name="q" placeholder="Search our store...">
-                        <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+			</div>
+			<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+				<form method="GET" action="{% url 'products' %}">
+					<div class="input-group w-100">
+						<input class="searchbox form-control rounded-0" type="text" name="q" placeholder="Search our store...">
+						<div class="input-group-append">
+							<button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
                             </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                            {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                            {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                            {% endif %}
-                        </div>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
-                            <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
-                                    {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                        $0.00
-                                    {% endif %}
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-         <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+				<ul class="list-inline list-unstyled text-center text-lg-right my-0">
+					<li class="list-inline-item dropdown">
+						<a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<div class="text-center">
+								<div><i class="fas fa-user fa-lg"></i></div>
+								<p class="my-0">My Account</p>
+							</div>
+						</a>
+						<div class="dropdown-menu border-0" aria-labelledby="user-options">
+							{% if request.user.is_authenticated %}
+							{% if request.user.is_superuser %}
+							<a href="" class="dropdown-item">Product Management</a>
+							{% endif %}
+							<a href="" class="dropdown-item">My Profile</a>
+							<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+							{% else %}
+							<a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+							<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+							{% endif %}
+						</div>
+					</li>
+					<li class="list-inline-item">
+						<a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+							href="{% url 'view_bag' %}">
+							<div class="text-center">
+								<div><i class="fas fa-shopping-bag fa-lg"></i></div>
+								<p class="my-0">
+									{% if grand_total %}
+									${{ grand_total|floatformat:2 }}
+									{% else %}
+									$0.00
+									{% endif %}
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row bg-white">
+			<nav class="navbar navbar-expand-lg navbar-light w-100">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                {% include 'includes/mobile-top-header.html' %}
-                {% include 'includes/main-nav.html' %}
-            </nav>
-        </div>
-         
-    </header>
+				{% include 'includes/mobile-top-header.html' %}
+				{% include 'includes/main-nav.html' %}
+			</nav>
+		</div>
 
-   
+		<div id="delivery-banner" class="row text-center">
+			<div class="col bg-black text-white">
+				<h6 class="my-1">Shop & Save Get Free Delivery On All orders over €{{ free_delivery_threshold }}!</h6>
+			</div>
+		</div>
+
+	</header>
+
+
 
 	{% if messages %}
 	<div class="message-container"></div>
@@ -140,136 +148,142 @@
 	{% block postloadjs %}
 	{% endblock %}
 
-<!-- Footer -->
+	<!-- Footer -->
 
-<footer class="page-footer font-small mdb-color pt-4">
+	<footer class="page-footer font-small mdb-color pt-4">
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
 
-    <!-- Footer links -->
-    <div class="row text-center text-md-left mt-3 pb-3">
+			<!-- Footer links -->
+			<div class="row text-center text-md-left mt-3 pb-3">
 
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold footer-name">RetroKings</h6>
-        <p class="footer-info">Retro Kings Limited is the worlds largest retailer of retro and authentic sports jerseys.</p>
-      </div>
-    
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold footer-name">RetroKings</h6>
+					<p class="footer-info">Retro Kings Limited is the worlds largest retailer of retro and authentic
+						sports jerseys.</p>
+				</div>
 
-      <hr class="w-100 clearfix d-md-none">
 
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold footer-name">Products</h6>
-        <p>
-          <a href="{% url 'products' %}?category=intsoccer" class="footer-link">International Soccer Jerseys</a>
-        </p>
-        <p>
-          <a href="{% url 'products' %}?category=clubsoccer" class="footer-link">Club Soccer Jerseys</a>
-        </p>
-        <p>
-          <a href="{% url 'products' %}?category=baseball" class="footer-link">Baseball Jerseys</a>
-        </p>
-        <p>
-          <a href="{% url 'products' %}?category=icehockey" class="footer-link">Ice Hockey Jerseys</a>
-        </p>
-        <p>
-          <a href="{% url 'products' %}?category=americanfootball" class="footer-link">American Football Jerseys</a>
-        </p>
-        <p>
-          <a href="{% url 'products' %}?category=basketball" class="footer-link">Basketball Jerseys</a>
-        </p>
-      </div>
-      <!-- Grid column -->
+				<hr class="w-100 clearfix d-md-none">
 
-      <hr class="w-100 clearfix d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold footer-name">Products</h6>
+					<p>
+						<a href="{% url 'products' %}?category=intsoccer" class="footer-link">International Soccer
+							Jerseys</a>
+					</p>
+					<p>
+						<a href="{% url 'products' %}?category=clubsoccer" class="footer-link">Club Soccer Jerseys</a>
+					</p>
+					<p>
+						<a href="{% url 'products' %}?category=baseball" class="footer-link">Baseball Jerseys</a>
+					</p>
+					<p>
+						<a href="{% url 'products' %}?category=icehockey" class="footer-link">Ice Hockey Jerseys</a>
+					</p>
+					<p>
+						<a href="{% url 'products' %}?category=americanfootball" class="footer-link">American Football
+							Jerseys</a>
+					</p>
+					<p>
+						<a href="{% url 'products' %}?category=basketball" class="footer-link">Basketball Jerseys</a>
+					</p>
+				</div>
+				<!-- Grid column -->
 
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold footer-name">Useful Links</h6>
-        <p>
-          <a href="#!" class="footer-link">Your Account</a>
-        </p>
-        <p>
-          <a href="#!" class="footer-link">Shopping Bag</a>
-        </p>
-        <p>
-          <a href="#!" class="footer-link">Privacy Policy</a>
-        </p>
-        <p>
-          <a href="#!" class="footer-link">Help</a>
-        </p>
-      </div>
+				<hr class="w-100 clearfix d-md-none">
 
-      <!-- Grid column -->
-      <hr class="w-100 clearfix d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold footer-name">Useful Links</h6>
+					<p>
+						<a href="#!" class="footer-link">Your Account</a>
+					</p>
+					<p>
+						<a href="#!" class="footer-link">Shopping Bag</a>
+					</p>
+					<p>
+						<a href="#!" class="footer-link">Privacy Policy</a>
+					</p>
+					<p>
+						<a href="#!" class="footer-link">Help</a>
+					</p>
+				</div>
 
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold footer-name">Contact</h6>
-        <p class="footer-info">
-          <i class="fas fa-home mr-3 footer-icon"></i> New York, NY 10017, US</p>
-        <p class="footer-info">
-          <i class="fas fa-envelope mr-3 footer-icon"></i> customerservice@retrokings.com</p>
-        <p class="footer-info">
-          <i class="fas fa-phone mr-3 footer-icon"></i> + 01 234 567 88</p>
-        <p class="footer-info">
-          <i class="fas fa-print mr-3 footer-icon"></i> + 01 234 567 89</p>
-          <p class="footer-info">Customer Service Available: <br> Mon - Fri 9:00am - 17:30pm</p>
-      </div>
- 
+				<!-- Grid column -->
+				<hr class="w-100 clearfix d-md-none">
 
-    </div>
-    <!-- Footer links -->
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold footer-name">Contact</h6>
+					<p class="footer-info">
+						<i class="fas fa-home mr-3 footer-icon"></i> New York, NY 10017, US</p>
+					<p class="footer-info">
+						<i class="fas fa-envelope mr-3 footer-icon"></i> customerservice@retrokings.com</p>
+					<p class="footer-info">
+						<i class="fas fa-phone mr-3 footer-icon"></i> + 01 234 567 88</p>
+					<p class="footer-info">
+						<i class="fas fa-print mr-3 footer-icon"></i> + 01 234 567 89</p>
+					<p class="footer-info">Customer Service Available: <br> Mon - Fri 9:00am - 17:30pm</p>
+				</div>
 
-    <hr>
 
-    <!-- Grid row -->
-    <div class="row d-flex align-items-center">
+			</div>
+			<!-- Footer links -->
 
-      <!-- Grid column -->
-      <div class="col-md-7 col-lg-8">
+			<hr>
 
-        <!--Copyright-->
-        <p class="text-center text-md-left copyright">© 2020 Copyright:
-          <a href="https://github.com/Jmurray1989">
-            <strong class="name"> John Murray <i class="fa fa-github" aria-hidden="true"></i></strong>
-          </a>
-        </p>
+			<!-- Grid row -->
+			<div class="row d-flex align-items-center">
 
-      </div>
-     
+				<!-- Grid column -->
+				<div class="col-md-7 col-lg-8">
 
-      <!-- Grid column -->
-      <div class="col-md-5 col-lg-4 ml-lg-0">
+					<!--Copyright-->
+					<p class="text-center text-md-left copyright">© 2020 Copyright:
+						<a href="https://github.com/Jmurray1989">
+							<strong class="name"> John Murray <i class="fa fa-github" aria-hidden="true"></i></strong>
+						</a>
+					</p>
 
-        <!-- Social buttons -->
-        <div class="text-center text-md-right">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/" target="blank" class="btn-floating btn-lg rgba-white-slight mx-1">
-                <i class="fab fa-facebook-f footer-icon"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.twitter.com/" target="blank" class="btn-floating btn-lg rgba-white-slight mx-1">
-                <i class="fab fa-twitter footer-icon"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com/" target="blank" class="btn-floating btn-lg rgba-white-slight mx-1">
-                <i class="fab fa-instagram footer-icon"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+				</div>
 
-      </div>
-    </div>
-  </div>
 
-</footer>
+				<!-- Grid column -->
+				<div class="col-md-5 col-lg-4 ml-lg-0">
+
+					<!-- Social buttons -->
+					<div class="text-center text-md-right">
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item">
+								<a href="https://www.facebook.com/" target="blank"
+									class="btn-floating btn-lg rgba-white-slight mx-1">
+									<i class="fab fa-facebook-f footer-icon"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.twitter.com/" target="blank"
+									class="btn-floating btn-lg rgba-white-slight mx-1">
+									<i class="fab fa-twitter footer-icon"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/" target="blank"
+									class="btn-floating btn-lg rgba-white-slight mx-1">
+									<i class="fab fa-instagram footer-icon"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
 
 
 </body>

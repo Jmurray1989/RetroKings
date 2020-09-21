@@ -72,10 +72,6 @@ body {
 
 /* Homepage Header & Paragraph */
 
-.hero-font{
-    margin-top: 12rem;
-}
-
 .hr-hero-font {
     background-color: #D4AF37;
     padding: 0.03rem;
@@ -321,7 +317,7 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 400px;
     }
     
 }
