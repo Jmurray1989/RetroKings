@@ -256,7 +256,22 @@ body {
     cursor: pointer; /* Changes cursor by default on hover */
 }
 
+/* Toasts */
 
+.message-container {
+    position: fixed;
+    top: 8rem;
+    right: 0.5rem;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
 
 /*-------------------------------------Footer-------------------------------------------*/
 
