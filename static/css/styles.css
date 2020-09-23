@@ -30,8 +30,6 @@ body {
     padding: 0.05rem;
 }
 
-
-
 .text-dark {
     color: #d4af37 !important; /* use important to override text color on bag total */
 }
