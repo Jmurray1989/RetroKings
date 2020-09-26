@@ -1,3 +1,5 @@
+/*Stripe payment form css */
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -35,6 +37,20 @@
     color: #000;
     border: 1px solid #000;
 }
+
+/* To Grey out country selection box */
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
+/* Page loading after payment processed */
 
 #loading-overlay {
 	display: none;
