@@ -57,6 +57,10 @@ body {
     width: 1.5rem;
 }
 
+.logo-font {
+    text-transform: uppercase;
+}
+
 .bg-black {
     background: #000 !important;
 }
@@ -395,7 +399,7 @@ body {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #D4AF37;
+    color: #aab7c4;
 }
 
 .allauth-form-inner-content button,
