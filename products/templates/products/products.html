@@ -8,7 +8,7 @@
 		<div class="col text-center mt-3">
 			<h2 class="products-header">Products</h2>
 			{% for c in current_categories %}
-			<a class="category-name text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+			<a class="category-name text-decoration-none lead" href="{% url 'products' %}?category={{ c.name }}">
 				<span class="category-badge p-2 mt-2 badge badge-white rounded border border-dark">{{ c.friendly_name }}</span>
 			</a>
 			{% endfor %}
