@@ -32,16 +32,6 @@
   {
     "pk": 7,
     "model": "products.category",
-    "fields": { "name": "newera", "friendly_name": "New Era" }
-  },
-  {
-    "pk": 8,
-    "model": "products.category",
     "fields": { "name": "clearance", "friendly_name": "Clearance" }
-  },
-  {
-    "pk": 9,
-    "model": "products.category",
-    "fields": { "name": "mitchellness", "friendly_name": "Mitchell & Ness" }
   }
 ]
