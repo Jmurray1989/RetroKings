@@ -14,7 +14,8 @@ import dj_database_url
 
 from pathlib import Path
 
-if os.path.exists("env.py"):
+from os import path
+if path.exists("env.py"):
     import env
 
 
@@ -189,7 +190,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 # AWS static file hosting
 
 if 'USE_AWS' in os.environ:
-     # Cache control
+    # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
