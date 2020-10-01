@@ -1,7 +1,12 @@
 <div class="collapse navbar-collapse" id="main-nav">
 	<ul class="navbar-nav w-auto mx-auto">
+    <li class="nav-item d-block d-md-none">
+			<a class="logo-font font-weight-bold nav-link text-black mr-5 ml-1" href="{% url 'home' %}" id="home-link">
+				Home
+			</a>
+		</li>
 		<li class="nav-item">
-			<a class="logo-font font-weight-bold nav-link text-black mr-5"
+			<a class="logo-font font-weight-bold nav-link text-black mr-5 ml-1"
 				href="{% url 'products' %}?category=baseball,americanfootball,intsoccer,clubsoccer,basketball,icehockey"
 				id="all-products-link" aria-expanded="false">
 				All Jerseys
@@ -9,7 +14,7 @@
 		</li>
 
 		<li class="nav-item dropdown">
-			<a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="sport-link"
+			<a class="logo-font font-weight-bold nav-link text-black mr-5 ml-1" href="#" id="sport-link"
 				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Sports
 			</a>
@@ -24,7 +29,7 @@
 		</li>
 
 		<li class="nav-item dropdown">
-			<a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="headwear-link"
+			<a class="logo-font font-weight-bold nav-link text-black mr-5 ml-1" href="#" id="headwear-link"
 				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Headwear</a>
 			<div class="dropdown-menu border-0" aria-labelledby="brands-link">
@@ -38,7 +43,7 @@
 		</li>
 
 		<li class="nav-item dropdown">
-			<a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
+			<a class="logo-font font-weight-bold nav-link text-black ml-1" href="#" id="specials-link" data-toggle="dropdown"
 				aria-haspopup="true" aria-expanded="false">
 				Special Offers
 			</a>
