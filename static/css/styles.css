@@ -451,6 +451,10 @@ body {
   .container {
     max-width: 80%;
   }
+
+  .header-container {
+        padding-top: 325px;
+    }
 }
 
 /* fixed top navbar only on medium and up */
