@@ -489,15 +489,19 @@ body {
         font-size: 0.8rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
-        padding: .375rem .375rem;
+        padding: .400rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-gold.rounded-0 {
         padding: .375rem .375rem;
         font-size: .75rem;
+    }
+
+    .btn.btn-gold.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        
     }
 
     .increment-qty, .decrement-qty {
