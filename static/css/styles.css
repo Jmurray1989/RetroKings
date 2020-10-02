@@ -7,7 +7,7 @@ html {
 /* Homepage Image */
 
 body {
-    background: url('/media/jersey-home-background.jpg') no-repeat center 90%;
+    background: url('/media/jersey-home-background.jpg') no-repeat center 80%;
     background-size: contain; 
     color: #000000;
     font-family: 'Old Standard TT', serif;
@@ -464,7 +464,7 @@ body {
     }
 
     .header-container {
-        padding-top: 325px;
+        padding-top: 350px;
     }  
 }
 
@@ -505,11 +505,12 @@ body {
     }
 
     .img-fluid-carousel {
-        height: 250px;
+        height: 225px;
+
     }
 
     .carousel-header {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 
     body {
