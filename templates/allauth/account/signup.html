@@ -17,8 +17,30 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
+  <p class="font-small dark-grey-text text-right d-flex justify-content-center">
+	or
+	Sign up
+	with:</p>
+
+	<div class="row justify-content-center">
+
+	    <!--Facebook-->
+			<a href="https://www.facebook.com/" target="_blank"
+				class="button btn btn-white btn-rounded mb-3"><i class="fab fa-facebook-f text-center" aria-hidden="true"></i></a>
+
+		<!--Twitter-->
+			<a href="https://twitter.com/login" target="_blank"
+				class=" button btn btn-white btn-rounded mb-3"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+
+		<!--Google +-->
+			<a href="https://accounts.google.com/" target="_blank"
+				class="button btn btn-white btn-rounded mb-3"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+
+	</div>
+
   <a class="btn btn-outline-black btn-black rounded-0 mb-5" href="{% url 'account_login' %}">Back to Login</a>
   <button class="btn-gold mb-5" type="submit">{% trans "Sign Up" %}</button>
 </form>
+
 
 {% endblock %}
