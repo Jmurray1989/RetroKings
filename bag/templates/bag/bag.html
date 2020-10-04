@@ -23,7 +23,7 @@
                 <a href="{% url 'products' %}" class="text-dark"><i class="fas fa-arrow-left mr-2"></i>Continue shopping</a>
 			</h2>
 			{% for item in bag_items %}
-		    <div class="row d-lg-flex justify-content-between my-4 pb-4 border-bottom">
+		    <div class="row d-lg-flex my-4 pb-4 border-bottom">
 			    <div class="col-12 col-lg-8 d-block d-sm-flex text-center text-sm-left">
 				<div class="mx-auto mr-sm-4">
 					{% if item.product.image %}
@@ -72,9 +72,9 @@
                                 {% endif %}
                                 </div>
 						</div>
+                        <a class="update-link update-item float-left"><small><i class="fas fa-sync-alt"></i> Update</small></a>
+                        <a class="remove-item float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small><i class="far fa-trash-alt"></i> Remove</small></a>
 					</form>
-					<a class="update-link update-item"><small><i class="fas fa-sync-alt"></i> Update</small></a>
-                    <a class="remove-item float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small><i class="far fa-trash-alt"></i> Remove</small></a>
 				</div>
 		    </div>
             {% endfor %}
@@ -84,7 +84,7 @@
 				<div class="cart-summary">
 					<h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
 					<h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
-					<h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+					<h6 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h6>
 					{% if free_delivery_delta > 0 %}
 					<p class="mb-1 text-danger">
 						You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong>
@@ -122,7 +122,17 @@
 
 {% endblock %} 
 {% block postloadjs %} 
-{{ block.super }} 
+{{ block.super }}
+
+<script type="text/javascript">
+	$('.btt-link').click(function(e) {
+		window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+        });
+	})
+</script> 
 
 {% include 'products/includes/quantity_input_script.html' %} 
 {% include 'bag/includes/update_remove.html' %} 
