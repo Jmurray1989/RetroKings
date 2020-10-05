@@ -1,15 +1,16 @@
-<div class="container-fluid mt-2">
-    <div class="product-detail-wrapper">  
+<div class="container-fluid mt-2"> 
         <div class="row">
             <div class="col-12">
                 <div class="product-reviews">
-                    <h2 class="product-reviews-text text-center text-black">Product Reviews</h2>
+                    <h2 class="text-center text-black">Product Reviews</h2>
+                    <hr class="hr-hero-font">
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 review-vh">
+            <div class="col-sm-12 col-md-6">
                 <div class="card text-center align-items-center">
                     <div class="card-body">
-                    <h3 class="text-center text-black">Reviews</h3>
+                    <h3 class="text-center">Reviews</h3>
+                    <hr class="hr-hero-font">
                         {% if reviews %}
                         {% for review in reviews %}
                         <div class="card-container">
@@ -18,8 +19,14 @@
                                     <h4 class="text-center text-black d-inline-block"><i class="fas fa-user d-block"></i></h4>
                                     <h5 class="review-user text-center text-black">{{review.user}}</h5>
                                 </div>
-                                <p class="text-center text-black">{{review.comment}}</p>
-                                <p class="text-center text-black">{{ review.rating|floatformat:0 }}/5</p>
+                                <p class="text-center">{{review.comment}}</p>
+                                <div class="review-rating mb-3">
+                                <span class="fa fa-star{% if review.rating < 1 %}-o empty{% endif %} checked"></span>
+                                <span class="fa fa-star{% if review.rating < 2 %}-o empty{% endif %} checked"></span>
+                                <span class="fa fa-star{% if review.rating < 3 %}-o empty{% endif %} checked"></span>
+                                <span class="fa fa-star{% if review.rating < 4 %}-o empty{% endif %} checked"></span>
+                                <span class="fa fa-star{% if review.rating < 5 %}-o empty{% endif %} checked"></span>
+                                </div>
                                 {% if review.user == request.user %}
                                 <div class="button-wrapper pb-5">
                                     <a class="btn btn-black" href="{% url 'edit_review' product.id %}" aria-label="edit button">Edit</a>
@@ -30,7 +37,7 @@
                         </div>
                         {% endfor %}
                         {% else %}
-                        <p class="text-black">Nobody has left a review for this product yet.</p>
+                        <p class="text-black">Be the first person to leave a review.</p>
                         {% endif %}
                     </div>
                 </div>
@@ -39,6 +46,7 @@
                 <div class="card">
                     <div class="card-body">
                     <h3 class="text-center text-black">Leave a review</h3>
+                    <hr class="hr-hero-font">
                     {% if review_form  %}
                     <form action="{% url 'add_review' product.id %}" method="POST" class="text-center text-black">
                         <div class="col-12 col-lg-8 offset-lg-2">
@@ -58,5 +66,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
