@@ -37,7 +37,7 @@
                         </div>
                         {% endfor %}
                         {% else %}
-                        <p class="text-black">Be the first person to leave a review.</p>
+                        <p class="text-black">Be the first person to leave a review on this product.</p>
                         {% endif %}
                     </div>
                 </div>
@@ -58,9 +58,9 @@
                         </div>
                     </form>
                     {% elif review and not review_form %}
-                    <p class="text-black text-center">Thank you for reviewing this product, you can edit it in the reviews section</p>
+                    <p class="text-black text-center">Thank you for reviewing this product, you can edit it in the reviews section.</p>
                     {% else %}
-                    <p class="text-black text-center">Purchase to make a review</p>
+                    <p class="text-black text-center">You must be logged in and have made a purchase to leave a review.</p>
                     {% endif %}
                     </div>
                 </div>
