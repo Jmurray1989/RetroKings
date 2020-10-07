@@ -485,11 +485,36 @@ body {
  
 }
 
-/*-----------------------------Tablet-----------------------------*/
+/*-----------------------------Large Tablet Devices-----------------------------*/
+
+@media screen and (min-width: 991px) and (max-width: 1034px) {
+    body {
+    background: url('/media/jersey-home-background.jpg') no-repeat center 20%;
+    background-size: contain; 
+    color: #000000;
+    font-family: 'Old Standard TT', serif;
+    }
+
+    .header-container {
+    padding-top: 225px;
+    }
+
+    .img-fluid-carousel {
+        height: 500px;
+    }
+
+    .footer-info {
+        font-size: 0.75rem;
+    }
+
+}
+
+/*-----------------------------Tablet Devices-----------------------------*/
 
 /* To fix background image display on tablet devices */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
     body {
     background: url('/media/jersey-home-background.jpg') no-repeat center 10%;
     background-size: contain; 
@@ -520,9 +545,18 @@ body {
     z-index: 99999999999;
 }
 
+    .img-fluid-carousel {
+        height: 350px;
+
+    }
+
+    .footer-info {
+        font-size: 0.75rem;
+    }
+
 }
 
-/*-----------------------------Mobile-----------------------------*/
+/*-----------------------------Mobile Devices-----------------------------*/
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 767px) {
@@ -571,7 +605,7 @@ body {
     }
 
     .img-fluid-carousel {
-        height: 125px;
+        height: 175px;
 
     }
 
