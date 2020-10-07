@@ -4,7 +4,76 @@
 {% block title %} Help & FAQ {% endblock %}
 
 {% block content %}
-
-
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-5">
+            <h1 class="font-weight-bold text-center mb-5">Frequently Asked Questions</h1>
+            <div class="card">
+            <h6 class="font-weight-bold text-center">CUSTOMER CARE UPDATE<hr class="hr-hero-font"></h6>
+            <small><p class="text-center">Our Customer Care Team are busier than usual during these uncertain times, but we’re listening to what you need.<br> 
+               We’re still here to help you, but to get the answers to our most popular asked questions please see below.</p></small>
+            </div>   
+            <div id="accordion">
+                <div class="card mb-4 mt-4">
+                    <div class="card-header" id="headerOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-black font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How do I create an account?
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headerOne" data-parent="#accordion">
+                    <div class="card-body">
+                        You can create an account by clicking on the "My Account" link at the top of the page, or simply click <a class="text-dark" href="{% url 'account_signup' %}">here</a>.
+                     </div>
+                    </div>
+                </div>
+                <div class="card mb-4 mt-4">
+                    <div class="card-header" id="headerTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"  aria-controls="collapseTwo">
+                            
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headerTwo" data-parent="#accordion">
+                        <div class="card-body">
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 mt-4">
+                    <div class="card-header" id="headerThree">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headerThree" data-parent="#accordion">
+                        <div class="card-body">
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 mt-4">
+                    <div class="card-header" id="headerFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headerFour" data-parent="#accordion">
+                        <div class="card-body">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

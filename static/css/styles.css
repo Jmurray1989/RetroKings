@@ -342,8 +342,8 @@ body {
     background-color: #e7e7e7;
 }
 
-a.update-item,
-a.remove-item:hover {
+.update-item,
+.remove-item:hover {
     color: #D4AF37;
 }
 
