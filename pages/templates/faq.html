@@ -1,79 +1,210 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
 {% load static %} 
 
-{% block title %} Help & FAQ {% endblock %}
+{% block title %} Help & FAQ {% endblock %} 
 
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
-    <div class="row">
-        <div class="col-12 mt-5">
-            <h1 class="font-weight-bold text-center mb-5">Frequently Asked Questions</h1>
-            <div class="card">
-            <h6 class="font-weight-bold text-center">CUSTOMER CARE UPDATE<hr class="hr-hero-font"></h6>
-            <small><p class="text-center">Our Customer Care Team are busier than usual during these uncertain times, but we’re listening to what you need.<br> 
-               We’re still here to help you, but to get the answers to our most popular asked questions please see below.</p></small>
-            </div>   
-            <div id="accordion">
-                <div class="card mb-4 mt-4">
-                    <div class="card-header" id="headerOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link text-black font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        How do I create an account?
-                        </button>
-                    </h5>
-                    </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headerOne" data-parent="#accordion">
-                    <div class="card-body">
-                        You can create an account by clicking on the "My Account" link at the top of the page, or simply click <a class="text-dark" href="{% url 'account_signup' %}">here</a>.
-                     </div>
-                    </div>
-                </div>
-                <div class="card mb-4 mt-4">
-                    <div class="card-header" id="headerTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"  aria-controls="collapseTwo">
-                            
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headerTwo" data-parent="#accordion">
-                        <div class="card-body">
-                        
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-4 mt-4">
-                    <div class="card-header" id="headerThree">
-                        <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        
-                        </button>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headerThree" data-parent="#accordion">
-                        <div class="card-body">
-                        
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-4 mt-4">
-                    <div class="card-header" id="headerFour">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                            
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headerFour" data-parent="#accordion">
-                        <div class="card-body">
-                        
-                        </div>
-                    </div>
-                </div>
+  <div class="row">
+    <div class="col-12 mt-5 mb-5">
+      <h1 class="font-weight-bold text-center mb-5">
+        Frequently Asked Questions
+      </h1>
+      <div class="card">
+        <h6 class="font-weight-bold text-center">
+          CUSTOMER CARE UPDATE
+          <hr class="hr-hero-font" />
+        </h6>
+        <small
+          ><p class="text-center">
+            Our Customer Care Team are busier than usual during these uncertain
+            times, but we’re listening to what you need.<br />
+            We’re still here to help you, but to get the answers to our most
+            popular asked questions please see below.
+          </p></small
+        >
+      </div>
+      <div id="accordion">
+        <div class="card mb-3 mt-3">
+          <div class="card-header" id="headerOne">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link text-black font-weight-bold collapsed"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                How do I create an account?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headerOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                You can create an account by clicking on the "My Account" link
+                at the top of the page, or simply click
+                <a class="text-dark" href="{% url 'account_signup' %}"><strong>here</strong></a>.
+              </p>
             </div>
+          </div>
         </div>
+        <div class="card mb-3 mt-3">
+          <div class="card-header" id="headerTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link text-black font-weight-bold collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How do I return an item?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headerTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Fill in your returns slip and put it in your parcel. We’ll need
+                to know the item you’re returning and the reason you’re
+                returning it to us.
+              </p>
+              <ul class="mt-3" id="return-list">
+                <li>Returns are <strong>FREE</strong> and trackable.</li>
+                <li>
+                  You have 28 days from the date you receive your order to
+                  return it for a refund.
+                </li>
+                <li>
+                  Returning your order within 29 to 45 days? A gift voucher will
+                  be issued instead.
+                </li>
+                <li>
+                  It can take up to 14 working days for your order to reach the
+                  warehouse and be processed.
+                </li>
+                <li>
+                  Refunds can take up to 10 working days to show on your
+                  account.
+                </li>
+              </ul>
+              All returned items should be sent in their original condition and
+              packaging including tags etc. In the unlikely event that an item
+              is returned to us in an unsuitable condition, we may send it back
+              to you.
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 mt-3">
+          <div class="card-header" id="headerThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link font-weight-bold text-black collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Can I track the delivery of my order?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headerThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                If your order has been sent to you using a trackable service,
+                you can follow its journey to you. You'll receive a shipping
+                confirmation email from our warehouse once your order is on its
+                way; simply click on your tracking link on the email to view the
+                up to date tracking.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 mt-3">
+          <div class="card-header" id="headerFour">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link font-weight-bold text-black collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                How long will it take my order to arrive?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headerFour"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                All orders dispatch within 24 hours, but it may take up to 3
+                business days depending on different circumstances. While we
+                would like to ensure your order is delivered swiftly, we use
+                companies such as (An Post, DHL & UPS) so we cannot guarantee
+                delivery times, or be held responsible for conditions beyond our
+                control.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 mt-3">
+          <div class="card-header" id="headerFive">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link font-weight-bold text-black collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                How can i cancel my order?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headerFive"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                The Consumer Contracts (Information, Cancellation and Additional
+                Charges) Regulations 2013 (IRE) advise you have fourteen
+                calendar days to cancel the contract for your order with us and
+                we will issue you with a full refund for the items you have
+                purchased and the cost of standard delivery if you've paid for
+                shipping.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 {% endblock %}
