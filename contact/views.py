@@ -30,7 +30,7 @@ def contact(request):
             )
             form.save()
 
-        # Send Email
+        # Send Email to admin informing them they have a new message
         send_mail(
             'New Message Received',
             'Hi Admin,\n\nYou have a new message. Sign '
@@ -40,7 +40,7 @@ def contact(request):
             [EMAIL_HOST_USER],
             fail_silently=True
         )
-
+        # Success message
         messages.success(request, 'Contact form successfully submitted. We will be in touch!')
         return redirect(reverse('contact_success'))
 
@@ -50,5 +50,6 @@ def contact(request):
     return render(request, 'contact/contact.html', context)
 
 
+# Contact success page
 def contact_success(request):
     return render(request, "contact/contact_success.html")
