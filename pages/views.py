@@ -10,6 +10,6 @@ def privacy_policy(request):
 
 def faq(request):
     """
-    Renders view for the terms and conditions page
+    Renders view for the faq page
     """
     return render(request, "faq.html")
