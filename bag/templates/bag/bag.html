@@ -72,9 +72,9 @@
                                 {% endif %}
                                 </div>
 						</div>
-                        <button class="btn update-item update-link float-left"><small><i class="fas fa-sync-alt"></i> Update</small></button>
-                        <button class="btn remove-item float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small><i class="far fa-trash-alt"></i> Remove</small></button>
 					</form>
+                    <button class="btn update-link float-left text-dark"><small><i class="fas fa-sync-alt"></i> Update</small></button>
+                    <button class="btn remove-item float-right text-black" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small><i class="far fa-trash-alt"></i> Remove</small></button>
 				</div>
 		    </div>
             {% endfor %}
