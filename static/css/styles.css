@@ -580,6 +580,11 @@ body {
 
     .dropdown-menu {
         min-width: 5rem;
+        font-size: 0.8rem;
+    }
+
+    .dropdown-item {
+        padding: 0.5rem;
     }  
 
     .navbar-toggler {
@@ -612,8 +617,7 @@ body {
     }
 
     .img-fluid-carousel {
-        height: 175px;
-
+        height: 150px;
     }
 
     .carousel-header {
