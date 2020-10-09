@@ -101,7 +101,6 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
-
 @login_required
 def add_product(request):
     """ Add a product to the store """
@@ -219,7 +218,7 @@ def edit_review(request, product_id):
         if review_form.is_valid():
             review_form.save()
             messages.success(request, f'We have updated your review for {product.name}.')
-            return redirect(reverse('product_detail', args=[product_id,]))
+            return redirect(reverse('product_detail', args=[product_id, ]))
         else:
             messages.error(request, f'Sorry we were unable to update your review for {product.name}, please try again.')
     else:
