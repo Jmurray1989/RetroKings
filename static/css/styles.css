@@ -361,17 +361,6 @@ body {
     cursor: pointer;
 }
 
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0;
-    border-color: #dc3545;
-}
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    border-radius: 0;
-}
-
 /* Change colour of stars in product reviews */
 .checked {
   color: orange;
@@ -504,56 +493,70 @@ body {
 .form-control-contact {
     -webkit-box-shadow: 0 2px 5px 0 rgba(212,175,55, 0.28), 0 4px 15px 0 rgba(212,175,0, 0.28);
     box-shadow: 0 2px 5px 0 rgba(212,175,55, 0.28), 0 4px 15px 0 rgba(212,175,0, 0.28); 
-    }
+}
+
+/*---------------------------------Error Pages--------------------------------------*/
+
+.error-p {
+    margin: 50px 15vw;
+}
+
+
 
 /*-----------------------------------Media Queries----------------------------------------*/
+
 
 /*-----------------------------Larger Screens-----------------------------*/
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
+.container {
     max-width: 80%;
-  }
+}
+
 }
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
-    .fixed-top-desktop-only {
+.fixed-top-desktop-only {
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 1030;
-    }
+}
 
-    .header-container {
+.header-container {
         padding-top: 350px;
-    }
+}
  
 }
 
 /*-----------------------------Large Tablet Devices-----------------------------*/
 
 @media screen and (min-width: 991px) and (max-width: 1034px) {
-    body {
+
+/* Homepage Image */
+body {
     background: url('/media/jersey-home-background.jpg') no-repeat center 20%;
     background-size: contain; 
     color: #000000;
     font-family: 'Old Standard TT', serif;
-    }
+}
 
-    .header-container {
+.header-container {
     padding-top: 225px;
-    }
+}
 
-    .img-fluid-carousel {
-        height: 500px;
-    }
+/* Homepage Carousel */
+.img-fluid-carousel {
+    height: 500px;
+}
 
-    .footer-info {
-        font-size: 0.75rem;
-    }
+/* Footer Contact Us Text */
+.footer-info {
+    font-size: 0.75rem;
+}
 
 }
 
@@ -563,126 +566,136 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    body {
+/* Homepage Image */
+body {
     background: url('/media/jersey-home-background.jpg') no-repeat center 10%;
     background-size: contain; 
     color: #000000;
     font-family: 'Old Standard TT', serif;
-    }
+}
 
-    .header-container {
-        padding-top: 225px;
-    }
+.header-container {
+    padding-top: 225px;
+}
 
-    .home_header {
-        font-size: 1.5rem;
-    }
+/* Homepage Header reduced for smaller device */
+.home_header {
+    font-size: 1.5rem;
+}
 
-    .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
-        margin-left: 0.6rem;
-    }
+/* Padding for hamburger icon*/
+.navbar-toggler {
+    padding: .6rem .6rem;
+    font-size: 1rem;
+    margin-left: 0.6rem;
+}
 
-    /* Toasts */
+/* Toasts */
 
-    .message-container {
+.message-container {
     position: fixed;
     top: 2rem;
     right: 0.8rem;
     z-index: 99999999999;
 }
 
-    .img-fluid-carousel {
-        height: 350px;
+/* Homepage Carousel */
+.img-fluid-carousel {
+    height: 350px;
 
-    }
+}
 
-    .footer-info {
-        font-size: 0.75rem;
-    }
+/* Footer Contact Us text */
+.footer-info {
+    font-size: 0.75rem;
+}
 
 }
 
 /*-----------------------------Mobile Devices-----------------------------*/
 
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 767px) {
 
-    .nav-link {
-        padding: 0.15rem;
-    }
-
-    .nav-link i.fa-lg {
-        font-size: 1rem;
-    }
-
-    /* Fix for nav dropdown on My account on mobile view */
-
-    .dropdown-menu {
-        min-width: 5rem;
-        font-size: 0.8rem;
-    }
-
-    .dropdown-item {
-        padding: 0.5rem;
-    }  
-
-    .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
-        margin-left: 0.4rem;
-    }
-
-    #delivery-banner h6 {
-        font-size: 0.8rem;
-    }
-
-    .btn.btn-black.rounded-0 {
-        padding: .400rem .375rem;
-    }
-
-    .btn.btn-gold.rounded-0 {
-        padding: .375rem .375rem;
-        font-size: .75rem;
-    }
-
-    .btn.btn-gold.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
-        padding: .375rem .375rem;
-        
-    }
-
-    .increment-qty, .decrement-qty {
-        padding: .25rem .5rem !important;
-    }
-
-    .img-fluid-carousel {
-        height: 150px;
-    }
-
-    .carousel-header {
-        font-size: 2rem;
-    }
-
-    body {
+/* Homepage Image */
+body {
     background: url('/media/jersey-home-background.jpg') no-repeat center 15%;
     background-size: contain; 
     color: #000000;
     font-family: 'Old Standard TT', serif;
-    }
+}
 
-    .header-container {
-        padding-top: 150px;
-    }
+.header-container {
+    padding-top: 150px;
+}
 
-    .home_header {
-        font-size: 1.3rem;
-    }
+.home_header {
+    font-size: 1.3rem;
+}
 
-    /* Toasts */
 
-   .message-container {
+/*Navbar*/
+.nav-link {
+    padding: 0.15rem;
+}
+
+.nav-link i.fa-lg {
+    font-size: 1rem;
+}
+
+/* Fix for nav dropdown on My account on mobile view */
+
+.dropdown-menu {
+    min-width: 5rem;
+    font-size: 0.8rem;
+}
+
+.dropdown-item {
+    padding: 0.5rem;
+}  
+
+/* Hamburger icon padding */
+.navbar-toggler {
+    padding: .6rem .6rem;
+    font-size: 1rem;
+    margin-left: 0.4rem;
+}
+
+/* Homepage Carousel */
+.img-fluid-carousel {
+    height: 150px;
+}
+
+.carousel-header {
+    font-size: 2rem;
+}
+
+/* Shopping bag */
+#delivery-banner h6 {
+    font-size: 0.8rem;
+}
+
+.btn.btn-black.rounded-0 {
+    padding: .400rem .375rem;
+}
+
+.btn.btn-gold.rounded-0 {
+    padding: .375rem .375rem;
+    font-size: .75rem;
+}
+
+.btn.btn-gold.rounded-0.btn-lg,
+.btn.btn-black.rounded-0.btn-lg {
+    padding: .375rem .375rem;
+        
+}
+
+.increment-qty, .decrement-qty {
+    padding: .25rem .5rem !important;
+}
+
+/* Toasts */
+
+.message-container {
     position: fixed;
     top: 2rem;
     right: 0.1rem;
