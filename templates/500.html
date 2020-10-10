@@ -1,0 +1,35 @@
+{% extends 'base.html' %} 
+{% load static %}
+ 
+{% block title %} 500 Server Error {% endblock %} 
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="page-title text-center mt-3">500 Internal Server Error</h1>
+    </div>
+    <div class="col-sm-12 text-center">
+      <h2 class="mt-2">OOPS.... Something has gone wrong</h2>
+      <p class="error-p">The site is currently down and inaccessible. Please come back later!. Try a quick refresh to see if we can get you working again, If not get in touch by using the contact page and
+      make sure to give us as much information as possible as to how you got to this problem so we can get working on the fix right away!<br> Thank you.</p>
+      <p>Let's take you</p>
+      <!--Button-->
+      <a href="{% url 'home' %}" class="btn btn-gold btn-lg mb-3" role="button"
+        >Home <i class="fas fa-home"></i
+      ></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center brand-img">
+      <img
+        class="img-fluid"
+        src="{% static 'logo/RetroKingsLogo.png' %}"
+        alt="RK Logo"
+      />
+    </div>
+  </div>
+</div>
+
+{% endblock %}
