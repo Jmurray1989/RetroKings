@@ -23,6 +23,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+
 class ReviewAdmin(admin.ModelAdmin):
     """
     To display the below fields to the Review admin panel.
