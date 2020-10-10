@@ -9,7 +9,9 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = '__all__'
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(label='Image',
+                             required=False,
+                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -33,7 +35,8 @@ class ReviewForm(forms.ModelForm):
                 attrs={
                     "rows": 5,
                     "class": 'form-control stripe-style-input',
-                    "placeholder": "Please leave a review for your item here...",
+                    "placeholder":
+                    "Please leave a review for your item here...",
                 }
             ),
             'rating': forms.NumberInput(

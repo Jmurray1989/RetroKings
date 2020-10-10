@@ -41,7 +41,9 @@ def contact(request):
             fail_silently=True
         )
         # Success message
-        messages.success(request, 'Contact form successfully submitted. We will be in touch!')
+        messages.success(request,
+                         'Contact form successfully submitted.\
+                         We will be in touch!')
         return redirect(reverse('contact_success'))
 
     context = {

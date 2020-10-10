@@ -30,7 +30,8 @@ class Product(models.Model):
     description = models.TextField()
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    rating = models.DecimalField(max_digits=6,
+                                 decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
@@ -44,9 +45,11 @@ class Review(models.Model):
     """
     product = models.ForeignKey(Product, on_delete=models.CASCADE,
                                 null=True, blank=True, related_name="reviews")
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True,
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             null=True, blank=True,
                              related_name="reviews")
-    comment = models.TextField(max_length=1000, blank=True, null=True)
+    comment = models.TextField(max_length=1000,
+                               blank=True, null=True)
     rating = models.IntegerField(default=1)
 
     def __str__(self):
