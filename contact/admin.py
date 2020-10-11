@@ -4,7 +4,7 @@ from .models import Contact
 
 
 class ContactAdmin(admin.ModelAdmin):
-    # what fields to display
+    # What fields to display in admin dashboard
     list_display = (
         'name',
         'user_id',
@@ -19,7 +19,7 @@ class ContactAdmin(admin.ModelAdmin):
 
     list_per_page = 25
 
-    # orders contacts by date
+    # Orders contacts by date
     ordering = ('contact_date',)
 
 

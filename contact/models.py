@@ -4,6 +4,9 @@ from datetime import datetime
 
 
 class Contact(models.Model):
+    """
+    Contact Model
+    """
     name = models.CharField(max_length=200)
     message = models.TextField(max_length=200, blank=True)
     email = models.EmailField(max_length=200)

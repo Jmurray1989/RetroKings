@@ -45,7 +45,7 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 
-     <!-- Stripe -->
+    <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
 	{% endblock %}
 
@@ -56,6 +56,7 @@
 </head>
 
 <body>
+ <!--Nav Header -->
 	<header class="container-fluid">
 		<div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
 			<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -118,6 +119,7 @@
 				</ul>
 			</div>
 		</div>
+        <!-- Navbar -->
 		<div class="row bg-white">
 			<nav class="navbar navbar-expand-lg navbar-light w-100">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -127,7 +129,7 @@
 				{% include 'includes/main-nav.html' %}
 			</nav>
 		</div>
-
+        <!-- Deliver Banner -->
 		<div id="delivery-banner" class="row text-center">
 			<div class="col bg-black text-white">
 				<h6 class="my-1">Shop & Save - Get Free Delivery On All orders over €{{ free_delivery_threshold }}!</h6>
@@ -159,13 +161,15 @@
 
     {% block content %}
     {% endblock %}
-    
+
+    <!-- Footer -->
     {% block footer %}
     {% include 'partials/footer.html' %}
     {% endblock %}
 
+    <!-- Scripts -->
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}

@@ -85,7 +85,7 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
-
+            # Save the info to the user's profile
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success',
                                     args=[order.order_number]))
@@ -107,7 +107,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-
+        # Pre fill the form 
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)

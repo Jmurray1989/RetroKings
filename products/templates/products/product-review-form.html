@@ -19,6 +19,7 @@
                                     <h4 class="text-center text-black d-inline-block"><i class="fas fa-user d-block"></i></h4>
                                     <h5 class="review-user text-center text-black">{{review.user}}</h5>
                                 </div>
+                                <!-- Displays user rating in the review form as a star field-->
                                 <p class="text-center">{{review.comment}}</p>
                                 <div class="review-rating mb-3">
                                 <span class="fa fa-star{% if review.rating < 1 %}-o empty{% endif %} checked"></span>

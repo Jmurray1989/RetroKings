@@ -1,5 +1,7 @@
 {% extends "base.html" %}
+
 {% block title %} Shopping Bag {% endblock %}
+
 {% load static %} 
 
 {% load bag_tools %}
@@ -118,6 +120,7 @@
     </a>	
 </div>
 
+<!-- Removes footer from bag view -->
 {% block footer %}
 {% endblock %}
 
@@ -125,7 +128,8 @@
 {% block postloadjs %} 
 {{ block.super }}
 
-<script type="text/javascript">
+<!-- Scripts -->
+<script>
 	$('.btt-link').click(function(e) {
 		window.scroll({
         top: 0, 
@@ -134,7 +138,7 @@
         });
 	})
 </script> 
-
+<!-- Script Includes -->
 {% include 'products/includes/quantity_input_script.html' %} 
 {% include 'bag/includes/update_remove.html' %} 
 
