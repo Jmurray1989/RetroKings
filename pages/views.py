@@ -13,3 +13,10 @@ def faq(request):
     Renders view for the faq page
     """
     return render(request, "faq.html")
+
+
+def tandc(request):
+    """
+    Renders view for the terms & conditions page
+    """
+    return render(request, "tandc.html")
