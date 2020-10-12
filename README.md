@@ -13,7 +13,9 @@ Tasked to create a website combining knowledge from the Full Stack Frameworks wi
 
 ## The Idea
 
-This Milestone project creation is the culmination of learning and study from all modules of the Full Stack Developer Course from Code Institute, culminating in the creation of this Full Stack Framework Django project. For this project i decided to build an e-commerce store that allows an admin to store and manipulate data records and also allows the user to create, read, update, delete & purchase items from the store. RetroKings is your one stop shop for all retro Soccer, NBA, NFL & MLB jerseys.
+This Milestone project creation is the culmination of learning and study from all modules of the Full Stack Developer Course from Code Institute, culminating in the creation of this Full Stack Framework Django project. For this project i decided to build an e-commerce store that allows an admin to store and manipulate data records and also allows them to create, read, update & delete items from the store. 
+
+RetroKings is your one stop shop for all retro Soccer, NBA, NFL & MLB jerseys.
 
 To test the website's checkout functionality, use the following payment credentials:
 
@@ -27,15 +29,50 @@ To test the website's checkout functionality, use the following payment credenti
 ## Table Of Contents
 
 <hr>
- 
+
 ## UX
+
+<hr>
+
+### Business Goals:
+
+The business goals of RetroKings:
+
+- To sell the highest quality authentic retro jerseys.
+- To engage, promote and sell across all social media platforms.
+- Increase visits per month to the webpage.
+- Be the no.1 store to purchase authentic retro jerseys from.
+
+### User Stories:
+
+1. I want to browse a range of retro jerseys on the site.
+
+2. To be able to view an in depth detail about the product i wish to purchase.
+
+3. For the products in the store to have a rating
+
+4. I want to be able to create a user account so that it will store previous purchase history.
+
+5. Make a purchase on the site by way of card payment.
+
+6. Leave a review for the item i purchased.
+
+7. A way to contact the company with any issues or questions i may have. 
+
+8. For the site to have an FAQ page that may answer my queries efficently withouth always needed to contact the store.
+
+9. Terms & Conditions must be available to a user so that they have a clear view of their entitlements on returns etc.
+
+10. As a user I want to view the site from any device (mobile, tablet, desktop).
+
+## Design
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+<p align="center">
+  <img width="900" height="450" src="https://github.com/Jmurray1989/RetroKings/blob/master/media/mockup.jpg">
+</p>
+ 
+### Wireframes
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
 ## Features
 
