@@ -97,6 +97,26 @@ The main font i chose for this site was 'Old Standard TT' from [Google Fonts](ht
 
 ### Colour Scheme
 
+To help me choose my color scheme i used [Adobe Color Wheel](https://color.adobe.com/create/color-wheel).
+
+This process took a long time during the wireframe stage. In the end i decided on this color scheme as it is quite vivid and bright. The gold gives it a very vivid feel and helps to highlight important points against the white backdrop and at the same time it gives the website a bold feel with the added contrast of the color black. I also used white with a mix of a gold gradient to just break the page up from being a standard white background on certain areas such as products cards, FAQ page etc.
+
+Three primary colors were chosen when creating this project:
+
+- ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` 
+- ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` 
+- ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`
+
+The three colours are featured heavily across the site.
+
+The navbar header is colored in ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`, which offered a bright background to the logo and the searchbar. I used 
+![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` to highlight the nav-links i surround them by a background of ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` and also to break up the navbar from the top nav header.
+
+The call to action buttons utilised the same navbar coloring of ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` as their background with a font color of 
+![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` where there is two buttons in view on the same page to highlight the different buttons i reveresed this procedure. When active, focused or hovered on the primary colour buttons of ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` with ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` font the main background color of the button was set to reverse of ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` with ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` font. The secondary colour buttons of ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` with ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` font when active, focused or hovered have been set to ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` with the font inside being set to ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` to show the user that this element is interact-able and something will happen when pressed.
+
+To give the website a more colorful feel & to create a better visual experience for the user i added a subtle gradient effect to pages like the products page & the FAQ page etc using white to begin with and then adding the gradient effect working its way into gold.
+
 ### Logo
 
 ### Background Image
