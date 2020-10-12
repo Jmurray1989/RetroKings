@@ -45,6 +45,20 @@ The business goals of RetroKings:
 
 ### User Stories:
 
+###### As the developer:
+
+1. As a Developer, I want to showcase my growing abilities as a Full Stack Software developer during my time on the Code Institute course.
+
+2. As a Developer, I want a project that I can proudly showcase to potential employers via my Github Repository.
+
+###### As the admin:
+
+1. As the site administrator, I want to be able to login to an administration panel.
+
+2. As a Site Administrator, I want to have the ability to update site content, such as add, remove and delete store products.
+
+###### As a customer:
+
 1. I want to browse a range of retro jerseys on the site.
 
 2. To be able to view an in depth detail about the product i wish to purchase.
@@ -64,6 +78,8 @@ The business goals of RetroKings:
 9. Terms & Conditions must be available to a user so that they have a clear view of their entitlements on returns etc.
 
 10. As a user I want to view the site from any device (mobile, tablet, desktop).
+
+
 
 ## Design
  
