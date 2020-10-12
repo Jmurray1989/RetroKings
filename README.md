@@ -79,13 +79,27 @@ The business goals of RetroKings:
 
 10. As a user I want to view the site from any device (mobile, tablet, desktop).
 
-
-
 ## Design
  
 <p align="center">
-  <img width="900" height="450" src="https://github.com/Jmurray1989/RetroKings/blob/master/media/mockup.jpg">
+  <img width="1200" height="500" src="https://github.com/Jmurray1989/RetroKings/blob/master/media/mockup.jpg">
 </p>
+
+
+The design process is the one i enjoy the most. I enjoy learning new ways to style my projects and I feel more and more that Front End Development in particular the design aspects of it is my calling in this profession. I have enjoyed designing all of my projects but this is the one i have enjoyed the most as i have really seen over the course how i have improved in this aspect. I have tried to take on new challenges in all of my milestone projects and not be repetitive when it has come to the design of each one. 
+I enjoy it all from deciding on the colour schemes to the layouts of the pages etc, and i really feel this is how you entice the user and convince him to browse your site.
+
+### Font
+
+The main font i chose for this site was 'Old Standard TT' from [Google Fonts](https://fonts.google.com/specimen/Old+Standard+TT?preview.text=Retro%20Kings&preview.text_type=custom&query=old+#standard-styles) In keeping with the theme of the site Old Standard reproduces a specific type of Modern (classicist) style of serif typefaces, It keeps in line to the type of vintage/classic products we have on offer. The font is clear with clean lines and reads well.
+
+'Sans-Serif' is used as the default backup font in cases where these fonts have difficulty loading. 
+
+### Colour Scheme
+
+### Logo
+
+### Background Image
  
 ### Wireframes
 
