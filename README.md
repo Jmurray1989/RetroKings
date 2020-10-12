@@ -11,7 +11,22 @@ Tasked to create a website combining knowledge from the Full Stack Frameworks wi
   <img width="350" height="350" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/logo/RetroKingsLogo.png">
 </p>
 
-Your one stop shop for all retro soccer, nba & nfl jerseys.
+## The Idea
+
+This Milestone project creation is the culmination of learning and study from all modules of the Full Stack Developer Course from Code Institute, culminating in the creation of this Full Stack Framework Django project. For this project i decided to build an e-commerce store that allows an admin to store and manipulate data records and also allows the user to create, read, update, delete & purchase items from the store. RetroKings is your one stop shop for all retro Soccer, NBA, NFL & MLB jerseys.
+
+To test the website's checkout functionality, use the following payment credentials:
+
+- <strong>Card number:</strong> 4242 4242 4242 4242
+- <strong>Expiry date:</strong> Any date in the future
+- <strong>CV2 number:</strong> Any 3 digits
+- <strong>ZIP:</strong> 42424
+
+<hr>
+
+## Table Of Contents
+
+<hr>
  
 ## UX
  
