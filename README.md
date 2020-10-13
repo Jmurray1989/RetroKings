@@ -177,7 +177,7 @@ The project boasts several key features a quick summary is below:
 - The user can view a price summary of their current orders underneath the bag icon. Clicking on the icon will bring them to their bag for a more detailed view.
 
 <p align="center">
-  <img width="200" height="200" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/bag-icon.jpg">
+  <img width="100" height="100" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/bag-icon.jpg">
 </p>
  
 ###### Navbar
@@ -289,14 +289,14 @@ Toast notifications are used across the site to give the user feedback in variou
 - The user while logged in can also choose to re-edit their review or remove it completely. Keeping in with the CRUD functionality.
 
 <p align="center">
-  <img width="200" height="200" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/product-review.jpg">
+  <img width="7000" height="300" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/product-review.jpg">
 </p>
 
 ###### Toast Notifications
 - Toast notifications also operate on this page informing the user they have posted, edit or deleted their review.
 
 <p align="center">
-  <img width="200" height="200" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/update-review.jpg">
+  <img width="300" height="200" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/update-review.jpg">
 </p>
  
 ### 👤 User Profile Dashboard
@@ -318,7 +318,7 @@ The user profile dashboard contains the default deliver information for the user
 When a user updates their billing information they are notified of this change through a success toast message.
 
 <p align="center">
-  <img width="200" height="200" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/profile updated.jpg">
+  <img width="300" height="150" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/profile-updated.jpg">
 </p>
  
 ### 👜 Shopping Bag
@@ -333,7 +333,7 @@ The shopping bag page features a summary of all the items the user has added to 
 - To show the user the site has a secure payment facility we have included an image below the 'Secure Checkout' button.
 
 <p align="center">
-  <img width="300" height="200" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/security/img-security.png">
+  <img width="500" height="150" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/security/img-security.png">
 </p>
 
 ###### Toast notification
@@ -344,7 +344,7 @@ When a user adds an item to their cart, a toast notification displays with the i
 - A 'Go To Secure Checkout' button is displayed below the item information to take the user to the checkout screen.
 
 <p align="center">
-  <img width="300" height="200" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/bag-toast.jpg">
+  <img width="300" height="300" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/bag-toast.jpg">
 </p>
  
 ### 💳 Checkout Page
@@ -387,7 +387,7 @@ The checkout page features a checkout form on the left and on the right again it
 - When a contact form has been successfully submitted, the user is notified via toast message.
 
 <p align="center">
-  <img width="300" height="200" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/toast-message.jpg">
+  <img width="350" height="150" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/toast-message.jpg">
 </p>
  
 ### Features Left to Implement
