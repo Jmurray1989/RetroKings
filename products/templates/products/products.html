@@ -76,12 +76,11 @@
                                 {% endif %}
 							{% endif %}    
 							</div>
-							<div class="card-footer bg-white">
+							<div class="card_footer">
 								<div class="row">
 									<div class="col">
-										<p class="lead text-center font-weight-bold">€{{ product.price }}</p>
-										
-                                      
+                                    <hr class="hr-card-footer">
+										<p class="lead text-center font-weight-bold">€{{ product.price }}</p>  
 									</div>
 								</div>
 							</div>
@@ -89,22 +88,22 @@
 			</div>
             <!-- Changes layout of products on different devices -->
 			{% if forloop.counter|divisibleby:1 %}
-			<div class="col-12 d-sm-none mt-5">
+			<div class="col-12 d-sm-none mt-3">
 				<hr>
 			</div>
 			{% endif %}
 			{% if forloop.counter|divisibleby:2 %}
-			<div class="col-12 d-none d-sm-block d-md-block d-lg-none mt-5">
+			<div class="col-12 d-none d-sm-block d-md-block d-lg-none mt-3">
 				<hr>
 			</div>
 			{% endif %}
 			{% if forloop.counter|divisibleby:3 %}
-			<div class="col-12 d-none d-lg-block d-xl-none mt-5">
+			<div class="col-12 d-none d-lg-block d-xl-none mt-3">
 				<hr>
 			</div>
 			{% endif %}
 			{% if forloop.counter|divisibleby:4 %}
-			<div class="col-12 d-none d-xl-block mt-5">
+			<div class="col-12 d-none d-xl-block mt-3">
 				<hr>
 			</div>
 			{% endif %}

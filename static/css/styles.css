@@ -273,6 +273,19 @@ body {
     margin-bottom: 3rem;
 }
 
+.card {
+    margin: 0rem;
+}
+
+.card-body {
+    padding: 0rem;
+}
+
+.hr-card-footer {
+    background-color: #D4AF37;
+    width: 75%;
+}
+
 /* Category Buttons */
 
 .category-badge {
