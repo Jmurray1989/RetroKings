@@ -13,7 +13,9 @@ Tasked to create a website combining knowledge from the Full Stack Frameworks wi
 
 ## The Idea
 
-This Milestone project creation is the culmination of learning and study from all modules of the Full Stack Developer Course from Code Institute, culminating in the creation of this Full Stack Framework Django project. For this project i decided to build an e-commerce store that allows an admin to store and manipulate data records and also allows the user to create, read, update, delete & purchase items from the store. RetroKings is your one stop shop for all retro Soccer, NBA, NFL & MLB jerseys.
+This Milestone project creation is the culmination of learning and study from all modules of the Full Stack Developer Course from Code Institute, culminating in the creation of this Full Stack Framework Django project. For this project i decided to build an e-commerce store that allows an admin to store and manipulate data records and also allows them to create, read, update & delete items from the store. 
+
+RetroKings is your one stop shop for all retro Soccer, NBA, NFL & MLB jerseys.
 
 To test the website's checkout functionality, use the following payment credentials:
 
@@ -27,15 +29,100 @@ To test the website's checkout functionality, use the following payment credenti
 ## Table Of Contents
 
 <hr>
- 
+
 ## UX
+
+<hr>
+
+### Business Goals:
+
+The business goals of RetroKings:
+
+- To sell the highest quality authentic retro jerseys.
+- To engage, promote and sell across all social media platforms.
+- Increase visits per month to the webpage.
+- Be the no.1 store to purchase authentic retro jerseys from.
+
+### User Stories:
+
+###### As the developer:
+
+1. As a Developer, I want to showcase my growing abilities as a Full Stack Software developer during my time on the Code Institute course.
+
+2. As a Developer, I want a project that I can proudly showcase to potential employers via my Github Repository.
+
+###### As the admin:
+
+1. As the site administrator, I want to be able to login to an administration panel.
+
+2. As a Site Administrator, I want to have the ability to update site content, such as add, remove and delete store products.
+
+###### As a customer:
+
+1. I want to browse a range of retro jerseys on the site.
+
+2. To be able to view an in depth detail about the product i wish to purchase.
+
+3. For the products in the store to have a rating
+
+4. I want to be able to create a user account so that it will store previous purchase history.
+
+5. Make a purchase on the site by way of card payment.
+
+6. Leave a review for the item i purchased.
+
+7. A way to contact the company with any issues or questions i may have. 
+
+8. For the site to have an FAQ page that may answer my queries efficently withouth always needed to contact the store.
+
+9. Terms & Conditions must be available to a user so that they have a clear view of their entitlements on returns etc.
+
+10. As a user I want to view the site from any device (mobile, tablet, desktop).
+
+## Design
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+<p align="center">
+  <img width="1200" height="500" src="https://github.com/Jmurray1989/RetroKings/blob/master/media/mockup.jpg">
+</p>
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+The design process is the one i enjoy the most. I enjoy learning new ways to style my projects and I feel more and more that Front End Development in particular the design aspects of it is my calling in this profession. I have enjoyed designing all of my projects but this is the one i have enjoyed the most as i have really seen over the course how i have improved in this aspect. I have tried to take on new challenges in all of my milestone projects and not be repetitive when it has come to the design of each one. 
+I enjoy it all from deciding on the colour schemes to the layouts of the pages etc, and i really feel this is how you entice the user and convince him to browse your site.
+
+### Font
+
+The main font i chose for this site was 'Old Standard TT' from [Google Fonts](https://fonts.google.com/specimen/Old+Standard+TT?preview.text=Retro%20Kings&preview.text_type=custom&query=old+#standard-styles) In keeping with the theme of the site Old Standard reproduces a specific type of Modern (classicist) style of serif typefaces, It keeps in line to the type of vintage/classic products we have on offer. The font is clear with clean lines and reads well.
+
+'Sans-Serif' is used as the default backup font in cases where these fonts have difficulty loading. 
+
+### Colour Scheme
+
+To help me choose my color scheme i used [Adobe Color Wheel](https://color.adobe.com/create/color-wheel).
+
+This process took a long time during the wireframe stage. In the end i decided on this color scheme as it is quite vivid and bright. The gold gives it a very vivid feel and helps to highlight important points against the white backdrop and at the same time it gives the website a bold feel with the added contrast of the color black. I also used white with a mix of a gold gradient to just break the page up from being a standard white background on certain areas such as products cards, FAQ page etc.
+
+Three primary colors were chosen when creating this project:
+
+- ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` 
+- ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` 
+- ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`
+
+The three colours are featured heavily across the site.
+
+The navbar header is colored in ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`, which offered a bright background to the logo and the searchbar. I used 
+![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` to highlight the nav-links i surround them by a background of ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` and also to break up the navbar from the top nav header.
+
+The call to action buttons utilised the same navbar coloring of ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` as their background with a font color of 
+![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` where there is two buttons in view on the same page to highlight the different buttons i reveresed this procedure. When active, focused or hovered on the primary colour buttons of ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` with ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` font the main background color of the button was set to reverse of ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` with ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` font. The secondary colour buttons of ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` with ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` font when active, focused or hovered have been set to ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` with the font inside being set to ![#d4af37](https://placehold.it/15/d4af37/000000?text=+) `#d4af37` to show the user that this element is interact-able and something will happen when pressed.
+
+To give the website a more colorful feel & to create a better visual experience for the user i added a subtle gradient effect to pages like the products page & the FAQ page etc using white to begin with and then adding the gradient effect working its way into gold.
+
+### Logo
+
+### Background Image
+ 
+### Wireframes
+
 
 ## Features
 
