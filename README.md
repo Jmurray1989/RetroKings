@@ -166,7 +166,7 @@ Wireframing for this project began with Pen and paper as all my projects tend to
 
 Each element was structurally planned out at this stage and even during the physical build of the application there was not much deviation from the original planning. Each page was rendered as a wireframe in all viewport sizes to show the difference between them and to show how the elements would react to differing viewport sizes.
 
-<a href="#table-of-content">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -456,7 +456,7 @@ To implement this idea would be quite complex and a challenge i would like to ta
 
 - The Retrokings store would like to offer even more products in the future starting with a range of retro headwear.
 
-<a href="#table-of-content">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -548,8 +548,7 @@ The User model used is the standard one provided by Django.
 |Contact Date|default=datetime.now, blank=True)| DateTimeField      |
 |User Id|null=True, on_delete=models.CASCADE| ForeignKey     |
 
-<a href="#table-of-content">Back to top</a>
-
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -665,7 +664,7 @@ The User model used is the standard one provided by Django.
 
 * Used to resize my images
 
-<a href="#table-of-content">Back To Top</a>
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -771,7 +770,7 @@ I found a couple of css issues with regards to some browsers i tested. These are
 I have not found any other issues.
 
 
-<a href="#table-of-content">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -901,7 +900,7 @@ To clone the repository the steps below must be taken:
 
 6. Paste the Git URL https://github.com/Jmurray1989/RetroKings.git and click "Ok".
 
-<a href="#table-of-content">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -923,7 +922,7 @@ To clone the repository the steps below must be taken:
 
 - Review product implementation for my product details page was sourced and amended to meet my projects needs from CI student's [Stevo Github repository](https://github.com/nemixu/Milestone4/).
 
-<a href="#">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 ### Content
 
@@ -931,14 +930,14 @@ To clone the repository the steps below must be taken:
 - Terms and conditions page referenced from [Asos](https://www.asos.com/terms-and-conditions/).
 - Privacy policy page referenced from [Policy Maker](https://policymaker.io/).
 
-<a href="#table-of-content">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 ### Media
 
 - Logo & background images are custom designs by me. Created using photoshop as explained above.
 - Jersey images where taken from various sources like [Fanatics](https://www.fanatics.com/), [Mitchell & Ness](https://www.mitchellandness.com/) and [Google Images](https://www.google.com/imghp?hl=EN). As these images where used for educational purposes and not for profit i was made aware that it may not be neccessary to ask for permission.
 
-<a href="#table-of-content">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 ### Acknowledgements
 
