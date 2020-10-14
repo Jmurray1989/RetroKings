@@ -14,7 +14,7 @@ html {
 /* Homepage Image */
 
 body {
-    background: url('/media/jersey-home-background.jpg') no-repeat center 80%;
+    background: url('/media/jersey-home-background.jpg') no-repeat center 70%;
     background-size: contain; 
     color: #000000;
     font-family: 'Old Standard TT', serif;
@@ -213,6 +213,8 @@ body {
 
 .jersey-header {
     margin-top: 1rem;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #D4AF37;
 }
 
 /* Zoom Effect On Card Images */
