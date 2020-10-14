@@ -26,13 +26,13 @@ Please ensure when testing payments in this application to use the Stripe test c
 
 <hr>
 
-[Back to top]()
+<a href="#">Back to top</a>
 
 ## Table Of Contents
 
 <hr>
 
-[Back to top]()
+<a href="#">Back to top</a>
 
 ## UX
 
@@ -83,7 +83,7 @@ The business goals of RetroKings:
 
 10. As a user I want to view the site from any device (mobile, tablet, desktop).
 
-[Back to top]()
+<a href="#">Back to top</a>
 
 ## Design
  
@@ -140,7 +140,7 @@ Wireframing for this project began with Pen and paper as all my projects tend to
 
 Each element was structurally planned out at this stage and even during the physical build of the application there was not much deviation from the original planning. Each page was rendered as a wireframe in all viewport sizes to show the difference between them and to show how the elements would react to differing viewport sizes.
 
-[Back to top]()
+<a href="#">Back to top</a>
 
 ## Features
 
@@ -190,7 +190,10 @@ The navbar links feature in the centre of the navbar itself. I have 4 links in t
 - Special Offers (When clicked dropdown appears to show an option to view the stores clearance items).
 
 Intuitive navigation fixed to the top of the the page that resizes for mobile devices with the hamburger icon. When pressed it expands to show the other navigable pages. On desktop when the user hovers over the nav-links the icon changes so that will show the user that this is interact-able and something will happen when clicked.
- 
+
+###### Custom Scrollbar
+
+I created a custom scrollbar for my site to give it another level of customization and to move away from the standard scrollbar you see on most sites. This is also a new feature i implemented for this project as i have not incorporated this on any previous milestone projects.
  
 ###### Footer
 
@@ -391,7 +394,35 @@ The checkout page features a checkout form on the left and on the right again it
 </p>
  
 ### Features Left to Implement
-- Another feature idea
+
+These are a list of future features i would like to incorporate into the site. Unfortunately due to the time constraints placed on me during the course i did not have enough time to complete the list below.
+
+###### Social Sign Up
+
+- On the register page i would like to give the user the option to login with their social account details.
+
+To implement this idea i would go to the Facebook developers page and create my app to link with Facebook. Django allauth comes pre-installed with templates for setting up social login.
+
+###### Discount Codes
+
+- I'd like to include a field for customers to enter discount codes that adjust the final cost of the shopping cart.
+
+###### Two Step verification
+
+- With cybercrime on the rise this is a new trend that a lot of social providers and banks are using so i would like to implement this as an added layer of security for the users of my site.
+
+###### User Rating
+
+- I have implemented user reviews on the site to include a star rating system. I would like to take this information so everytime a user leaves a review on a product an average rating would appear based on that review.
+
+To implement this idea would be quite complex and a challenge i would like to take on. The steps below are how i believe i would achieve this feature.
+- Once a review has been saved
+- Pull reviews of product from reviews DB
+- Find the sum of all of the reviews
+- Divide the sum by the number of reviews of product
+- Write this number into the review field of the ProductModel
+
+<a href="#">Back to top</a>
 
 ## Technologies Used
 
