@@ -142,7 +142,11 @@ Each element was structurally planned out at this stage and even during the phys
 
 <a href="#">Back to top</a>
 
+<hr>
+
 ## Features
+
+<hr>
 
 This section will outline all the features of RetroKings implemented by page.
 
@@ -409,7 +413,7 @@ To implement this idea i would go to the Facebook developers page and create my 
 
 ###### Two Step verification
 
-- With cybercrime on the rise this is a new trend that a lot of social providers and banks are using so i would like to implement this as an added layer of security for the users of my site.
+- With cyber crime on the rise this is a new trend that a lot of social providers and banks are using so i would like to implement this as an added layer of security for the users of my site.
 
 ###### User Rating
 
@@ -424,7 +428,11 @@ To implement this idea would be quite complex and a challenge i would like to ta
 
 <a href="#">Back to top</a>
 
+<hr>
+
 ## Database
+
+<hr>
 
 The database used for this Project was Postgres, as an Installed add-on to the deployed Heroku Application. During development in gitpod Sqlite3 was used to test the User Authentication, Registration & Login, and for testing the creation of products and reviews for the store. On deployment Postgres was used from that point on.
 
@@ -483,6 +491,14 @@ The User model used is the standard one provided by Django.
 
 ###### Order Item Model
 
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+|Order|null=False, blank=False, on_delete=models.CASCADE,related_name='lineitems'| ForeignKey  |
+|Product|null=False, blank=False, on_delete=models.CASCADE| ForeignKey |
+|Product Size| max_length=2, blank=True XS, S, M, L, XL| CharField   |
+|Quantity | null=False, blank=False, default=0 | IntegerField |
+|Line Item Total| max_digits=6, decimal_places=2, null=False, blank=False, editable=False|Decimal Field|
+
 ###### Review Model
 
 | Name        | Description | Field Type    |
@@ -502,33 +518,129 @@ The User model used is the standard one provided by Django.
 |Contact Date|default=datetime.now, blank=True)| DateTimeField      |
 |User Id|null=True, on_delete=models.CASCADE| ForeignKey     |
 
+<a href="#">Back to top</a>
+
+<hr>
+
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+<hr>
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+###### Languages, Frameworks, Libraries & Version Control:
 
+###### HTML, CSS, JS & Python
+
+* core languages used to create this multi-page CRUD application.
+
+[Django](https://www.djangoproject.com/)  
+
+* Used as the architectural engine following the model-template-view approach.
+
+[Sqlite3](https://www.sqlite.org/index.html) 
+
+* Database used in development comes preinstalled with Django.
+
+[PostgreSQL](https://www.postgresql.org/)
+
+* A free and open-source relational database management.
+
+[Django Aullauth](https://django-allauth.readthedocs.io/en/latest/)
+
+* Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication.
+
+[Bootstrap](https://getbootstrap.com/)
+
+* Used as the core structuring layout for the application, ensuring mobile-first design and screen size fluidity.
+
+[Bootstrap's Imported Javascript & JQuery](https://getbootstrap.com/)
+
+* For the Responsive Navbar expand & collapse functionality.
+
+[Gitpod](https://gitpod.io/)
+
+* IDE of choice for this project.
+
+[Github](https://github.com/)
+
+* Used to host the repository of all previous versions of the build and linked to Heroku to push the latest changes to the deployed build version held there.
+
+[Heroku](https://id.heroku.com/login)
+
+* A cloud platform as a service enabling deployment for this application.
+
+[Stripe](https://stripe.com/en-ie)
+
+* Used to handle checkout payments.
+
+###### Tools Used:
+
+[Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+
+* Used to test the application's functionality, the responsiveness, and the CSS visualisation.
+
+[Balsamiq](https://balsamiq.com/wireframes/)
+
+* Used for the creation of my pre-build wireframes showing the main elements and differences in size of same through small to large screen sizes.
+
+[Favicon Generator](https://www.favicon-generator.org/)
+
+* Used to create favicon from custom Logo I created for the project.
+
+[W3C Mark-up Validation](https://validator.w3.org/) and [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+
+* Used to check the validity and efficiency of my code.
+
+[JSHint](https://jshint.com/)
+
+* Using JSHint to validate the project's Javascript
+
+[Django Extensions Plugin](https://django-extensions.readthedocs.io/en/latest/)
+
+* For validating my templates for any jinja rendering errors.
+
+[Autoprefixer CSS Online](https://autoprefixer.github.io/)
+
+* Used to check for possible webkits required in the applications stylesheet ensuring Cross-browser support.
+
+[PEP 8 Online Validator](http://pep8online.com/)
+
+* To validate my python code to be consistent with PEP8 requirements.
+
+[AWS S3](https://aws.amazon.com/?nc2=h_lg)
+
+* Used to store external media and static files.
+
+[Font Awesome Icons](https://fontawesome.com/)
+
+* For social icons used in Footer and Iconography present throughout site.
+
+[Adobe Colour Picker](https://color.adobe.com/create/color-wheel)
+
+* Helped me to choose the colour scheme of the website.
+
+[Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html?gclid=CjwKCAjww5r8BRB6EiwArcckC_fXdr_HQcxAW69oogvaq1DMY2UcB9-u8qhJEkKpt02pvonpc1YtlhoCMJgQAvD_BwE&sdid=88X75SKS&mv=search&ef_id=CjwKCAjww5r8BRB6EiwArcckC_fXdr_HQcxAW69oogvaq1DMY2UcB9-u8qhJEkKpt02pvonpc1YtlhoCMJgQAvD_BwE:G:s&s_kwcid=AL!3085!3!441704131147!e!!g!!photoshop!1423511192!58810496314)
+
+* Used to crop, re-size, editing and to custom create my images.
+
+[Image Background Remover](https://www.remove.bg/)
+
+* Used to remove the backgrounds of my jersey images.
+
+[Google Fonts](https://fonts.google.com/)
+
+* Helped me to choose the font for my site.
+
+[Tinypng](https://tinypng.com/)
+
+* Used to resize my images
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+I used W3C Mark-up Validation and W3C CSS Validation to validate my html and css code. Unfortunately the W3C Validator for HTML does not understand the Jinja templating syntax, so it therefore shows a lot of errors with regards to {{ variables }}, {% for %} {% endfor %}, etc. Aside from the Jinja warnings and errors, all of the remaining code is perfectly validating
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+I used JSHint to validate the project's Javascript file which i configured to accept jQuery & ES6 New JS features, It returned 0 warnings.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+I used PEP8 online to make sure my Python files are compliant to current standards.
 
 ## Deployment
 
