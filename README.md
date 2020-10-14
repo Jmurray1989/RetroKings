@@ -520,13 +520,14 @@ The User model used is the standard one provided by Django.
 
 <a href="#">Back to top</a>
 
+
 <hr>
 
 ## Technologies Used
 
 <hr>
 
-###### Languages, Frameworks, Libraries & Version Control:
+##### Languages, Frameworks, Libraries & Version Control:
 
 ###### HTML, CSS, JS & Python
 
@@ -634,15 +635,113 @@ The User model used is the standard one provided by Django.
 
 * Used to resize my images
 
+<hr>
+
 ## Testing
 
-I used W3C Mark-up Validation and W3C CSS Validation to validate my html and css code. Unfortunately the W3C Validator for HTML does not understand the Jinja templating syntax, so it therefore shows a lot of errors with regards to {{ variables }}, {% for %} {% endfor %}, etc. Aside from the Jinja warnings and errors, all of the remaining code is perfectly validating
+<hr>
+
+Manual testing was my preferred choice for this project as it has been the case with all my projects.
+
+The website has been tested across multiple browsers and on mobile devices to ensure compatibility and responsiveness of the site. Continuous testing for this application was carried out throughout the entire lifetime of the build. This was achieved through Chrome Devtools and it was used constantly to test on as many devices as possible from Android to Apple phones & tablet dimensions, and also larger device sizes. The website was tested constantly throughout the build at home using devices i had on hand.
+
+###### Browsers
+
+- Chrome
+- Firefox 
+- Safari 
+- Microsoft Edge 
+- Opera
+
+As Safari is no longer developed for Windows I used a site known as [LambdaTest](https://accounts.lambdatest.com/register) to run my code in a live view for mac and safari software. It returned a few errors however as this is not official software i cannot be sure the results given are accurate. When I tested my project through chrome and other browsers on this site it showed me errors which i do not have on these browsers when ran locally.
+
+###### Devices
+
+- Samsung Galaxy S10 & S8 
+- Xiaomi Redmi Pro 8
+- Amazon Fire HD 8.
+
+If a bug arose during testing it was dealt with during the build of the project. The build and the fix where then pushed to the repository for the latest changes to take affect on the deployed application via automatic build & deploy function set up in Heroku.
+
+I used W3C Mark-up Validation and W3C CSS Validation to validate my html and css code. Unfortunately the W3C Validator for HTML does not understand the Djangos templating syntax, so it therefore shows a lot of errors with regards to url paths {% url 'example' %} {{ variables }}, {% block %} {% endblock %}, etc. Aside from the these warnings and errors, all of the remaining code is perfectly validating.
+
+I stumbled across this collection of custom Django Extensions where by I could pip install it to the project and add it to the INSTALLED_APPS to enable it for use within the project. Running python manage.py validate_templates command in the terminal allowed me to check all templates for rendering errors of which there were none. Using this coupled with the HTML Validator allowed me to fully check my templates for any errors, if any existed at time of inspection. 
 
 I used JSHint to validate the project's Javascript file which i configured to accept jQuery & ES6 New JS features, It returned 0 warnings.
 
 I used PEP8 online to make sure my Python files are compliant to current standards.
 
+###### Manual Testing Log:
+
+The log provided below also answers user stories from above.
+
+| Functionality      | Browser | Pass / Fail    |
+| :---        |    :----:   |          ---: |
+|User can open application via Heroku deployed link?|Chrome/Opera/Edge/Safari/FireFox	| Pass |
+|Homepage loads for the user|Chrome/Opera/Edge/Safari/FireFox| Pass|
+|Favicon loads in browser tab| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|All nav links operate correctly|Chrome/Opera/Edge/Safari/FireFox| Pass |
+|All buttons operate correctly| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Jersey category cards bring the user to the correct category| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Carousel images display and operate correctly| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Users can browse the store and display the product details page| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|User can add items to the shopping bag| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|User can updated quantity and remove products from the bag| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|User can register for account using the form| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Once registered the user can login to view their personal dashboard| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Logged in users can leave reviews on products purchased| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Logged in users can edit their reviews or remove them if they wish| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Toast messages operate as required to inform the user of different actions they have performed| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Public user cannot leave a review if they purchase an item| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Users can contact the store by way of contact form| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Custom error pages show when required (404 & 500)|Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Footer displays correctly|Chrome/Opera/Edge/Safari/FireFox|Pass|
+|User can checkout successfully| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|All form fields behave as expected| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Toast messages operate as required to inform the user of different actions they have performed| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Admin can add or remove products to the store as required| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|A public or logged in user cannot add or remove products to the store| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Admin can access the dashboard and view messages submitted from the contact form| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Users can view our FAQ, Privacy Policy and Terms & conditions pages in the footer| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Logged in users can logout successfully| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Reset password link operates as expected| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|The site scales up and down depending on viewing device| Chrome/Opera/Edge/Safari/FireFox|Pass|
+
+###### Lighthouse Report
+
+I ran the lighthouse report to check the performance of my site and accessibility for screen readers see reports below:
+
+###### Desktop
+
+<p align="center">
+  <img width="450" height="175" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/Desktop-LighthouseReport.jpg">
+</p>
+
+###### Mobile
+
+<p align="center">
+  <img width="450" height="175" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/Mobile-LighthouseReport.jpg">
+</p>
+
+<hr>
+
+### Known Issues
+
+I found a couple of css issues with regards to some browsers i tested. These are layed out below.
+
+###### Mozilla Firefox
+
+1. Not all hr elements take on the color effects i implemented.
+2. My product reviews star field is not coloured.
+3. My dropshadow effect on the contact form did not take effect on this browser.
+
+I have not found any other issues.
+
+<a href="#">Back to top</a>
+
 ## Deployment
+
+<hr>
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
@@ -653,15 +752,25 @@ In particular, you should provide all details of the differences between the dep
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
+<a href="#">Back to top</a>
+
 
 ## Credits
+
+<a href="#">Back to top</a>
 
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
+<a href="#">Back to top</a>
+
 ### Media
 - The photos used in this site were obtained from ...
+
+<a href="#">Back to top</a>
 
 ### Acknowledgements
 
 - I received inspiration for this project from X
+
+<a href="#">Back to top</a>
