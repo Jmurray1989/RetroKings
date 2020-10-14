@@ -26,13 +26,13 @@ Please ensure when testing payments in this application to use the Stripe test c
 
 <hr>
 
-[Back to top]()
+<a href="#">Back to top</a>
 
 ## Table Of Contents
 
 <hr>
 
-[Back to top]()
+<a href="#">Back to top</a>
 
 ## UX
 
@@ -83,7 +83,7 @@ The business goals of RetroKings:
 
 10. As a user I want to view the site from any device (mobile, tablet, desktop).
 
-[Back to top]()
+<a href="#">Back to top</a>
 
 ## Design
  
@@ -140,9 +140,13 @@ Wireframing for this project began with Pen and paper as all my projects tend to
 
 Each element was structurally planned out at this stage and even during the physical build of the application there was not much deviation from the original planning. Each page was rendered as a wireframe in all viewport sizes to show the difference between them and to show how the elements would react to differing viewport sizes.
 
-[Back to top]()
+<a href="#">Back to top</a>
+
+<hr>
 
 ## Features
+
+<hr>
 
 This section will outline all the features of RetroKings implemented by page.
 
@@ -190,7 +194,10 @@ The navbar links feature in the centre of the navbar itself. I have 4 links in t
 - Special Offers (When clicked dropdown appears to show an option to view the stores clearance items).
 
 Intuitive navigation fixed to the top of the the page that resizes for mobile devices with the hamburger icon. When pressed it expands to show the other navigable pages. On desktop when the user hovers over the nav-links the icon changes so that will show the user that this is interact-able and something will happen when clicked.
- 
+
+###### Custom Scrollbar
+
+I created a custom scrollbar for my site to give it another level of customization and to move away from the standard scrollbar you see on most sites. This is also a new feature i implemented for this project as i have not incorporated this on any previous milestone projects.
  
 ###### Footer
 
@@ -391,35 +398,249 @@ The checkout page features a checkout form on the left and on the right again it
 </p>
  
 ### Features Left to Implement
-- Another feature idea
+
+These are a list of future features i would like to incorporate into the site. Unfortunately due to the time constraints placed on me during the course i did not have enough time to complete the list below.
+
+###### Social Sign Up
+
+- On the register page i would like to give the user the option to login with their social account details.
+
+To implement this idea i would go to the Facebook developers page and create my app to link with Facebook. Django allauth comes pre-installed with templates for setting up social login.
+
+###### Discount Codes
+
+- I'd like to include a field for customers to enter discount codes that adjust the final cost of the shopping cart.
+
+###### Two Step verification
+
+- With cyber crime on the rise this is a new trend that a lot of social providers and banks are using so i would like to implement this as an added layer of security for the users of my site.
+
+###### User Rating
+
+- I have implemented user reviews on the site to include a star rating system. I would like to take this information so everytime a user leaves a review on a product an average rating would appear based on that review.
+
+To implement this idea would be quite complex and a challenge i would like to take on. The steps below are how i believe i would achieve this feature.
+- Once a review has been saved
+- Pull reviews of product from reviews DB
+- Find the sum of all of the reviews
+- Divide the sum by the number of reviews of product
+- Write this number into the review field of the ProductModel
+
+<a href="#">Back to top</a>
+
+<hr>
+
+## Database
+
+<hr>
+
+The database used for this Project was Postgres, as an Installed add-on to the deployed Heroku Application. During development in gitpod Sqlite3 was used to test the User Authentication, Registration & Login, and for testing the creation of products and reviews for the store. On deployment Postgres was used from that point on.
+
+### Database Models
+
+When each app and its models were created and implemented, python manage.py makemigrations was run in the terminal to create the initial model package and python manage.py migrate was then used to apply the model to the database and create the table.
+
+All models were created with Django's ability to auto-assign a Primary Key (ID).
+
+###### User Model
+
+The User model used is the standard one provided by Django.
+
+###### Category Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+| Name        | max_length=250     | Charfield   |
+|Friendly Name|models.CharField(max_length=254, blank=True)             | Charfield      |
+
+###### Product Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+| Category        | null=True, blank=True, on_delete=models.SET_NULL     | ForeignKey   |
+| Sku        | max_length=254, blank=True     | Charfield   |
+|Name|max_length=254             | Charfield      |
+| Description       | blank    | TextField  |
+|Has Sizes| blank | BooleanField     |
+| Price        | max_digits=6, decimal_places=2     | DecimalField   |
+|Rating|max_digits=6,decimal_places=2, null=True, blank=True | DecimalField      |
+| Image Url        | max_length=1024, blank=True     | UrlField   |
+|Image|blank=True | Image Field      |
+
+###### Order Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+|Order Number|max_length=32, null=False, editable=False| Charfield   |
+|User Profile|on_delete=models.SET_NULL,null=True, blank=True, related_name='orders'|ForeignKey|
+|Full Name|max_length=50, null=False, blank=False| Charfield   |
+|Email|max_length=254, null=False, blank=False|EmailField|
+|Phone Number |max_length=20, null=False, blank=False| Charfield   |
+|Country|blank_label='Country *', null=False, blank=False|CoutryField|
+|Postcode|max_length=20, blank=True| Charfield   |
+|Town or City|max_length=40, null=False, blank=False| Charfield      |
+|Street Address 1|max_length=80, null=False, blank=False| Charfield   |
+|Street Address 2|max_length=80, blank=True| Charfield      |
+|County|max_length=80, blank=True| Charfield   |
+|Date|auto_now_add=True| DateTimeField |
+|Delivery Cost|max_digits=6, decimal_places=2, null=False, default=0| DecimalField   |
+|Order Total|max_digits=10, decimal_places=2, null=False, default=0| DecimalField      |
+|Grand Total|max_digits=10, decimal_places=2, null=False, default=0	| DecimalField  |
+|Original Bag|null=False, blank=False, default=''| TextField|
+|Stripe Pid|max_length=254, null=False, blank=False, default=''| Charfield      |
+
+###### Order Item Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+|Order|null=False, blank=False, on_delete=models.CASCADE,related_name='lineitems'| ForeignKey  |
+|Product|null=False, blank=False, on_delete=models.CASCADE| ForeignKey |
+|Product Size| max_length=2, blank=True XS, S, M, L, XL| CharField   |
+|Quantity | null=False, blank=False, default=0 | IntegerField |
+|Line Item Total| max_digits=6, decimal_places=2, null=False, blank=False, editable=False|Decimal Field|
+
+###### Review Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+| Product     |on_delete=models.CASCADE, null=True, blank=True, related_name="reviews"| ForeignKey  |
+|User         |on_delete=models.CASCADE,null=True, blank=True, related_name="reviews"            | ForeignKey |
+|Comment      | max_length=1000, blank=True| TextField   |
+|Rating| default=1 | IntegerField |
+
+###### Contact Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+| Name        | max_length=200    | Charfield   |
+|Message|max_length=200, blank=True| TextField      |
+| Email        | max_length=200    | EmailField   |
+|Contact Date|default=datetime.now, blank=True)| DateTimeField      |
+|User Id|null=True, on_delete=models.CASCADE| ForeignKey     |
+
+<a href="#">Back to top</a>
+
+<hr>
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+<hr>
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+###### Languages, Frameworks, Libraries & Version Control:
 
+###### HTML, CSS, JS & Python
+
+* core languages used to create this multi-page CRUD application.
+
+[Django](https://www.djangoproject.com/)  
+
+* Used as the architectural engine following the model-template-view approach.
+
+[Sqlite3](https://www.sqlite.org/index.html) 
+
+* Database used in development comes preinstalled with Django.
+
+[PostgreSQL](https://www.postgresql.org/)
+
+* A free and open-source relational database management.
+
+[Django Aullauth](https://django-allauth.readthedocs.io/en/latest/)
+
+* Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication.
+
+[Bootstrap](https://getbootstrap.com/)
+
+* Used as the core structuring layout for the application, ensuring mobile-first design and screen size fluidity.
+
+[Bootstrap's Imported Javascript & JQuery](https://getbootstrap.com/)
+
+* For the Responsive Navbar expand & collapse functionality.
+
+[Gitpod](https://gitpod.io/)
+
+* IDE of choice for this project.
+
+[Github](https://github.com/)
+
+* Used to host the repository of all previous versions of the build and linked to Heroku to push the latest changes to the deployed build version held there.
+
+[Heroku](https://id.heroku.com/login)
+
+* A cloud platform as a service enabling deployment for this application.
+
+[Stripe](https://stripe.com/en-ie)
+
+* Used to handle checkout payments.
+
+###### Tools Used:
+
+[Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+
+* Used to test the application's functionality, the responsiveness, and the CSS visualisation.
+
+[Balsamiq](https://balsamiq.com/wireframes/)
+
+* Used for the creation of my pre-build wireframes showing the main elements and differences in size of same through small to large screen sizes.
+
+[Favicon Generator](https://www.favicon-generator.org/)
+
+* Used to create favicon from custom Logo I created for the project.
+
+[W3C Mark-up Validation](https://validator.w3.org/) and [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+
+* Used to check the validity and efficiency of my code.
+
+[JSHint](https://jshint.com/)
+
+* Using JSHint to validate the project's Javascript
+
+[Django Extensions Plugin](https://django-extensions.readthedocs.io/en/latest/)
+
+* For validating my templates for any jinja rendering errors.
+
+[Autoprefixer CSS Online](https://autoprefixer.github.io/)
+
+* Used to check for possible webkits required in the applications stylesheet ensuring Cross-browser support.
+
+[PEP 8 Online Validator](http://pep8online.com/)
+
+* To validate my python code to be consistent with PEP8 requirements.
+
+[AWS S3](https://aws.amazon.com/?nc2=h_lg)
+
+* Used to store external media and static files.
+
+[Font Awesome Icons](https://fontawesome.com/)
+
+* For social icons used in Footer and Iconography present throughout site.
+
+[Adobe Colour Picker](https://color.adobe.com/create/color-wheel)
+
+* Helped me to choose the colour scheme of the website.
+
+[Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html?gclid=CjwKCAjww5r8BRB6EiwArcckC_fXdr_HQcxAW69oogvaq1DMY2UcB9-u8qhJEkKpt02pvonpc1YtlhoCMJgQAvD_BwE&sdid=88X75SKS&mv=search&ef_id=CjwKCAjww5r8BRB6EiwArcckC_fXdr_HQcxAW69oogvaq1DMY2UcB9-u8qhJEkKpt02pvonpc1YtlhoCMJgQAvD_BwE:G:s&s_kwcid=AL!3085!3!441704131147!e!!g!!photoshop!1423511192!58810496314)
+
+* Used to crop, re-size, editing and to custom create my images.
+
+[Image Background Remover](https://www.remove.bg/)
+
+* Used to remove the backgrounds of my jersey images.
+
+[Google Fonts](https://fonts.google.com/)
+
+* Helped me to choose the font for my site.
+
+[Tinypng](https://tinypng.com/)
+
+* Used to resize my images
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+I used W3C Mark-up Validation and W3C CSS Validation to validate my html and css code. Unfortunately the W3C Validator for HTML does not understand the Jinja templating syntax, so it therefore shows a lot of errors with regards to {{ variables }}, {% for %} {% endfor %}, etc. Aside from the Jinja warnings and errors, all of the remaining code is perfectly validating
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+I used JSHint to validate the project's Javascript file which i configured to accept jQuery & ES6 New JS features, It returned 0 warnings.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+I used PEP8 online to make sure my Python files are compliant to current standards.
 
 ## Deployment
 
