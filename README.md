@@ -55,7 +55,7 @@ Please ensure when testing payments in this application to use the Stripe test c
   * [Deployment](#deployment)
   * [Credits](#credits)
 
-<a href="#table-of-contents">Back to top</a>
+<a href="#">Back to top</a>
 
 <hr>
 
@@ -166,7 +166,7 @@ Wireframing for this project began with Pen and paper as all my projects tend to
 
 Each element was structurally planned out at this stage and even during the physical build of the application there was not much deviation from the original planning. Each page was rendered as a wireframe in all viewport sizes to show the difference between them and to show how the elements would react to differing viewport sizes.
 
-<a href="#">Back to top</a>
+<a href="#table-of-content">Back to top</a>
 
 <hr>
 
@@ -260,7 +260,7 @@ Below the category cards i have an image carousel displaying old photographs of 
 
 The login page itself was kept simple with some text and two input fields where the user must input there log in details of username or email & password. It also has two buttons 'Home' & 'Sign In' coloured in the theme of the site. Both buttons also contain a hover effect to indicate they are interactable to the user.
 
-###### Log in form
+###### Log In Form
 
 - A user who is registered can log in using their username and password.
 - The form was created using Django Crispy Forms.
@@ -336,7 +336,7 @@ Toast notifications are used across the site to give the user feedback in variou
 
 The user profile dashboard contains the default deliver information for the user while showing their order history on the right hand side.
 
-###### Billing details
+###### Billing Details
 
 - The users profile page can only be accessed by a logged in user.
 - The account page contains the user's billing information that they can edit and update. This billing information will automatically be included in the checkout process to save time for the user.
@@ -384,7 +384,7 @@ When a user adds an item to their cart, a toast notification displays with the i
 
 The checkout page features a checkout form on the left and on the right again it shows them their order summary in a detailed view with pictures etc.
 
-###### Checkout form
+###### Checkout Form
 
 - The checkout page features a form that needs to be filled out by the user.
 - If this is a logged in user's first time to check out, they need to fill out their billing information.
@@ -396,7 +396,7 @@ The checkout page features a checkout form on the left and on the right again it
 - Payment is handled though the secure Stripe API.
 - Once a user clicks to buy, a custom loader appears while the payment is processing and if a successful payment is made, the user is taken to the checkout success page.
 
-###### Checkout success
+###### Checkout Success
 
 - An order confirmation email is then sent to the email provided by the user which contains all the information of their purchase(s).
 - The checkout success page gives the customer all their order information.
@@ -407,7 +407,7 @@ The checkout page features a checkout form on the left and on the right again it
  
  The contact page features a form where by the user con contact the store if they have any queries that cannot be answered by our FAQ section. The make the contact form standout from the back is used a dropshadow effect in the colour gold keeping in with the color scheme of the site which can be viewed [here]().
  
-###### Contact form
+###### Contact Form
 
 - The contact page contains a form for the user to fill in to send to the store admin.
 - Name, email address and message have all been set to required fields.
@@ -415,7 +415,7 @@ The checkout page features a checkout form on the left and on the right again it
 - This message can be checked by logging in to the admin area. Preview it [here](https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/contact-form.jpg).
 - After the user submits the form a 'Thank You' message is displayed informing them we will be in touch soon and that they can continue to shop our store by clicking on the 'Take Me Shopping' button while they wait.
 
-###### Toast notification
+###### Toast Notification
 
 - When a contact form has been successfully submitted, the user is notified via toast message.
 
@@ -456,7 +456,7 @@ To implement this idea would be quite complex and a challenge i would like to ta
 
 - The Retrokings store would like to offer even more products in the future starting with a range of retro headwear.
 
-<a href="#">Back to top</a>
+<a href="#table-of-content">Back to top</a>
 
 <hr>
 
@@ -548,7 +548,7 @@ The User model used is the standard one provided by Django.
 |Contact Date|default=datetime.now, blank=True)| DateTimeField      |
 |User Id|null=True, on_delete=models.CASCADE| ForeignKey     |
 
-<a href="#">Back to top</a>
+<a href="#table-of-content">Back to top</a>
 
 
 <hr>
@@ -665,6 +665,8 @@ The User model used is the standard one provided by Django.
 
 * Used to resize my images
 
+<a href="#table-of-content">Back To Top</a>
+
 <hr>
 
 ## Testing
@@ -769,7 +771,7 @@ I found a couple of css issues with regards to some browsers i tested. These are
 I have not found any other issues.
 
 
-<a href="#">Back to top</a>
+<a href="#table-of-content">Back to top</a>
 
 <hr>
 
@@ -899,7 +901,7 @@ To clone the repository the steps below must be taken:
 
 6. Paste the Git URL https://github.com/Jmurray1989/RetroKings.git and click "Ok".
 
-<a href="#">Back to top</a>
+<a href="#table-of-content">Back to top</a>
 
 <hr>
 
@@ -929,14 +931,14 @@ To clone the repository the steps below must be taken:
 - Terms and conditions page referenced from [Asos](https://www.asos.com/terms-and-conditions/).
 - Privacy policy page referenced from [Policy Maker](https://policymaker.io/).
 
-<a href="#">Back to top</a>
+<a href="#table-of-content">Back to top</a>
 
 ### Media
 
 - Logo & background images are custom designs by me. Created using photoshop as explained above.
 - Jersey images where taken from various sources like [Fanatics](https://www.fanatics.com/), [Mitchell & Ness](https://www.mitchellandness.com/) and [Google Images](https://www.google.com/imghp?hl=EN). As these images where used for educational purposes and not for profit i was made aware that it may not be neccessary to ask for permission.
 
-<a href="#">Back to top</a>
+<a href="#table-of-content">Back to top</a>
 
 ### Acknowledgements
 
