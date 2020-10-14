@@ -33,7 +33,6 @@ Please ensure when testing payments in this application to use the Stripe test c
 - [RetroKings](#retrokings)
   * [Introducing you to](#introducing-you-to)
   * [The Idea](#the-idea)
-  * [Table Of Contents](#table-of-contents)
   * [UX](#ux)
   * [Design](#design)
   * [Wireframes](#wireframes)
@@ -56,7 +55,7 @@ Please ensure when testing payments in this application to use the Stripe test c
   * [Deployment](#deployment)
   * [Credits](#credits)
 
-<a href="#">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -110,7 +109,7 @@ The business goals of RetroKings:
 
 10. As a user I want to view the site from any device (mobile, tablet, desktop).
 
-<a href="#">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 ## Design
  
