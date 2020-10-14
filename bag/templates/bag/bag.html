@@ -75,8 +75,8 @@
                                 </div>
 						</div>
 					</form>
-                    <button class="btn update-link float-left text-dark"><small><i class="fas fa-sync-alt"></i> Update</small></button>
-                    <button class="btn remove-item float-right text-black" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small><i class="far fa-trash-alt"></i> Remove</small></button>
+                    <button class="btn update-link float-left text-dark" aria-label="update"><small><i class="fas fa-sync-alt"></i> Update</small></button>
+                    <button class="btn remove-item float-right text-black" aria-label="remove" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small><i class="far fa-trash-alt"></i> Remove</small></button>
 				</div>
 		    </div>
             {% endfor %}
@@ -93,7 +93,7 @@
 						more!
 					</p>
 					{% endif %}
-					<a href="{% url 'checkout' %}" class="btn btn-gold rounded-0 btn-lg mt-4">
+					<a href="{% url 'checkout' %}" aria-label="checkout" class="btn btn-gold rounded-0 btn-lg mt-4">
 						<span class=""><i class="fas fa-lock mr-2"></i> Secure Checkout</span>
 					</a>
 				</div>
@@ -104,7 +104,7 @@
 	
 		{% else %}
 		<p class="lead mb-5">Your bag is empty.</p>
-      <a href="{% url 'products' %}" class="btn btn-gold rounded-0 btn-lg">
+        <a href="{% url 'products' %}" class="btn btn-gold rounded-0 btn-lg">
         <span class="icon">
           <i class="fas fa-chevron-left"></i>
         </span>
@@ -115,7 +115,7 @@
 </div>
 
 <div class="btt-button mx-auto mt-5">
-    <a class="btt-link d-flex h-100">
+    <a class="btt-link d-flex h-100" aria-label="back-to-top">
         <i class="fas fa-arrow-up mx-auto my-auto"></i>
     </a>	
 </div>

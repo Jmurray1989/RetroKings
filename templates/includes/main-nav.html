@@ -3,7 +3,7 @@
 		<li class="nav-item">
 			<a class="logo-font font-weight-bold nav-link text-black mr-5 ml-1"
 				href="{% url 'products' %}?category=baseball,americanfootball,intsoccer,clubsoccer,basketball,icehockey"
-				id="all-products-link" aria-expanded="false">
+				id="all-products-link" aria-label="products" aria-expanded="false">
 				All Jerseys
 			</a>
 		</li>
@@ -13,37 +13,37 @@
 				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Sports
 			</a>
-			<div class="dropdown-menu border-0" aria-labelledby="sport-link">
-				<a href="{% url 'products' %}?category=baseball" class="dropdown-item">Baseball</a>
-				<a href="{% url 'products' %}?category=americanfootball" class="dropdown-item">American Football</a>
-				<a href="{% url 'products' %}?category=intsoccer" class="dropdown-item">International Soccer</a>
-				<a href="{% url 'products' %}?category=clubsoccer" class="dropdown-item">Club Soccer</a>
-				<a href="{% url 'products' %}?category=basketball" class="dropdown-item">Basketball</a>
-				<a href="{% url 'products' %}?category=icehockey" class="dropdown-item">Ice Hockey</a>
+			<div class="dropdown-menu border-0" aria-labelledby="Sports">
+				<a href="{% url 'products' %}?category=baseball" aria-label="baseball" class="dropdown-item">Baseball</a>
+				<a href="{% url 'products' %}?category=americanfootball" aria-label="americanfootball" class="dropdown-item">American Football</a>
+				<a href="{% url 'products' %}?category=intsoccer" aria-label="Internationalsoccer" class="dropdown-item">International Soccer</a>
+				<a href="{% url 'products' %}?category=clubsoccer" aria-label="clubsoccer" class="dropdown-item">Club Soccer</a>
+				<a href="{% url 'products' %}?category=basketball" aria-label="basketball" class="dropdown-item">Basketball</a>
+				<a href="{% url 'products' %}?category=icehockey" aria-label="icehockey" class="dropdown-item">Ice Hockey</a>
 			</div>
 		</li>
 
 		<li class="nav-item dropdown">
 			<a class="logo-font font-weight-bold nav-link text-black mr-5 ml-1" href="#" id="headwear-link"
-				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				data-toggle="dropdown" aria-label="headwear" aria-haspopup="true" aria-expanded="false">
 				Headwear</a>
-			<div class="dropdown-menu border-0" aria-labelledby="brands-link">
-                <a href="#" class="dropdown-item">All Headwear
+			<div class="dropdown-menu border-0">
+                <a href="#" class="dropdown-item" aria-label="headwear">All Headwear
                  <span class="badge badge-secondary">Coming Soon...</span></a>
-				<a href="#" class="dropdown-item">New Era
+				<a href="#" class="dropdown-item" aria-label="newera">New Era
                 <span class="badge badge-secondary">Coming Soon...</span></a>
-				<a href="#" class="dropdown-item">Mitchell & Ness
+				<a href="#" class="dropdown-item" aria-label="mitchellandness">Mitchell & Ness
                 <span class="badge badge-secondary">Coming Soon...</span></a>
 			</div>
 		</li>
 
 		<li class="nav-item dropdown">
 			<a class="logo-font font-weight-bold nav-link text-black ml-1" href="#" id="specials-link" data-toggle="dropdown"
-				aria-haspopup="true" aria-expanded="false">
+				aria-label="specials" aria-haspopup="true" aria-expanded="false">
 				Special Offers
 			</a>
-			<div class="dropdown-menu border-0" aria-labelledby="specials-link">
-				<a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+			<div class="dropdown-menu border-0">
+				<a href="{% url 'products' %}?category=clearance" aria-label="clearance" class="dropdown-item">Clearance</a>
 			</div>
 		</li>
 	</ul>

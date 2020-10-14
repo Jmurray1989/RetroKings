@@ -37,13 +37,14 @@
         NHL and More.
       </p>
 
-      <h4>
+      <div id="shop-all-button">
         <a
           href="{% url 'products'%}"
+          aria-label="shop all"
           class="shop-all-btn btn btn-lg rounded text-uppercase font-weight-bold py-3"
           >Shop All</a
         >
-      </h4>
+      </div>
 
       <hr class="w-50">
 
@@ -62,7 +63,7 @@
           class="card-img"
           alt="int-jersey"
       /></a>
-      <h5 class="text-center">International Soccer Jerseys</h5>
+      <div class="text-center jersey-header" id="international-jerseys">International Soccer Jerseys</div>
     </div>
     <div class="card img-hover-zoom">
       <a href="{% url 'products' %}?category=clubsoccer">
@@ -71,7 +72,7 @@
           class="card-img"
           alt="club-jersey"
       /></a>
-      <h5 class="text-center">Club Soccer Jerseys</h5>
+      <div class="text-center jersey-header" id="club-soccer-jerseys">Club Soccer Jerseys</div>
     </div>
     <div class="card img-hover-zoom">
       <a href="{% url 'products' %}?category=baseball">
@@ -80,7 +81,7 @@
           class="card-img"
           alt="mlb-jersey"
       /></a>
-      <h5 class="text-center">Baseball Jerseys</h5>
+      <div class="text-center jersey-header" id="baseball-jerseys">Baseball Jerseys</div>
     </div>
   </div>
 
@@ -94,7 +95,7 @@
           class="card-img"
           alt="nhl-jersey"
       /></a>
-      <h5 class="text-center jersey-header">Ice Hockey Jerseys</h5>
+      <div class="text-center jersey-header" id="ice-hockey-jersey">Ice Hockey Jerseys</div>
     </div>
     <div class="card img-hover-zoom">
       <a href="{% url 'products' %}?category=americanfootball">
@@ -103,7 +104,7 @@
           class="card-img"
           alt="nfl-jersey"
       /></a>
-      <h5 class="text-center jersey-header">American Football Jerseys</h5>
+      <div class="text-center jersey-header" id="american-football-jersey">American Football Jerseys</div>
     </div>
     <div class="card img-hover-zoom">
       <a href="{% url 'products' %}?category=basketball">
@@ -112,7 +113,7 @@
           class="card-img"
           alt="nba-jersey"
       /></a>
-      <h5 class="text-center jersey-header">Basketball Jerseys</h5>
+      <div class="text-center jersey-header" id="basketball-jersey">Basketball Jerseys</div>
     </div>
   </div>
 </div>
@@ -126,7 +127,7 @@
 >
   <!--Header-->
 
-  <h6 class="carousel-header text-center">Relive The Magic</h6>
+  <div class="carousel-header text-center">Relive The Magic</div>
 
   <hr class="w-25 hr-carousel-header" />
 
