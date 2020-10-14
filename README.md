@@ -426,6 +426,10 @@ To implement this idea would be quite complex and a challenge i would like to ta
 - Divide the sum by the number of reviews of product
 - Write this number into the review field of the ProductModel
 
+###### Headwear / More Products
+
+- The Retrokings store would like to offer even more products in the future starting with a range of retro headwear.
+
 <a href="#">Back to top</a>
 
 <hr>
@@ -738,7 +742,10 @@ I found a couple of css issues with regards to some browsers i tested. These are
 
 I have not found any other issues.
 
+
 <a href="#">Back to top</a>
+
+<hr>
 
 ## Deployment
 
@@ -874,7 +881,9 @@ To clone the repository the steps below must be taken:
 
 <hr>
 
-###### Code Institute - Stripe Setup
+#### Code
+
+###### Code Institute Course Videos
 
 - Without the amazing Code Institute and Chris Zielinski videos, this project would not have been possible. While every attempt has been made to make this website my own, some elements and code may remain the same.
 
@@ -882,24 +891,39 @@ To clone the repository the steps below must be taken:
 
 - [Brad Traversy](https://www.udemy.com/course/python-django-dev-to-deployment/) course for assisting me with the contact page.
 
-###### Reviews
+###### Product Reviews
 
 - Review product implementation for my product details page was sourced and amended to meet my projects needs from CI student's [Stevo Github repository](https://github.com/nemixu/Milestone4/).
 
 <a href="#">Back to top</a>
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
+- Product detail information was taken from [Fanatics](https://www.fanatics.com/) & [Mitchell & Ness](https://www.mitchellandness.com/).
+- Terms and conditions page referenced from [Asos](https://www.asos.com/terms-and-conditions/).
+- Privacy policy page referenced from [Policy Maker](https://policymaker.io/).
 
 <a href="#">Back to top</a>
 
 ### Media
-- The photos used in this site were obtained from ...
+
+- Logo & background images are custom designs by me. Created using photoshop as explained above.
+- Jersey images where taken from various sources like [Fanatics](https://www.fanatics.com/), [Mitchell & Ness](https://www.mitchellandness.com/) and [Google Images](https://www.google.com/imghp?hl=EN). As these images where used for educational purposes and not for profit i was made aware that it may not be neccessary to ask for permission.
 
 <a href="#">Back to top</a>
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+##### Special Thanks & Acknowledgements:
+
+Those in Slack, Tutor Support, and my Mentor Gerard McBride for assisting with me with countless queries since starting on this journey until now. Huge thanks to those in the Slack who helped me with my queries when i posted them.
+
+This course has been a huge challenge, one which i have enjoyed thoroughly and sad it has come to an end but I am very much looking forward to working on new projects and working on developing new skills in the future to further develop the knowledge i have gained through this course. I am excited for all the possibilities that programming can give me.
+
+###### Disclaimer: This project was created for educational use only as part of the Code Institute Full Stack Software Development Course for Milestone 4 Grading!
+
+<p align="center">
+  <img width="350" height="350" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/logo/RetroKingsLogo.png">
+</p>
 
 <a href="#">Back to top</a>
