@@ -424,6 +424,84 @@ To implement this idea would be quite complex and a challenge i would like to ta
 
 <a href="#">Back to top</a>
 
+## Database
+
+The database used for this Project was Postgres, as an Installed add-on to the deployed Heroku Application. During development in gitpod Sqlite3 was used to test the User Authentication, Registration & Login, and for testing the creation of products and reviews for the store. On deployment Postgres was used from that point on.
+
+### Database Models
+
+When each app and its models were created and implemented, python manage.py makemigrations was run in the terminal to create the initial model package and python manage.py migrate was then used to apply the model to the database and create the table.
+
+All models were created with Django's ability to auto-assign a Primary Key (ID).
+
+###### User Model
+
+The User model used is the standard one provided by Django.
+
+###### Category Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+| Name        | max_length=250     | Charfield   |
+|Friendly Name|models.CharField(max_length=254, blank=True)             | Charfield      |
+
+###### Product Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+| Category        | null=True, blank=True, on_delete=models.SET_NULL     | ForeignKey   |
+| Sku        | max_length=254, blank=True     | Charfield   |
+|Name|max_length=254             | Charfield      |
+| Description       | blank    | TextField  |
+|Has Sizes| blank | BooleanField     |
+| Price        | max_digits=6, decimal_places=2     | DecimalField   |
+|Rating|max_digits=6,decimal_places=2, null=True, blank=True | DecimalField      |
+| Image Url        | max_length=1024, blank=True     | UrlField   |
+|Image|blank=True | Image Field      |
+
+###### Order Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+|Order Number|max_length=32, null=False, editable=False| Charfield   |
+|User Profile|on_delete=models.SET_NULL,null=True, blank=True, related_name='orders'|ForeignKey|
+|Full Name|max_length=50, null=False, blank=False| Charfield   |
+|Email|max_length=254, null=False, blank=False|EmailField|
+|Phone Number |max_length=20, null=False, blank=False| Charfield   |
+|Country|blank_label='Country *', null=False, blank=False|CoutryField|
+|Postcode|max_length=20, blank=True| Charfield   |
+|Town or City|max_length=40, null=False, blank=False| Charfield      |
+|Street Address 1|max_length=80, null=False, blank=False| Charfield   |
+|Street Address 2|max_length=80, blank=True| Charfield      |
+|County|max_length=80, blank=True| Charfield   |
+|Date|auto_now_add=True| DateTimeField |
+|Delivery Cost|max_digits=6, decimal_places=2, null=False, default=0| DecimalField   |
+|Order Total|max_digits=10, decimal_places=2, null=False, default=0| DecimalField      |
+|Grand Total|max_digits=10, decimal_places=2, null=False, default=0	| DecimalField  |
+|Original Bag|null=False, blank=False, default=''| TextField|
+|Stripe Pid|max_length=254, null=False, blank=False, default=''| Charfield      |
+
+###### Order Item Model
+
+###### Review Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+| Product     |on_delete=models.CASCADE, null=True, blank=True, related_name="reviews"| ForeignKey  |
+|User         |on_delete=models.CASCADE,null=True, blank=True, related_name="reviews"            | ForeignKey |
+|Comment      | max_length=1000, blank=True| TextField   |
+|Rating| default=1 | IntegerField |
+
+###### Contact Model
+
+| Name        | Description | Field Type    |
+| :---        |    :----:   |          ---: |
+| Name        | max_length=200    | Charfield   |
+|Message|max_length=200, blank=True| TextField      |
+| Email        | max_length=200    | EmailField   |
+|Contact Date|default=datetime.now, blank=True)| DateTimeField      |
+|User Id|null=True, on_delete=models.CASCADE| ForeignKey     |
+
 ## Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
