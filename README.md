@@ -24,15 +24,41 @@ Please ensure when testing payments in this application to use the Stripe test c
 - <strong>CV2 number:</strong> Any 3 digits
 - <strong>ZIP:</strong> 42424
 
-<hr>
-
 <a href="#">Back to top</a>
+
+<hr>
 
 ## Table Of Contents
 
-<hr>
+- [RetroKings](#retrokings)
+  * [Introducing you to](#introducing-you-to)
+  * [The Idea](#the-idea)
+  * [UX](#ux)
+  * [Design](#design)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+    + [Base Template](#base-template)
+    + [🏠 Home Page](#---home-page)
+    + [📝 Sign Up Page](#---sign-up-page)
+    + [🔑 Login Page](#---login-page)
+    + [🏬 Products Page](#---products-page)
+    + [📃 Products Detail Page](#---products-detail-page)
+    + [⭐ User Reviews](#--user-reviews)
+    + [👤 User Profile Dashboard](#---user-profile-dashboard)
+    + [👜 Shopping Bag](#---shopping-bag)
+    + [💳 Checkout Page](#---checkout-page)
+    + [📧 Contact Page](#---contact-page)
+    + [Features Left to Implement](#features-left-to-implement)
+  * [Database](#database)
+  * [Technologies Used](#technologies-used)
+  * [Testing](#testing)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
 
 <a href="#">Back to top</a>
+
+<hr>
+
 
 ## UX
 
@@ -83,7 +109,7 @@ The business goals of RetroKings:
 
 10. As a user I want to view the site from any device (mobile, tablet, desktop).
 
-<a href="#">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 ## Design
  
@@ -140,7 +166,7 @@ Wireframing for this project began with Pen and paper as all my projects tend to
 
 Each element was structurally planned out at this stage and even during the physical build of the application there was not much deviation from the original planning. Each page was rendered as a wireframe in all viewport sizes to show the difference between them and to show how the elements would react to differing viewport sizes.
 
-<a href="#">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -234,7 +260,7 @@ Below the category cards i have an image carousel displaying old photographs of 
 
 The login page itself was kept simple with some text and two input fields where the user must input there log in details of username or email & password. It also has two buttons 'Home' & 'Sign In' coloured in the theme of the site. Both buttons also contain a hover effect to indicate they are interactable to the user.
 
-###### Log in form
+###### Log In Form
 
 - A user who is registered can log in using their username and password.
 - The form was created using Django Crispy Forms.
@@ -310,7 +336,7 @@ Toast notifications are used across the site to give the user feedback in variou
 
 The user profile dashboard contains the default deliver information for the user while showing their order history on the right hand side.
 
-###### Billing details
+###### Billing Details
 
 - The users profile page can only be accessed by a logged in user.
 - The account page contains the user's billing information that they can edit and update. This billing information will automatically be included in the checkout process to save time for the user.
@@ -358,7 +384,7 @@ When a user adds an item to their cart, a toast notification displays with the i
 
 The checkout page features a checkout form on the left and on the right again it shows them their order summary in a detailed view with pictures etc.
 
-###### Checkout form
+###### Checkout Form
 
 - The checkout page features a form that needs to be filled out by the user.
 - If this is a logged in user's first time to check out, they need to fill out their billing information.
@@ -370,7 +396,7 @@ The checkout page features a checkout form on the left and on the right again it
 - Payment is handled though the secure Stripe API.
 - Once a user clicks to buy, a custom loader appears while the payment is processing and if a successful payment is made, the user is taken to the checkout success page.
 
-###### Checkout success
+###### Checkout Success
 
 - An order confirmation email is then sent to the email provided by the user which contains all the information of their purchase(s).
 - The checkout success page gives the customer all their order information.
@@ -381,7 +407,7 @@ The checkout page features a checkout form on the left and on the right again it
  
  The contact page features a form where by the user con contact the store if they have any queries that cannot be answered by our FAQ section. The make the contact form standout from the back is used a dropshadow effect in the colour gold keeping in with the color scheme of the site which can be viewed [here]().
  
-###### Contact form
+###### Contact Form
 
 - The contact page contains a form for the user to fill in to send to the store admin.
 - Name, email address and message have all been set to required fields.
@@ -389,7 +415,7 @@ The checkout page features a checkout form on the left and on the right again it
 - This message can be checked by logging in to the admin area. Preview it [here](https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/contact-form.jpg).
 - After the user submits the form a 'Thank You' message is displayed informing them we will be in touch soon and that they can continue to shop our store by clicking on the 'Take Me Shopping' button while they wait.
 
-###### Toast notification
+###### Toast Notification
 
 - When a contact form has been successfully submitted, the user is notified via toast message.
 
@@ -426,7 +452,11 @@ To implement this idea would be quite complex and a challenge i would like to ta
 - Divide the sum by the number of reviews of product
 - Write this number into the review field of the ProductModel
 
-<a href="#">Back to top</a>
+###### Headwear / More Products
+
+- The Retrokings store would like to offer even more products in the future starting with a range of retro headwear.
+
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -518,7 +548,7 @@ The User model used is the standard one provided by Django.
 |Contact Date|default=datetime.now, blank=True)| DateTimeField      |
 |User Id|null=True, on_delete=models.CASCADE| ForeignKey     |
 
-<a href="#">Back to top</a>
+<a href="#table-of-contents">Back to top</a>
 
 <hr>
 
@@ -526,7 +556,7 @@ The User model used is the standard one provided by Django.
 
 <hr>
 
-###### Languages, Frameworks, Libraries & Version Control:
+##### Languages, Frameworks, Libraries & Version Control:
 
 ###### HTML, CSS, JS & Python
 
@@ -634,34 +664,293 @@ The User model used is the standard one provided by Django.
 
 * Used to resize my images
 
+<a href="#table-of-contents">Back to top</a>
+
+<hr>
+
 ## Testing
 
-I used W3C Mark-up Validation and W3C CSS Validation to validate my html and css code. Unfortunately the W3C Validator for HTML does not understand the Jinja templating syntax, so it therefore shows a lot of errors with regards to {{ variables }}, {% for %} {% endfor %}, etc. Aside from the Jinja warnings and errors, all of the remaining code is perfectly validating
+<hr>
+
+Manual testing was my preferred choice for this project as it has been the case with all my projects.
+
+The website has been tested across multiple browsers and on mobile devices to ensure compatibility and responsiveness of the site. Continuous testing for this application was carried out throughout the entire lifetime of the build. This was achieved through Chrome Devtools and it was used constantly to test on as many devices as possible from Android to Apple phones & tablet dimensions, and also larger device sizes. The website was tested constantly throughout the build at home using devices i had on hand.
+
+###### Browsers
+
+- Chrome
+- Firefox 
+- Safari 
+- Microsoft Edge 
+- Opera
+
+As Safari is no longer developed for Windows I used a site known as [LambdaTest](https://accounts.lambdatest.com/register) to run my code in a live view for mac and safari software. It returned a few errors however as this is not official software i cannot be sure the results given are accurate. When I tested my project through chrome and other browsers on this site it showed me errors which i do not have on these browsers when ran locally.
+
+###### Devices
+
+- Samsung Galaxy S10 & S8 
+- Xiaomi Redmi Pro 8
+- Amazon Fire HD 8.
+
+If a bug arose during testing it was dealt with during the build of the project. The build and the fix where then pushed to the repository for the latest changes to take affect on the deployed application via automatic build & deploy function set up in Heroku.
+
+I used W3C Mark-up Validation and W3C CSS Validation to validate my html and css code. Unfortunately the W3C Validator for HTML does not understand the Djangos templating syntax, so it therefore shows a lot of errors with regards to url paths {% url 'example' %} {{ variables }}, {% block %} {% endblock %}, etc. Aside from the these warnings and errors, all of the remaining code is perfectly validating.
+
+I stumbled across this collection of custom Django Extensions where by I could pip install it to the project and add it to the INSTALLED_APPS to enable it for use within the project. Running python manage.py validate_templates command in the terminal allowed me to check all templates for rendering errors of which there were none. Using this coupled with the HTML Validator allowed me to fully check my templates for any errors, if any existed at time of inspection. 
 
 I used JSHint to validate the project's Javascript file which i configured to accept jQuery & ES6 New JS features, It returned 0 warnings.
 
 I used PEP8 online to make sure my Python files are compliant to current standards.
 
+###### Manual Testing Log:
+
+The log provided below also answers user stories from above.
+
+| Functionality      | Browser | Pass / Fail    |
+| :---        |    :----:   |          ---: |
+|User can open application via Heroku deployed link?|Chrome/Opera/Edge/Safari/FireFox	| Pass |
+|Homepage loads for the user|Chrome/Opera/Edge/Safari/FireFox| Pass|
+|Favicon loads in browser tab| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|All nav links operate correctly|Chrome/Opera/Edge/Safari/FireFox| Pass |
+|All buttons operate correctly| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Jersey category cards bring the user to the correct category| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Carousel images display and operate correctly| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Users can browse the store and display the product details page| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|User can add items to the shopping bag| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|User can updated quantity and remove products from the bag| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|User can register for account using the form| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Once registered the user can login to view their personal dashboard| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Logged in users can leave reviews on products purchased| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Logged in users can edit their reviews or remove them if they wish| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Toast messages operate as required to inform the user of different actions they have performed| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Public user cannot leave a review if they purchase an item| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Users can contact the store by way of contact form| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Custom error pages show when required (404 & 500)|Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Footer displays correctly|Chrome/Opera/Edge/Safari/FireFox|Pass|
+|User can checkout successfully| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|All form fields behave as expected| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Toast messages operate as required to inform the user of different actions they have performed| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Admin can add or remove products to the store as required| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|A public or logged in user cannot add or remove products to the store| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Admin can access the dashboard and view messages submitted from the contact form| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Users can view our FAQ, Privacy Policy and Terms & conditions pages in the footer| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Logged in users can logout successfully| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|Reset password link operates as expected| Chrome/Opera/Edge/Safari/FireFox|Pass|
+|The site scales up and down depending on viewing device| Chrome/Opera/Edge/Safari/FireFox|Pass|
+
+
+##### Lighthouse Report
+
+I ran the lighthouse report to check the performance of my site and accessibility for screen readers see reports below:
+
+###### Desktop
+
+<p align="center">
+  <img width="450" height="175" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/Desktop-LighthouseReport.jpg">
+</p>
+
+###### Mobile
+
+<p align="center">
+  <img width="450" height="175" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/Mobile-LighthouseReport.jpg">
+</p>
+
+<hr>
+
+### Known Issues
+
+I found a couple of css issues with regards to some browsers i tested. These are layed out below.
+
+###### Mozilla Firefox
+
+1. Not all hr elements take on the color effects i implemented.
+2. My product reviews star field is not coloured.
+3. My dropshadow effect on the contact form did not take effect on this browser.
+
+I have not found any other issues.
+
+
+<a href="#table-of-contents">Back to top</a>
+
+<hr>
+
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+<hr>
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+This project was deployed on Heroku: https://retrokings.herokuapp.com/
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+#### Running project locally
 
+Follow the instructions below to run this project in your own Interactive Development Environment (IDE), such as VSCode or PyCharm. Please note: If you use PyCharm as your IDE, this process is easier with a one click installation of Django.
+
+Make sure that the following are installed on your device (this is necessary):
+
+- Python 3
+- PIP
+- Git
+
+You will also need to create free accounts with the following services:
+
+- AWS and set up an S3 bucket
+- Stripe
+
+###### Instructions
+
+Save a copy of the github repository located in this repository by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. 
+
+To install the project's dependencies, it is recommended to create a virtual environment to prevent the dependencies from being installed globally on your system, therefore keeping it in the virtual environment. To create a virtual environment for your project, in the Terminal, in the project's root directory, 
+
+enter:
+
+- python -m venv venv
+
+and then activate the created virtual environment with
+
+- venv\Scripts\activate
+
+Install all requirements to the requirements.txt file using this command:
+
+- pip3 -r requirements.txt
+
+In the IDE terminal, use the following command to launch the Django project: python manage.py runserver
+
+In the root directory of the project, create an env.py file. Immediately store this file in a .gitignore file. This will prevent your sensitive data from being committed and pushed to GitHub.
+
+In your env.py file, set the environment variables as follows:
+
+1. os.environ["AWS_ACCESS_KEY_ID"] = "<your key here>"
+2. os.environ["AWS_SECRET_ACCESS_KEY"] = "<your key here>"
+3. os.environ["AWS_STORAGE_BUCKET_NAME"] = "<your AWS Sbucket name here>"
+4. os.environ["SECRET_KEY"] = "<your secret key here>"
+5. os.environ["STRIPE_PUBLIC_KEY"] = "<your key here>"
+6. os.environ["STRIPE_SECRET_KEY"] = "<your key here>"
+7. os.environ["STRIPE_WH_SECRET"] = "<your key here>"
+  
+Create your superuser to access the django admin panel and database with the following command:
+
+- python3 manage.py createsuperuser
+
+and then follow the steps to add your admin username and password.
+
+You then need to make migrations to create the database schema (outlined above) using the commands as follows:
+
+- python3 manage.py makemigrations
+- python3 manage.py migrate
+
+The application can now be run locally.
+
+#### Deploying to Heroku
+
+Retro Kings was deployed to Heroku by doing the following:
+
+App created on Heroku called retrokings
+Added Heroku Postgres under the resources tab.
+
+In the Heroku dashboard Under the Settings > Reveal Config Vars, entered the following configuration variables:
+
+1. SECRET_KEY	<"your key here">
+2. STRIPE_PUBLIC_KEY	<"your key here">
+3. STRIPE_SECRET_KEY	<"your key here">
+4. STRIPE_WH_SECRET	<"your key here">
+5. AWS_ACCESS_KEY_ID	<"your key here">
+6. AWS_SECRET_ACCESS_KEY	<"your key here">
+7. AWS_STORAGE_BUCKET_NAME	<"your bucket name here">
+8. USE_AWS	"True"
+9. EMAIL_HOST_PASS	<"your app password as generated by Gmail (if you use it)">
+10. EMAIL_HOST_USER	<"your email address that is used to send emails">
+
+Create a requirements.txt file in project so Heroku can install the required dependencies using the command below:
+
+- sudo pip3 freeze --local > requirements.txt
+
+Create a Procfile in the root project folder using the command below:
+
+- web: gunicorn retrokings.wsgi:application
+
+Migrated the database models to the Postgres database on Heroku by running the following commands:
+
+- python3 manage.py makemigrations
+
+- python3 manage.py migrate
+
+Went to 'Deploy' tab on the Heroku dashboard and connected to my project's Github repository.
+
+Selected 'Enable Automatic Deploys' in the 'Automatic Deployment' section and make sure that the Master Branch is selected.
+
+Performed a git push to Github. This also pushed the project to Heroku.
+
+After the build was completed, navigated to the 'Open app' button to open the project in the browser.
+
+Retro Kings was now deployed successfully.
+
+##### Clone Repository
+
+To clone the repository the steps below must be taken:
+
+1. Select the Repository from the Github Dashboard.
+
+2. Click on the "Clone or download" dropdown button which is located beside the Gitpod button to the right.
+
+3. Click on the "clipboard icon" to the right to copy the web URL.
+
+4. Open your preferred Integrated Development Environment (IDE) and navigate to the terminal window.
+
+5. Change the directory to where you want to clone the repository too.
+
+6. Paste the Git URL https://github.com/Jmurray1989/RetroKings.git and click "Ok".
+
+<a href="#table-of-contents">Back to top</a>
+
+<hr>
 
 ## Credits
 
+<hr>
+
+#### Code
+
+###### Code Institute Course Videos
+
+- Without the amazing Code Institute and Chris Zielinski videos, this project would not have been possible. While every attempt has been made to make this website my own, some elements and code may remain the same.
+
+###### Brady Traversy - Contact Page
+
+- [Brad Traversy](https://www.udemy.com/course/python-django-dev-to-deployment/) course for assisting me with the contact page.
+
+###### Product Reviews
+
+- Review product implementation for my product details page was sourced and amended to meet my projects needs from CI student's [Stevo Github repository](https://github.com/nemixu/Milestone4/).
+
+<a href="#table-of-contents">Back to top</a>
+
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
+- Product detail information was taken from [Fanatics](https://www.fanatics.com/) & [Mitchell & Ness](https://www.mitchellandness.com/).
+- Terms and conditions page referenced from [Asos](https://www.asos.com/terms-and-conditions/).
+- Privacy policy page referenced from [Policy Maker](https://policymaker.io/).
+
+<a href="#table-of-contents">Back to top</a>
 
 ### Media
-- The photos used in this site were obtained from ...
+
+- Logo & background images are custom designs by me. Created using photoshop as explained above.
+- Jersey images where taken from various sources like [Fanatics](https://www.fanatics.com/), [Mitchell & Ness](https://www.mitchellandness.com/) and [Google Images](https://www.google.com/imghp?hl=EN). As these images where used for educational purposes and not for profit i was made aware that it may not be neccessary to ask for permission.
+
+<a href="#table-of-contents">Back to top</a>
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+##### Special Thanks & Acknowledgements:
+
+Those in Slack, Tutor Support, and my Mentor Gerard McBride for assisting with me with countless queries since starting on this journey until now. Huge thanks to those in the Slack who helped me with my queries when i posted them.
+
+This course has been a huge challenge, one which i have enjoyed thoroughly and sad it has come to an end but I am very much looking forward to working on new projects and working on developing new skills in the future to further develop the knowledge i have gained through this course. I am excited for all the possibilities that programming can give me.
+
+###### Disclaimer: This project was created for educational use only as part of the Code Institute Full Stack Software Development Course for Milestone 4 Grading!
+
+<p align="center">
+  <img width="350" height="350" src="https://github.com/Jmurray1989/RetroKings/blob/master/static/logo/RetroKingsLogo.png">
+</p>
+
+<a href="#">Back to top</a>
