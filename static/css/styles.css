@@ -538,7 +538,12 @@ body {
     margin: 50px 15vw;
 }
 
+/*---------------------------------Contact Form--------------------------------------*/
 
+.contact-submit {
+    float: right;
+    width: 25vw;
+}
 
 /*-----------------------------------Media Queries----------------------------------------*/
 
@@ -595,6 +600,12 @@ body {
     font-size: 0.75rem;
 }
 
+/* Contact Form */
+.contact-submit {
+    float: right;
+    width: 25vw;
+}
+
 }
 
 /*-----------------------------Tablet Devices-----------------------------*/
@@ -645,6 +656,12 @@ body {
 /* Footer Contact Us text */
 .footer-info {
     font-size: 0.75rem;
+}
+
+/* Contact Form */
+.contact-submit {
+    float: right;
+    width: 25vw;
 }
 
 }
@@ -736,6 +753,12 @@ body {
     top: 2rem;
     right: 0.1rem;
     z-index: 99999999999;
+}
+
+/* Contact Form */
+.contact-submit {
+    float: right;
+    width: 50vw;
 }
 
 }
