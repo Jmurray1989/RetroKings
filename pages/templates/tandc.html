@@ -183,4 +183,27 @@
     </div>
   </div>
 </div>
+
+<div class="btt-button mx-auto mt-5">
+    <a class="btt-link d-flex h-100" aria-label="back-to-top">
+        <i class="fas fa-arrow-up mx-auto my-auto"></i>
+    </a>	
+</div>
+
+{% endblock %} 
+
+{% block postloadjs %} 
+{{ block.super }}
+
+<!-- Scripts -->
+<script>
+	$('.btt-link').click(function(e) {
+		window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+        });
+	})
+</script> 
+
 {% endblock %}
