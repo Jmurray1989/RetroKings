@@ -166,6 +166,8 @@ Wireframing for this project began with Pen and paper as all my projects tend to
 
 Each element was structurally planned out at this stage and even during the physical build of the application there was not much deviation from the original planning. Each page was rendered as a wireframe in all viewport sizes to show the difference between them and to show how the elements would react to differing viewport sizes.
 
+##### All my wireframes for this project can be viewed [here](https://github.com/Jmurray1989/RetroKings/tree/master/wireframes)
+
 <a href="#table-of-contents">Back to top</a>
 
 <hr>
@@ -405,13 +407,13 @@ The checkout page features a checkout form on the left and on the right again it
  
 ### 📧 Contact Page
  
- The contact page features a form where by the user con contact the store if they have any queries that cannot be answered by our FAQ section. The make the contact form standout from the back is used a dropshadow effect in the colour gold keeping in with the color scheme of the site which can be viewed [here]().
+ The contact page features a form where by the user con contact the store if they have any queries that cannot be answered by our FAQ section. To enhance the contact form and for further customisation i used a dropshadow effect with the color scheme of the site which can be viewed [here](https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/contact-form.jpg).
  
 ###### Contact Form
 
 - The contact page contains a form for the user to fill in to send to the store admin.
 - Name, email address and message have all been set to required fields.
-- An email is sent to the store admin's email address notifiying them of a new contact enquiry in the admin dashboard.
+- An email is sent to the store admin's email address notifiying them of a new contact enquiry in the admin dashboard. [view here](https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/message-notification.jpg)
 - This message can be checked by logging in to the admin area. Preview it [here](https://github.com/Jmurray1989/RetroKings/blob/master/static/readme-imgs/contact-form.jpg).
 - After the user submits the form a 'Thank You' message is displayed informing them we will be in touch soon and that they can continue to shop our store by clicking on the 'Take Me Shopping' button while they wait.
 
@@ -443,7 +445,7 @@ To implement this idea i would go to the Facebook developers page and create my 
 
 ###### User Rating
 
-- I have implemented user reviews on the site to include a star rating system. I would like to take this information so everytime a user leaves a review on a product an average rating would appear based on that review.
+- I have implemented user reviews on the site to include a star rating system. I would like to take this information so everytime a user leaves a review on a product an average rating would appear based on that review in the product details page.
 
 To implement this idea would be quite complex and a challenge i would like to take on. The steps below are how i believe i would achieve this feature.
 - Once a review has been saved
@@ -454,7 +456,7 @@ To implement this idea would be quite complex and a challenge i would like to ta
 
 ###### Headwear / More Products
 
-- The Retrokings store would like to offer even more products in the future starting with a range of retro headwear.
+- The Retrokings store would like to offer even more products in the future starting with a range of retro headwear. This has been incorporated into the site in the navbar as a "Coming Soon" item.
 
 <a href="#table-of-contents">Back to top</a>
 
