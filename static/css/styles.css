@@ -538,6 +538,11 @@ body {
     margin: 50px 15vw;
 }
 
+.brand-img {
+    max-width: 30%;
+    height: auto;
+}
+
 /*---------------------------------Contact Form--------------------------------------*/
 
 .contact-submit {
