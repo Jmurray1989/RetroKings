@@ -639,12 +639,16 @@ body {
 }
 
 /* Toasts */
-
 .message-container {
     position: fixed;
     top: 2rem;
     right: 0.8rem;
     z-index: 99999999999;
+}
+
+/* Jersey Cards Header */
+.jersey-header {
+    font-size: 1rem;
 }
 
 /* Homepage Carousel */
