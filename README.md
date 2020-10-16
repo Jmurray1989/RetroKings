@@ -166,6 +166,8 @@ Wireframing for this project began with Pen and paper as all my projects tend to
 
 Each element was structurally planned out at this stage and even during the physical build of the application there was not much deviation from the original planning. Each page was rendered as a wireframe in all viewport sizes to show the difference between them and to show how the elements would react to differing viewport sizes.
 
+##### All my wireframes for this project can be viewed [here](https://github.com/Jmurray1989/RetroKings/tree/master/wireframes)
+
 <a href="#table-of-contents">Back to top</a>
 
 <hr>
