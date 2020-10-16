@@ -5,6 +5,17 @@
 {% block title %} 500 Server Error {% endblock %} 
 
 {% block content %}
+
+<div class="row">
+    <div class="col-sm-12 text-center brand-img mt-3 mb-5">
+      <img
+        class="img-fluid"
+        src="{% static 'logo/RetroKingsLogo.png' %}"
+        alt="RK Logo"
+      />
+    </div>
+</div>
+
 <!-- Will display this page on 500 server error -->
 <div class="overlay"></div>
 <div class="container">
@@ -21,15 +32,6 @@
       <a href="{% url 'home' %}" class="btn btn-gold btn-lg mb-5" role="button"
         >Home <i class="fas fa-home"></i
       ></a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 text-center brand-img">
-      <img
-        class="img-fluid"
-        src="{% static 'logo/RetroKingsLogo.png' %}"
-        alt="RK Logo"
-      />
     </div>
   </div>
 </div>
